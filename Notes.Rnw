@@ -1,4 +1,6 @@
 \documentclass{article}
+\usepackage{amsmath}
+\usepackage{natbib}
 \title{Notes on VAR Analysis for Doctorate}
 \author{Rob Hayward}
 
