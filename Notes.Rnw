@@ -33,8 +33,6 @@ The critical value for a sample size of 100 comes from \citep{Fuller1976}.
 
 An F-test of the null hypothesis that the coefficients on the lagged change in the dependend variable and the coefficient on the time trend are jointly equal to zero is also supplied $(\phi_3)$.  The critical values come from Table VI \citep{DF1981} testing the null $(\alpha, \beta, \rho) = (\alpha, 0, 1)$.  It seems that unit root and lack of time trend cannot be rejected. A joint test of the null that the coefficients on the drift, time trend and lagged difference of the dependent variable is suppoed in $(\phi_2)$.  The critical values come from Table V \citep{DF1981} testing the null $(\alpha, \beta, \rho) = (0, 0, 1)$.
 
-
-
 \section{Cointegration tests with capital flow data}
 Testing for cointegration of the series.  For the F-Test, that the coefficient on the lagged difference of the dependent variable and the coefficient on the It appears that the null of a unit root cannot be rejected for CNB, RTWI, Spread2. It is rejected at the 5\% level for CNE, CFDI, COT and S1.  Therefore, it appears that the former should be introduced in first difference. 
 
