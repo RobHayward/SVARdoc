@@ -87,49 +87,6 @@ The $\tau_3$ test statistic is the test of the null hypothesis that the coeffici
 The critical value for a sample size of 100 comes from \citep{Fuller1976}. 
 
 An F-test of the null hypothesis that the coefficients on the lagged change in the dependend variable and the coefficient on the time trend are jointly equal to zero is also supplied $(\phi_3)$.  The critical values come from Table VI \citep{DF1981} testing the null $(\alpha, \beta, \rho) = (\alpha, 0, 1)$.  It seems that unit root and lack of time trend cannot be rejected. A joint test of the null that the coefficients on the drift, time trend and lagged difference of the dependent variable is suppoed in $(\phi_2)$.  The critical values come from Table V \citep{DF1981} testing the null $(\alpha, \beta, \rho) = (0, 0, 1)$.
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
-
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: object 'd' not found}}
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: object 'd' not found}}
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: object 'd' not found}}
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: object 'd' not found}}
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: object 'd' not found}}
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: object 'd' not found}}
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: object 'd' not found}}\end{kframe}
-\end{knitrout}
-
-
-\begin{kframe}
-
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: could not find function "ur.df"}}\end{kframe}% latex table generated in R 2.15.2 by xtable 1.7-0 package
-% Thu Jun 27 22:16:04 2013
-\begin{table}[ht]
-\begin{center}
-\begin{tabular}{rrrrrrrr}
-  \hline
- & CNB & CNE & CNFDI & COT & RTWI & SPREAD2 & S1 \\ 
-  \hline
-tau & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\ 
-  CV(tau) & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\ 
-  phi2 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\ 
-  CV(phi) & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\ 
-   \hline
-\end{tabular}
-\end{center}
-\end{table}
-
-\includegraphics[width=\maxwidth]{figure/ur} 
-
-
 
 \section{Cointegration tests with capital flow data}
 Testing for cointegration of the series.  For the F-Test, that the coefficient on the lagged difference of the dependent variable and the coefficient on the It appears that the null of a unit root cannot be rejected for CNB, RTWI, Spread2. It is rejected at the 5\% level for CNE, CFDI, COT and S1.  Therefore, it appears that the former should be introduced in first difference. 
@@ -154,5 +111,8 @@ r = 0  & 251.31 & 118.99 & 124.25 & 136.06\\
 \end{tabular}
 
 This suggests that there are three or four conintegrating variables.  The results are the same no matter what the combination that is adopted.  
+
+\section{SVAR}
+The standard VAR with the orthogonal IRF is IRF1, IRF2 shuffles the order of the series so that a second test can be assessed.  It would be possible to repeat this exercise repeatedly so that there will be an average response and some indication of the range of possible responses. This would give even more idea of how the system reacts to different assumptions.  IRF3 is the SVAR that is a result of the restrictions that have been imposed.  There is one additional method that could be used where the COT for the bond equation is relaxed (on the assumption that some internatioal bond investors may jump on the back of the central bank purchase) and the bond coefficient on the COT equation is set to zero, on the very plausible assumption that central banks are concerned about the exchange rate rather than bond flows.  In essenence, this means that the Amat(1, 4) = na and het Amat(4,1) - 0.  
 
 \end{document}

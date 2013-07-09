@@ -28,50 +28,6 @@ roots(Var1)
 #for the spread equation. 
 resid1<-data.frame(resid(Var1))
 head(resid1)
-rv1CNB<-ts(resid1$CNBa, start=c(1986.1), frequency=4)
-plot(rv1CNB, main="Residuals from CNB equation", ylab="Error")
-hist(rv1CNB, main="Residuals from CNB equation and normal plot", ylab="Error", 
-	xlab='CNB',prob=TRUE)
-plot(function(x){dnorm(x,m=mean(rv1CNB),sd=sd(rv1CNB))},-40,30,add=TRUE, 
-	col='red')
-rv1CNE<-ts(resid1$CNE, start=c(1986.1), frequency=4)
-plot(rv1CNE, main="Residuals from CNE equation", ylab="Error")
-hist(rv1CNE, main="Residuals from CNE equation and normal plot", ylab="Error", 
-	xlab='CNE',prob=TRUE)
-plot(function(x){dnorm(x,m=mean(rv1CNE),sd=sd(rv1CNE))},-15,20,add=TRUE, 
-	col='red')
-rv1CNFDI<-ts(resid1$CNFDI, start=c(1986.1), frequency=4)
-plot(rv1CNFDI, main="Residuals from CNFDI equation", ylab="Error")
-hist(rv1CNFDI, main="Residuals from CFDI equation and normal plot", ylab="Error", 
-	xlab= 'CNE',prob=TRUE)
-plot(function(x){dnorm(x,m=mean(rv1CNFDI),sd=sd(rv1CNFDI))},-25,30,add=TRUE, 
-	col='red')
-rv1COT<-ts(resid1$COT, start=c(1986.1), frequency=4)
-plot(rv1COT, main="Residuals from COT equation", ylab="Error")
-hist(rv1COT, main="Residuals from COT equation and normal plot", ylab="Error", 
-	xlab='COT',prob=TRUE)
-plot(function(x){dnorm(x,m=mean(rv1COT),sd=sd(rv1COT))},-15,20,add=TRUE, 
-	col='red')
-rv1RTWI<-ts(resid1$RTWI, start=c(1986.1), frequency=4)
-plot(rv1RTWI, main="Residuals from RTWI equation", ylab="Error")
-hist(rv1RTWI, main="Residuals from RTWI equation and normal plot", ylab="Error", 
-	xlab='CNE',prob=TRUE)
-plot(function(x){dnorm(x,m=mean(rv1RTWI),sd=sd(rv1RTWI))},-5,5,add=TRUE, 
-	col='red')
-rv1SPREAD2<-ts(resid1$SPREAD2, start=c(1986.1), frequency=4)
-plot(rv1SPREAD2, main="Residuals from SPREAD2 equation", ylab="Error")
-hist(rv1SPREAD2, main="Residuals from SPREAD2 equation and normal plot", ylab="Error", 
-	xlab='CNE',prob=TRUE)
-plot(function(x){dnorm(x,m=mean(rv1SPREAD2),sd=sd(rv1SPREAD2))},-5,10,add=TRUE, 
-	col='red')
-rv1S1<-ts(resid1$S1, start=c(1986.1), frequency=4)
-plot(rv1S1, main="Residuals from S1 equation", ylab="Error")
-hist(rv1S1, main="Residuals from S1 equation and normal plot", ylab="Error", 
-	xlab='S1',prob=TRUE)
-plot(function(x){dnorm(x,m=mean(rv1S1),sd=sd(rv1S1))},-0.2,0.2, 
-	col='red', main="Residuals from S1 equation and normal plot", 
-	ylab="Error", xlab='S1')
-hist(rv1S1, prob=TRUE, add=TRUE)
 #The next step will be to plot the residual plots together. 
 # Plot serial correlation and histo#############################################
 #Plot time series of all the error terms
@@ -87,8 +43,8 @@ rv1CNFDI<-ts(resid1$CNFDI, start=c(1986.1), frequency=4)
 plot(rv1COT, main="Residuals from COT equation", ylab="Error")
 rv1RTWI<-ts(resid1$RTWI, start=c(1986.1), frequency=4)
 plot(rv1RTWI, main="Residuals from RTWI equation", ylab="Error")
-rv1SPREAD1<-ts(resid1$SPREAD1, start=c(1986.1), frequency=4)
-plot(rv1SPREAD1, main="Residuals from SPREAD1 equation", ylab="Error")
+rv1SPREAD2<-ts(resid1$SPREAD2, start=c(1986.1), frequency=4)
+plot(rv1SPREAD2, main="Residuals from SPREAD2 equation", ylab="Error")
 rv1S1<-ts(resid1$S1, start=c(1986.1), frequency=4)
 plot(rv1S1, main="Residuals from S1 equation", ylab="Error")
 #  Plot histogram and normal plot of the residuals-------------
@@ -189,8 +145,41 @@ var1.cause$Instant
 fevd.var6<-fevd(Var6)
 plot(fevd.var6)
 fevd.var6$CNB
+# Plot cumsum of coefficients---------------
+pdf("Stab.pdf", paper= "a4r", width = 10, title = "Stability Test")
+par(mfcol=c(2,3), oma = c(0,0,1,0))
+# find functions
+# names(stability(Var1)$stability$S1)
 
-
-stability(Var6)
-
+STCNB <- (stability(Var1)$stability$CNB)
+STCNE <- (stability(Var1)$stability$CNE)
+STCOT <- (stability(Var1)$stability$COT)
+STRTWI <- (stability(Var1)$stability$RTWI)
+STSPREAD2 <- (stability(Var1)$stability$SPREAD2)
+STS1 <- (stability(Var1)$stability$S1)
+bound.STCNB <- boundary(STCNB, alph = 0.05)
+bound.STCNE <- boundary(STCNE, alph = 0.05)
+bound.STCOT <- boundary(STCOT, alph = 0.05)
+bound.STRTWI <- boundary(STRTWI, alph = 0.05)
+bound.STSPREAD2 <- boundary(STSPREAD2, alph = 0.05)
+bound.STS1 <- boundary(STS1, alph = 0.05)
+plot(STCNB, main = "CNB", ylab = "", boundary = FALSE)
+lines(bound.STCNB, col = 'red')
+lines(-bound.STCNB, col = 'red')
+plot(STCNE, main = "CNE", ylab = "", boundary = FALSE)
+lines(bound.STCNE, col = 'red')
+lines(-bound.STCNE, col = 'red')
+plot(STCOT, main = "COT", ylab = "", boundary = FALSE)
+lines(bound.STCOT, col = 'red')
+lines(-bound.STCOT, col = 'red')
+plot(STRTWI, main = "RTWI", ylab = "", boundary = FALSE)
+lines(bound.STRTWI, col = 'red')
+lines(-bound.STRTWI, col = 'red')
+plot(STSPREAD2, main = "SPREAD2", ylab = "", boundary = FALSE)
+lines(bound.STSPREAD2, col = 'red')
+lines(-bound.STSPREAD2, col = 'red')
+plot(STS1, main = "S1", ylab = "", boundary = FALSE)
+lines(bound.STS1, col = 'red')
+lines(-bound.STS1, col = 'red')
+dev.off()
 #This is the end of the basic VAR analysis. 

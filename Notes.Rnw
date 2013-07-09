@@ -57,4 +57,7 @@ r = 0  & 251.31 & 118.99 & 124.25 & 136.06\\
 
 This suggests that there are three or four conintegrating variables.  The results are the same no matter what the combination that is adopted.  
 
+\section{SVAR}
+The standard VAR with the orthogonal IRF is IRF1, IRF2 shuffles the order of the series so that a second test can be assessed.  It would be possible to repeat this exercise repeatedly so that there will be an average response and some indication of the range of possible responses. This would give even more idea of how the system reacts to different assumptions.  IRF3 is the SVAR that is a result of the restrictions that have been imposed.  There is one additional method that could be used where the COT for the bond equation is relaxed (on the assumption that some internatioal bond investors may jump on the back of the central bank purchase) and the bond coefficient on the COT equation is set to zero, on the very plausible assumption that central banks are concerned about the exchange rate rather than bond flows.  In essenence, this means that the Amat(1, 4) = na and het Amat(4,1) - 0.  
+
 \end{document}
