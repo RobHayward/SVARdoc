@@ -15,7 +15,7 @@ info
 #Each of these can be tried with and without the dummies.
 # Model selection var1 and va2---------------------
 # Two models var1 is original, var2 has spread 2 and S2. 
-Var1<-VAR(ds,p=4, type='both',season=NULL, exog=dum)
+Var1<-VAR(da,p=4, type='both',season=NULL, exog=dum)
 logLik(Var1)
 summary(Var1)
 roots(Var1)

@@ -1,14 +1,14 @@
 # Create impulse response with random order of variables---------------------
 set.seed(3)
 head(da)
-sample <- sample(c(4:7,9, 11, 13), size = 7, replace = FALSE)
-head(sample)
-Var2<-VAR(da[,sample],p=4, type='both',season=NULL, exog=dum)
+#sample <- sample(c(1:7), size = 7, replace = FALSE)
+#head(sample)
+#Var2<-VAR(da[,sample],p=4, type='both',season=NULL, exog=dum)
 # adjust spread data-------------------------
 pdf("IRF2.pdf", paper= "a4r", width = 9, title = "IRF2")
 par(mfcol=c(2,3), oma = c(0,0,2,0))
 # System 2 CNB---------------------------------------
-irf.rtwicnb <- irf(Var2, n.ahead=8,impulse='CNBa', response='RTWI',ortho=TRUE, 
+irf.rtwicnb <- irf(Var2, n.ahead=8,impulse='CNB', response='RTWI',ortho=TRUE, 
                    cumulative=TRUE,boot=TRUE, runs=100)
 a<-irf.rtwicnb$irf
 b<-irf.rtwicnb$Upper
@@ -33,7 +33,7 @@ plot(aa[,1], xlim=c(1,8), ylim=c(-6, 6), type='l',
 lines(aa[,2], type='l', col='red', lty=2)
 lines(aa[,3],type='l', col='red',lty=2)
 abline(h=0, col='red',lty=6)
-# System 3 CNFDI --------------------------------
+# System 2 CNFDI --------------------------------
 irf.rtwicnfdi <- irf(Var2, n.ahead=8,impulse='CNFDI', response='RTWI',ortho=TRUE, 
                      cumulative=TRUE,boot=TRUE, runs=100)
 a<-irf.rtwicnfdi$irf
@@ -60,7 +60,7 @@ lines(aa[,2], type='l', col='red', lty=2)
 lines(aa[,3],type='l', col='red',lty=2)
 abline(h=0, col='red',lty=6)
 # System 2 Spread----------------------------
-irf.rtwispread <- irf(Var2, n.ahead=8,impulse='SPREAD1', response='RTWI',ortho=TRUE, 
+irf.rtwispread <- irf(Var2, n.ahead=8,impulse='SPREAD2', response='RTWI',ortho=TRUE, 
                       cumulative=TRUE,boot=TRUE, runs=100)
 a<-irf.rtwispread$irf
 b<-irf.rtwispread$Upper
