@@ -24,6 +24,11 @@ The preparation of data is straight forward.  The figures are downloaded and adj
 
 These can all be tested for unit roots to begin and as cointegrated vectors as a second move.  The labtop has a loop to calcualte the Augmented Dickey-Fuller tests of the key variables. 
 
+\section{Diagnostic tests}
+The diagnostic test are in the VAR.R file.  The da structure has to be changed to accomodeate the different versions of the VAR. This will be included in da according to the the model that is being assessed.  Once the data.frame called da has been set up to include the appropriate variables, the code will make the same analysis of the series.  All that has to be adjusted are the arguments of the VAR function to chose the appropriate lag length, dummies and whether there should be a trend, constant or no additional variables.  
+
+The main tests that are carried out will be roots, Loglikelihood, AIC, BIC, Portmanteau tests (with small sample correction), Breusch-Godffrey test (with small sample correction), hetroscedasticity test (univariate and multivariate) and normal test (univariate and multivariate).  There are a number of diagrams that augment the analysis.  There are the correlograms of the residuals from each equation (acf.pdf), the time series of the residuals (residts.pdf), histogram of the residuals (Hresid.pdf).  There is also the ability to construct the cumsum of residuals to test for parameter stability (Stab.pdf).  
+
 \section{Unit roots}
 
 The $\tau_3$ test statistic is the test of the null hypothesis that the coefficient on the difference of the lagged dependent variable is equal to zero and that there is a \emph{unit root} as $\rho$ is equal to one.  

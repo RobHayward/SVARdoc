@@ -1,19 +1,19 @@
 # If data is not prepared
-call("Prepare.R")
+# call("Prepare.R")
 head(da)
 info<-VARselect(da,lag.max=8,type='t')
 info
 #if you want turn list into dataframe and xtable for la tex
 #info<-as.data.frame(info)
 #xtable(info2)
-#Deal with current account########################################################
+#Deal with current account
 #the three ways to deal with the lack of stationarity in the current account 
 #The first ignores the problem, 
 #The second will look at the change in the current account (though this is not 
 #stationary itself.
 #The third will remove the current account from the system.
 #Each of these can be tried with and without the dummies.
-# Model selection var1 and va2---------------------
+# Model selection var1 and va2
 # Two models var1 is original, var2 has spread 2 and S2. 
 Var1<-VAR(da,p=4, type='both',season=NULL, exog=dum)
 logLik(Var1)
@@ -29,56 +29,65 @@ roots(Var1)
 resid1<-data.frame(resid(Var1))
 head(resid1)
 #The next step will be to plot the residual plots together. 
-# Plot serial correlation and histo#############################################
+# Plot serial history-----------------
 #Plot time series of all the error terms
-par(mfrow=c(3,2))
+pdf("residts.pdf", paper= "a4", width = 9, height = 11, title = "residts")
+par(mfcol=c(3,2), oma = c(0,0,0,0))
 rv1CNB<-ts(resid1$CNB, start=c(1986.1), frequency=4)
 plot(rv1CNB, main="Residuals from CNB equation", ylab="Error")
+abline(h = 0, col = 'red')
 rv1CNE<-ts(resid1$CNE, start=c(1986.1), frequency=4)
 plot(rv1CNE, main="Residuals from CNE equation", ylab="Error")
+abline(h = 0, col = 'red')
 rv1CNFDI<-ts(resid1$CNFDI, start=c(1986.1), frequency=4)
 # remove one to leave 6. 
 #plot(rv1CNFDI, main="Residuals from CNFDI equation", ylab="Error")
-#rv1COT<-ts(resid1$COT, start=c(1986.1), frequency=4)
+rv1COT<-ts(resid1$COT, start=c(1986.1), frequency=4)
 plot(rv1COT, main="Residuals from COT equation", ylab="Error")
+abline(h = 0, col = 'red')
 rv1RTWI<-ts(resid1$RTWI, start=c(1986.1), frequency=4)
 plot(rv1RTWI, main="Residuals from RTWI equation", ylab="Error")
 rv1SPREAD2<-ts(resid1$SPREAD2, start=c(1986.1), frequency=4)
+abline(h = 0, col = 'red')
 plot(rv1SPREAD2, main="Residuals from SPREAD2 equation", ylab="Error")
 rv1S1<-ts(resid1$S1, start=c(1986.1), frequency=4)
+abline(h = 0, col = 'red')
 plot(rv1S1, main="Residuals from S1 equation", ylab="Error")
+abline(h = 0, col = 'red')
+dev.off()
 #  Plot histogram and normal plot of the residuals-------------
-par(mfrow=c(3,2))
-hist(rv1CNB, main="Residuals from CNB equation and normal plot", ylab="Error", 
+pdf("Hresid.pdf", paper= "a4", width = 9, height = 11, title = "Hresid")
+par(mfcol=c(3,2), oma = c(0,0,0,0))
+hist(rv1CNB, main="CNB Residuals and normal plot", ylab="Error", 
 	xlab='CNB',prob=TRUE)
 plot(function(x){dnorm(x,m=mean(rv1CNB),sd=sd(rv1CNB))},-40,30,add=TRUE, 
 	col='red')
-hist(rv1CNE, main="Residuals from CNE equation and normal plot", ylab="Error", 
+hist(rv1CNE, main="CNE Residuals and normal plot", ylab="Error", 
 	xlab='CNE',prob=TRUE)
 plot(function(x){dnorm(x,m=mean(rv1CNE),sd=sd(rv1CNE))},-15,20,add=TRUE, 
 	col='red')
-hist(rv1CNFDI, main="Residuals from CFDI equation and normal plot", ylab="Error", 
-	xlab='CNE',prob=TRUE)
+hist(rv1CNFDI, main="CNFDI Residuals and normal plot", ylab="Error", 
+	xlab='CNFDI',prob=TRUE)
 plot(function(x){dnorm(x,m=mean(rv1CNFDI),sd=sd(rv1CNFDI))},-25,30,add=TRUE, 
 	col='red')
-hist(rv1COT, main="Residuals from COT equation and normal plot", ylab="Error", 
+hist(rv1COT, main="COT Residuals and normal plot", ylab="Error", 
 	xlab='COT',prob=TRUE)
 plot(function(x){dnorm(x,m=mean(rv1COT),sd=sd(rv1COT))},-15,20,add=TRUE, 
 	col='red')
-hist(rv1RTWI, main="Residuals from RTWI equation and normal plot", ylab="Error", 
-	xlab='CNE',prob=TRUE)
+hist(rv1RTWI, main="RTWI Residuals and normal plot", ylab="Error", 
+	xlab='RTWI',prob=TRUE)
 plot(function(x){dnorm(x,m=mean(rv1RTWI),sd=sd(rv1RTWI))},-5,5,add=TRUE, 
 	col='red')
-hist(rv1SPREAD1, main="Residuals from SPREAD1 equation and normal plot", ylab="Error", 
-	xlab='CNE',prob=TRUE)
-plot(function(x){dnorm(x,m=mean(rv1SPREAD1),sd=sd(rv1SPREAD1))},-5,10,add=TRUE, 
+hist(rv1SPREAD2, main="SPREAD2 Residuals and normal plot", ylab="Error", 
+	xlab='SPREAD2',prob=TRUE)
+plot(function(x){dnorm(x,m=mean(rv1SPREAD2),sd=sd(rv1SPREAD2))},-5,10,add=TRUE, 
 	col='red')
-hist(rv1S1, main="Residuals from S1 equation and normal plot", ylab="Error", 
-	xlab='S1',prob=TRUE)
-plot(function(x){dnorm(x,m=mean(rv1S1),sd=sd(rv1S1))},-0.2,0.2, 
-	col='red', main="Residuals from S1 equation and normal plot", 
-	ylab="Error", xlab='S1')
+#hist(rv1S1, main="Residuals from S1 equation and normal plot", ylab="Error", 
+#	xlab='S1',prob=TRUE)
+plot(function(x){dnorm(x,m=mean(rv1S1),sd=sd(rv1S1))},-2,2, 
+	col='red', main = "S1 Residuals and normal plot", ylab = "Error") 
 hist(rv1S1, prob=TRUE, add=TRUE)
+dev.off()
 ###arf2 ####################################################################
 #This is the acf2 function from Robert Shunway and D.S. Stoffer. 
 #This has been modified to include maxA and maxP (copied).
@@ -111,6 +120,7 @@ acf2=function(series,max.lag=NULL){
   return(cbind(ACF, PACF)) 
   }
 #Now add the residual series.   
+par(mfrow=c(3,2))
 acf2(rv1CNB)
 acf2(rv1CNE)
 acf2(rv1CNFDI)
@@ -122,7 +132,7 @@ acf2(rv1S1)
 #test the null of no serial correlation.  Test lags and types
 #BG is Breusch-Godfrey LM test
 #ES is the Edgerton-Shukur F test
-Var1.ser<-serial.test(Var1,lags.pt=8,type="BG")
+Var1.ser<-serial.test(Var1,lags.pt=8,type="PT.adjusted")
 Var1.ser
 #test null of no arch---------------------
 var1.arch<-arch.test(Var1,lags.multi=4, multivariate.only=FALSE)

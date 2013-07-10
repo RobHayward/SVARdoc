@@ -1,6 +1,7 @@
 #Setting up the A (or B) Matrix#####################################
 #Setting up the A matrix. 
 #change the restrictions according to the theory to be tested. 
+head(da)
 Amat=diag(7)
 Amat[1,1]<-1
 Amat[2,2]<-1
@@ -11,7 +12,7 @@ Amat[6,6]<-1
 Amat[7,7]<-1
 Amat[1,2]<-NA #bond vs equity 
 Amat[1,3]<-0  #bond vs fdi
-Amat[1,4]<-0 #bond vs no 
+Amat[1,4]<-NA #bond vs cot 
 Amat[1,5]<-0 #bond vs fx
 Amat[1,6]<-NA #bond vs spread
 Amat[1,7]<-0 #bond vs sentiment
@@ -27,7 +28,7 @@ Amat[3,4]<-0 #fdi cot
 Amat[3,5]<-NA #fdi fx
 Amat[3,6]<-0 #fdi spread
 Amat[3,7]<-0 #fdi sentiment
-Amat[4,1]<-NA #cot bond
+Amat[4,1]<-0 #cot bond
 Amat[4,2]<-0 # cot equity
 Amat[4,3]<-0 # cot fdi
 Amat[4,5]<-NA # cot vs fx
@@ -59,9 +60,9 @@ Svar1$A
 #if you want turn list into dataframe and xtable for la tex
 xtable(Svar1$A, digits = 3)
 #IRF, select number of bootstraps and the period ahead-----------------
-irfCNBa.Svar1<-irf(Svar1, cumulative=T,impulse="CNBa",response="RTWI", 
+irfCNB.Svar1<-irf(Svar1, cumulative=T,impulse="CNB",response="RTWI", 
                   boot=TRUE, runs=100, n.ahead=4)
-plot(irfCNBa.Svar1)
+plot(irfCNB.Svar1)
 #
 irfCNE.Svar1<-irf(Svar1, cumulative=T,impulse="CNE",response="RTWI", 
                   boot=TRUE, runs=100, n.ahead=4)
@@ -75,7 +76,7 @@ irfRTWI.Svar1<-irf(Svar1, cumulative=T,impulse="RTWI",response="RTWI",
                    boot=TRUE, runs=100, n.ahead=4)
 plot(irfRTWI.Svar1)
 #
-irfSPREAD.Svar1<-irf(Svar1, cumulative=T,impulse="SPREAD1",response="RTWI", 
+irfSPREAD.Svar1<-irf(Svar1, cumulative=T,impulse="SPREAD2",response="RTWI", 
                      boot=TRUE, runs=100, n.ahead=4)
 plot(irfSPREAD.Svar1)
 #
