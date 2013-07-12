@@ -1,6 +1,8 @@
 # If data is not prepared
-# call("Prepare.R")
+call("Prepare.R")
 head(da)
+# THis will select the variables that are used. 
+da <- da[,c(3:7,9,11)]
 info<-VARselect(da,lag.max=8,type='t')
 info
 #if you want turn list into dataframe and xtable for la tex
@@ -66,10 +68,11 @@ hist(rv1CNE, main="CNE Residuals and normal plot", ylab="Error",
 	xlab='CNE',prob=TRUE)
 plot(function(x){dnorm(x,m=mean(rv1CNE),sd=sd(rv1CNE))},-15,20,add=TRUE, 
 	col='red')
-hist(rv1CNFDI, main="CNFDI Residuals and normal plot", ylab="Error", 
-	xlab='CNFDI',prob=TRUE)
-plot(function(x){dnorm(x,m=mean(rv1CNFDI),sd=sd(rv1CNFDI))},-25,30,add=TRUE, 
-	col='red')
+# Take one out for the picture that requires 6
+# hist(rv1CNFDI, main="CNFDI Residuals and normal plot", ylab="Error", 
+#	xlab='CNFDI',prob=TRUE)
+# plot(function(x){dnorm(x,m=mean(rv1CNFDI),sd=sd(rv1CNFDI))},-25,30,add=TRUE, 
+#	col='red')
 hist(rv1COT, main="COT Residuals and normal plot", ylab="Error", 
 	xlab='COT',prob=TRUE)
 plot(function(x){dnorm(x,m=mean(rv1COT),sd=sd(rv1COT))},-15,20,add=TRUE, 

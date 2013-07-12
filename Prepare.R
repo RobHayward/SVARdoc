@@ -60,5 +60,4 @@ dum<-cbind(da$D1,da$D2, da$D3)
 #Any other dummies?  Maybe look at the residuals to see if anything is required.
 #One possibility would be the dot.com burst.  Check equity and FDI flow.
 colnames(dum)<- c("D1", "D2", "D3")
-da <- da[,c(3:7,9,11)]
-head(da)
+
