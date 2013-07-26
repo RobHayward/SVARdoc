@@ -68,11 +68,10 @@ hist(rv1CNE, main="CNE Residuals and normal plot", ylab="Error",
 	xlab='CNE',prob=TRUE)
 plot(function(x){dnorm(x,m=mean(rv1CNE),sd=sd(rv1CNE))},-15,20,add=TRUE, 
 	col='red')
-# Take one out for the picture that requires 6
-# hist(rv1CNFDI, main="CNFDI Residuals and normal plot", ylab="Error", 
-#	xlab='CNFDI',prob=TRUE)
-# plot(function(x){dnorm(x,m=mean(rv1CNFDI),sd=sd(rv1CNFDI))},-25,30,add=TRUE, 
-#	col='red')
+hist(rv1CNFDI, main="CNFDI Residuals and normal plot", ylab="Error", 
+  xlab='CNFDI',prob=TRUE)
+plot(function(x){dnorm(x,m=mean(rv1CNFDI),sd=sd(rv1CNFDI))},-25,30,add=TRUE, 
+	col='red')
 hist(rv1COT, main="COT Residuals and normal plot", ylab="Error", 
 	xlab='COT',prob=TRUE)
 plot(function(x){dnorm(x,m=mean(rv1COT),sd=sd(rv1COT))},-15,20,add=TRUE, 
@@ -87,9 +86,9 @@ plot(function(x){dnorm(x,m=mean(rv1SPREAD2),sd=sd(rv1SPREAD2))},-5,10,add=TRUE,
 	col='red')
 #hist(rv1S1, main="Residuals from S1 equation and normal plot", ylab="Error", 
 #	xlab='S1',prob=TRUE)
-plot(function(x){dnorm(x,m=mean(rv1S1),sd=sd(rv1S1))},-2,2, 
-	col='red', main = "S1 Residuals and normal plot", ylab = "Error") 
-hist(rv1S1, prob=TRUE, add=TRUE)
+# plot(function(x){dnorm(x,m=mean(rv1S1),sd=sd(rv1S1))},-2,2, 
+#	col='red', main = "S1 Residuals and normal plot", ylab = "Error") 
+# hist(rv1S1, prob=TRUE, add=TRUE)
 dev.off()
 ###arf2 ####################################################################
 #This is the acf2 function from Robert Shunway and D.S. Stoffer. 
@@ -159,11 +158,10 @@ fevd.var6<-fevd(Var6)
 plot(fevd.var6)
 fevd.var6$CNB
 # Plot cumsum of coefficients---------------
-pdf("Stab.pdf", paper= "a4r", width = 10, title = "Stability Test")
-par(mfcol=c(2,3), oma = c(0,0,1,0))
+pdf("stab.pdf", paper= "a4", width = 9, height = 11, title = "Stability test")
+par(mfcol=c(3,2), oma = c(0,0,0,0))
 # find functions
 # names(stability(Var1)$stability$S1)
-
 STCNB <- (stability(Var1)$stability$CNB)
 STCNE <- (stability(Var1)$stability$CNE)
 STCOT <- (stability(Var1)$stability$COT)

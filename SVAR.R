@@ -60,6 +60,9 @@ Svar1$A
 #if you want turn list into dataframe and xtable for la tex
 xtable(Svar1$A, digits = 3)
 #IRF, select number of bootstraps and the period ahead-----------------
+#pdf("IRF3.pdf", paper= "a4r", width = 9, title = "IRF2")
+# Need to make consistent with others so made in irf3.R
+par(mfcol=c(2,3), oma = c(0,0,1,0))
 irfCNB.Svar1<-irf(Svar1, cumulative=T,impulse="CNB",response="RTWI", 
                   boot=TRUE, runs=100, n.ahead=4)
 plot(irfCNB.Svar1)
