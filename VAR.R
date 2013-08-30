@@ -1,5 +1,5 @@
 # If data is not prepared
-call("Prepare.R")
+# source("Prepare.R")
 head(da)
 # THis will select the variables that are used. 
 da <- da[,c(3:7,9,11)]
