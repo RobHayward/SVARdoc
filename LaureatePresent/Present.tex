@@ -1,0 +1,215 @@
+\documentclass[14pt,xcolor=pdftex,dvipsnames,table]{beamer}
+
+% Specify theme
+\usetheme{Madrid}
+% See deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html for other themes
+\usepackage{caption}
+
+% Specify base color
+\usecolortheme[named=OliveGreen]{structure}
+% See http://goo.gl/p0Phn for other colors
+
+% Specify other colors and options as required
+\setbeamercolor{alerted text}{fg=Maroon}
+\setbeamertemplate{items}[square]
+
+% Title and author information
+\title{Capital Flow and the Real Exchange Rate}
+\author{Rob Hayward}
+
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+\tableofcontents
+\end{frame}
+
+\section{Introduction}
+\begin{frame}{Introduction}
+\begin{itemize}[<+-| alert@+>]
+\item There are prolonged and significant deviations from \textbf{PPP}
+\item How far are deviations from PPP a function of \textbf{International Capital Flows?}
+\item Are some \textbf{capital flows} more powerful than others? 
+\item Are some \textbf{exchange rates} more vulnerable than others?  
+\end{itemize}
+\end{frame}
+
+\section{Measuring Capital Flows}
+\begin{frame}{Measuring Capital Flows}
+\begin{itemize}[<+-| alert@+>]
+\item Capital flow is hard to measure
+\item Portfolio balance models (Kouri and Porter, 1974) use bonds as a proxy
+\item However, \textbf{international agencies (BIS, IMF)} as well as \textbf {national statistical agencies} and \textbf{private economists} have sought to improve the measurement of capital flows
+\item 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Microstructure}
+\framesubtitle{Order Flow at the macro level}
+\begin{itemize}[<+-| alert@+>]
+\item Evans and Lyons (2002) add order flow to conventional exchange rate model
+\item \begin{equation}
+ \Delta s_t=f(i,m,z,)+g(X,I,Z)+\epsilon_t
+\end{equation}
+\item Construct model of  \textbf{international capital flows} 
+\item \textbf{Signed} order flow is deliberate and is offset by a \textbf{passive} balancing flow
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Capital Flow Series}
+\begin{itemize}[<+-| alert@+>]
+\item RTWI - Real Trade Weighted Index
+\item CNB - Cumulative net bonds per GDP
+\item CNE - Cumulative net equity per GDP
+\item CNFDI - Cumulative net equity per GDP
+\item COT - Cumulative Official Treasuries per GDP
+\item Spread - Three month interest rate spread
+\item S1 - CFTC FX Derivative Positions (non-commercial per open interest)
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Capital Flow Series}
+\framesubtitle{Descriptive Statistics}
+\begin{center}
+\rowcolors{1}{OliveGreen!20}{OliveGreen!5}
+ \begin{tabular}{l r r r r r}
+Series & Units & Mean & Median &  Max & Min \\
+\hline
+RTWI & index & 91.24 & 89.26 & 115.96 & 78.44 \\
+CNB & \% GDP & 6.00 & 5.07 & 15.97 & -0.84\\
+CNE & \% GDP & 0.23 & -0.00 & 3.28 & -1.81  \\
+CNFDI & \% GDP & -0.67 & -1.29 & 8.91 & -11.48\\
+COT & \% GDP & 0.88 & 8.32 & 4.47 & -1.27 \\
+SPREAD &  pp & -0.20 & -0.07 & 3.38 & -4.99  \\
+S1 &  NC/OI & 47.0 & 3.00 & 70.0 & -69.0\\
+\hline
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\includegraphics<1>[width=12cm, height=8cm]{ts}
+\end{frame}
+
+\begin{frame}
+\includegraphics<1>[width=12cm, height=8cm]{bondflow}
+\end{frame}
+
+\begin{frame}
+\includegraphics<1>[width=12cm, height=8cm]{fdiflow}
+\end{frame}
+
+\begin{frame}{Vector Auto Regression}
+\structure{Structural Equation}
+$Bx_{t}=\Gamma_{0}+\Gamma_{1}x_{t-1}+\epsilon_{t}$
+\pause
+
+\begin{block}{}
+Where: $x_t$ is a vector of endogenous variables; matrix $B$ contains the coefficients for the contemporaneous relationships between the endogenous variables; $\Gamma_0$ contains exogenous variables such as a constant, trend or seasonal; $\epsilon$ is a vector of errors that are assumed to IID; and $\Gamma_1$ are the parameters to be estimated. 
+\end{block}
+\pause
+\end{frame}
+
+\begin{frame}{Vector Auto Regression 2}
+\structure{Standard Form of VAR}
+$x_t=A_0+A_1x_{t-1}+e_t$
+\pause
+
+\begin{block}{}
+Multiplying $Bx_{t}=\Gamma_{0}+\Gamma_{1}x_{t-1}+\epsilon_{t}$
+through by $B^{-1}$ will give $x_t=A_0+A_1x_{t-1}+e_t$
+With $A_0=B^{-1}\Gamma_0$, $A_1=B^{-1}\Gamma_1$ and $e_t=B^{-1}\epsilon_t$. 
+\end{block}
+\pause
+\vskip1cm
+Allows OLS to be used
+\end{frame}
+
+\begin{frame}{Identification}
+\structure{Restrictions}
+$K\frac{(K-1)}{2}$ restrictions are needed
+\pause
+
+\begin{block}{}
+Restrictions on the B matrix can be imposed in an arbitrary fashion (Cholesky decomposition) or by using economic theory and other prior information.  
+\end{block}
+\pause
+\vskip1cm
+Each method is used here.
+\vskip1cm
+Results are compared
+\end{frame}
+
+\begin{frame}
+\frametitle{SVAR Restrictions}
+\framesubtitle{NA is estimated}
+\begin{center}
+\rowcolors{1}{OliveGreen!20}{OliveGreen!5}
+\begin{tabular}{lrrrrrrrrr}  
+  \hline
+ &  CNB & CNE & CNFDI & COT & RTWI & SP & S1 \\ 
+  \hline
+  CNB & 1 & NA & 0 & 0 & 0 & NA & 0\\ 
+  CNE & NA & 1 & NA & 0 & NA & 0 & NA\\ 
+  CNFDI & 0 & NA & 1 & 0 & NA & 0 & 0\\ 
+  COT & NA & 0 & 0 & 1 & NA & 0 & NA \\ 
+   RTWI & 0 & NA & NA & NA & 1 & NA & NA\\ 
+  SPR'D & NA & 0 & 0 & 0 & NA & 1 & 0\\ 
+  S1 & 0 & NA & 0 & NA & NA & 0 & 1\\ 
+   \hline
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}{Impulse Response Functions}
+What is the effect of an innovation or shock? 
+\begin{equation}
+x_t=\mu+\sum_{i=0}^{i=n}\frac{A_t^i}{1-b_{12}b_{21}}
+\begin{bmatrix} 1 & -b_{12} \\ -b_{21} & 1
+\end{bmatrix}
+\end{equation}
+For n periods
+\end{frame}
+
+
+\begin{frame}
+\includegraphics<1>[width=12cm, height=8cm]{irfspread}
+\end{frame}
+
+\begin{frame}
+\includegraphics<1>[width=12cm, height=8cm]{irfcot}
+\end{frame}
+
+\begin{frame}
+\includegraphics<1>[width=12cm, height=8cm]{irfcnb}
+\end{frame}
+
+\begin{frame}
+\includegraphics<1>[width=12cm, height=8cm]{irfs1}
+\end{frame}
+
+\begin{frame}
+\includegraphics<1>[width=12cm, height=8cm]{irfcne}
+\end{frame}
+
+\section{Findings}
+\begin{frame}{Findings}
+\begin{itemize}[<+-| alert@+>]
+\item \textbf{Speculative flow} seems to have a significant and persistent effect on the real exchange rate
+\item There is a positive relationship between \textbf{interest rate differentials} and the US dollar
+\item \textbf{FDI}, \textbf{Bond flow} and \textbf{Equity flows} seem to have minimal influence on the real exchange rate
+\end{itemize}
+\end{frame}
+
+\begin{frame}{References}
+\textbf{Lyons and Evans} (2002), 'Order Flow and Exchange Rate Dynamics', \emph{Journal of Political Economy}, 110 (1)\\
+\textbf{Kouri and Porter} (1974), 'International Capital Flows and Portfolio Equilibrium', \emph{Journal of Political Economy}, 82\\
+\textbf{Sims} (1980), 'Macroeconomics and Reality', \emph{Econometrica} 48(1)
+\end{frame}
+
+\end{document}
