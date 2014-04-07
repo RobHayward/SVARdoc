@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.19)  4 APR 2014 13:55
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.19)  7 APR 2014 16:09
 entering extended mode
 **Present.tex
 
@@ -1149,6 +1149,8 @@ f>] [42
 
 ] [45
 
+] [46
+
 ]
 \tf@nav=\write6
 \tf@toc=\write7
@@ -1170,8 +1172,8 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 217.
  ) 
 Here is how much of TeX's memory you used:
- 16852 strings out of 494045
- 317975 string characters out of 3145963
+ 16854 strings out of 494045
+ 317994 string characters out of 3145963
  398951 words of memory out of 3000000
  19648 multiletter control sequences out of 15000+200000
  10514 words of font info for 38 fonts, out of 3000000 for 9000
@@ -1187,9 +1189,9 @@ ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi12.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Present.pdf (45 pages, 420294 bytes).
+Output written on Present.pdf (46 pages, 427842 bytes).
 PDF statistics:
- 1342 PDF objects out of 1440 (max. 8388607)
- 94 named destinations out of 1000 (max. 500000)
+ 1372 PDF objects out of 1440 (max. 8388607)
+ 96 named destinations out of 1000 (max. 500000)
  131 words of extra memory for PDF output out of 10000 (max. 10000000)
 
