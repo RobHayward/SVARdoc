@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: SVAR_Paper.aux
+The style file: agsm.bst
+Database file #1: ../../../../myrefs.bib
+Repeated entry---line 1474 of file ../../../../myrefs.bib
+ : @article{Jens
+ :              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1484 of file ../../../../myrefs.bib
+ : @article{HauEquity
+ :                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1771 of file ../../../../myrefs.bib
+ : @incollection{Frankel1986
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2102 of file ../../../../myrefs.bib
+ : @article{AIC
+ :             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2112 of file ../../../../myrefs.bib
+ : @manual{xtable
+ :               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2184 of file ../../../../myrefs.bib
+ : @manual{R
+ :          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2383 of file ../../../../myrefs.bib
+ : @article{FrootUIP
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3361 of file ../../../../myrefs.bib
+ : @article{HauEquity
+ :                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3542 of file ../../../../myrefs.bib
+ : @manual{R
+ :          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3711 of file ../../../../myrefs.bib
+ : @article{Bilson1978Money
+ :                         ,
+I'm skipping whatever remains of this entry
+Warning--there's a number but no volume in Branson1971
+Warning--there's a number but no volume in BoEdata
+Warning--there's a number but no volume in DelNegroFRBNY
+Warning--can't use both author and editor fields in Frankel1984tests
+Warning--there's a number but no volume in FrootUIP
+Warning--there's a number but no volume in Fedtwi
+Warning--can't use both author and editor fields in Lucas1976Critique
+Warning--empty publisher in Portes2009Global
+(There were 10 error messages)
