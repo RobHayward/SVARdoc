@@ -10,23 +10,9 @@ Andersen, L.~C. \harvardand\ Jordan, J.~L.  \harvardyearleft
   relative importance in economic stabilizations', {\em Federal Reserve Bank of
   St. Louis Review} pp.~11--24.
 
-\harvarditem{Balassa}{1964}{Balassa1964PPP}
-Balassa, B.  \harvardyearleft 1964\harvardyearright , `The purchasing power
-  parity doctrin: A reappraisal', {\em Journal of Political Economy} {\bf
-  72},~584--596.
-
-\harvarditem{Baumol \harvardand\ Bowen}{1966}{Baumol1966Performing}
-Baumol, W.~J. \harvardand\ Bowen, W.~G.  \harvardyearleft 1966\harvardyearright
-  , {\em Performing Arts: the Economic Dilemma}, Twentieth Century Fund.
-
 \harvarditem{Bernanke}{1986}{Bernanke1986}
 Bernanke, B.  \harvardyearleft 1986\harvardyearright , `Alternative explanation
   of the money-income correlation', {\em NBER Working Papers} {\bf 1842}.
-
-\harvarditem{Bilson}{1978}{Bilson1978Money}
-Bilson, J.~F.  \harvardyearleft 1978\harvardyearright , `The monetary approach
-  to the exchange rate: Some empirical evidence', {\em IMF Staff Papers} {\bf
-  25}(1).
 
 \harvarditem{{\em BIS Location Banking Statistics}}{2012}{BISbanking}
 {\em BIS Location Banking Statistics}  \harvardyearleft 2012\harvardyearright .
@@ -72,15 +58,6 @@ Brown, R.~L., Durbin, J. \harvardand\ Evans, J.  \harvardyearleft
   techniques over time', {\em Journal of the Royal Statistical Society: Series
   B (Methodological)} {\bf 37}(2),~149 -- 192.
 
-\harvarditem{Bruno \harvardand\ Sachs}{1982}{SachsDutch}
-Bruno, M. \harvardand\ Sachs, J.  \harvardyearleft 1982\harvardyearright ,
-  `Energy and resource allocation: A dynamic model of the '{D}utch disease'',
-  {\em Review of Economic Studies} {\bf 49},~845--859.
-
-\harvarditem{Cassel}{1916}{Cassel1916Present}
-Cassel, G.  \harvardyearleft 1916\harvardyearright , `The present situation of
-  the foreign exchanges', {\em Economic Journal} {\bf 26}(23),~319--323.
-
 \harvarditem{{CFTC}}{2012}{cot}
 {CFTC}  \harvardyearleft 2012\harvardyearright , `Us commodity futures trading
   commission: Cot'.
@@ -97,22 +74,11 @@ Chris~Kubelec, F.~S.  \harvardyearleft 2010\harvardyearright , `The
   2012\harvardyearright .
 \newline\harvardurl{http://cpis.imf.org/}
 
-\harvarditem{Corden \harvardand\ Neary}{1982}{CordenNeary}
-Corden, W.~M. \harvardand\ Neary, J.  \harvardyearleft 1982\harvardyearright ,
-  `Booming sector and de-industrialisation in a small open economy', {\em The
-  Economic Journal} {\bf 92}(Dec),~825--848.
-
 \harvarditem{Dahl}{2012}{xtable}
 Dahl, D.~B.  \harvardyearleft 2012\harvardyearright , {\em xtable: Export
   tables to LaTeX or HTML}.
 \newblock R package version 1.7-0.
 \newline\harvardurl{http://CRAN.R-project.org/package=xtable}
-
-\harvarditem[{De Gregorio} et~al.]{{De Gregorio}, Giovannini \harvardand\
-  Wolf}{1994}{DeGregorio1994International}
-{De Gregorio}, J., Giovannini, A. \harvardand\ Wolf, H.~C.  \harvardyearleft
-  1994\harvardyearright , `International evidence on tradables and nontradables
-  inflation', {\em European Economic Review} {\bf 38},~1325--44.
 
 \harvarditem{{Del Negro} \harvardand\ Otrok}{2008}{DelNegroFRBNY}
 {Del Negro}, M. \harvardand\ Otrok, C.  \harvardyearleft 2008\harvardyearright
@@ -138,11 +104,6 @@ Edgerton, D. \harvardand\ Shukur, G.  \harvardyearleft 1999\harvardyearright ,
 \harvarditem{Efron}{1979}{Efron}
 Efron, B.  \harvardyearleft 1979\harvardyearright , `Bootstrap methods: another
   look at the jacknife', {\em The Annals of Statistics} {\bf 7}(1),~1 -- 25.
-
-\harvarditem{Eichengreen \harvardand\ Park}{2006}{Eichengreen2006Global}
-Eichengreen, B. \harvardand\ Park, Y.~C.  \harvardyearleft
-  2006\harvardyearright , Global imbalances: Implications for {E}merging
-  {A}sia, {\em in} `presented to the IADB Annual Meetings Seminar'.
 
 \harvarditem{Enders}{2010}{EndersTS}
 Enders, W.  \harvardyearleft 2010\harvardyearright , {\em Applied Econometric
@@ -174,24 +135,9 @@ Frankel, J.~A. \harvardand\ Froot, K.  \harvardyearleft 1987\harvardyearright ,
   `Using survey data to test standard propositions regarding exchange rate
   expectations', {\em American Economic Review} {\bf 77},~133 -- 153.
 
-\harvarditem{Frenkel}{1976}{Frenkel1976Money}
-Frenkel, J.~A.  \harvardyearleft 1976\harvardyearright , `A monetary approach
-  to exchange rates: Doctrinal aspects and empirical evidence', {\em
-  Scandinavian Journal of Economics} {\bf 78},~200--224.
-
 \harvarditem{Friedman}{1957}{FriedmanConsumption}
 Friedman, M.  \harvardyearleft 1957\harvardyearright , {\em Theory of the
   Consumption Function}, Princeton University Press, Princeton.
-
-\harvarditem{Froot}{1990}{FrootUIP}
-Froot, K.  \harvardyearleft 1990\harvardyearright , `Short rates and expected
-  asset returns', {\em NBER Working Paper} (3247).
-
-\harvarditem{Froot \harvardand\ Rogoff}{1995}{Froot1995Purchasing}
-Froot, K. \harvardand\ Rogoff, K.  \harvardyearleft 1995\harvardyearright ,
-  Perspectives on {PPP} and long-run real exchange rate, {\em in} G.~M.
-  Grossman \harvardand\ K.~Rogoff, eds, `Handbook of International Economics',
-  Vol.~3, Elsevier, pp.~1647 -- 1688.
 
 \harvarditem{Godfrey}{1978}{Godfrey1978}
 Godfrey, L.  \harvardyearleft 1978\harvardyearright , `Testing against general
@@ -221,10 +167,6 @@ Haavelmo, T.  \harvardyearleft 1943\harvardyearright , `The statistical
 Hamilton, J.~D.  \harvardyearleft 1994\harvardyearright , {\em Time Series
   Analysis}, Princton University Press.
 
-\harvarditem{Harrod}{1933}{Harrod1933International}
-Harrod, R.  \harvardyearleft 1933\harvardyearright , {\em International
-  Economics}, Palgrave Macmillan, London.
-
 \harvarditem{Harvey}{1993}{HarveyTSM}
 Harvey, A.~C.  \harvardyearleft 1993\harvardyearright , {\em Time Series
   Models}, Pearson.
@@ -233,23 +175,6 @@ Harvey, A.~C.  \harvardyearleft 1993\harvardyearright , {\em Time Series
 Hau, H. \harvardand\ Rey, H.  \harvardyearleft 2006\harvardyearright ,
   `Exchange rates, equity prices and capital flows', {\em Review of Financial
   Studies} {\bf 19}(1),~273 -- 317.
-
-\harvarditem{Hodrick}{1988}{Hodrick1988}
-Hodrick, R.  \harvardyearleft 1988\harvardyearright , The empirical evidence on
-  the efficiency of forward and futures foreign exchange markets, {\em in}
-  `Foundations of Pure and Applied Economics', Harwood Academic Publishers,
-  Switzerland.
-
-\harvarditem{H\"{o}lscher \harvardand\ Jarmuek}{2005}{Jens}
-H\"{o}lscher, J. \harvardand\ Jarmuek, M.  \harvardyearleft
-  2005\harvardyearright , `Overvalued of undervalued euroland entry?', {\em
-  Post-Communist economies} {\bf 17}(2),~235 -- 250.
-
-\harvarditem{IMF}{2001}{IMFBOP}
-IMF  \harvardyearleft 2001\harvardyearright , {\em Balance of Payments and
-  International Investment Position Manual}, sixth edn, International Monetary
-  Fund.
-\newline\harvardurl{http://www.imf.org/external/pubs/ft/bop/2007/bopman6.htm}
 
 \harvarditem{Jarque \harvardand\ Bera}{1980}{JB1980}
 Jarque, C. \harvardand\ Bera, A.  \harvardyearleft 1980\harvardyearright ,
@@ -272,10 +197,6 @@ Juselius, K.  \harvardyearleft 2007\harvardyearright , {\em The Cointegrated
   {VAR} Model: Methodology and Applications (Advanced Texts in Econometrics)},
   2 edn, Oxford University Press, USA.
 
-\harvarditem{Keynes}{1925}{Keynes1925Churchill}
-Keynes, J.~M.  \harvardyearleft 1925\harvardyearright , {\em The Economic
-  Consequences of Mr. Churchill}, L. and V. Woolf.
-
 \harvarditem{Koop \harvardand\ Korobilis}{2009}{KoopMethods}
 Koop, G. \harvardand\ Korobilis, D.  \harvardyearleft 2009\harvardyearright ,
   `Bayesian multivariate time series', {\em Foundations and Trends in
@@ -291,11 +212,6 @@ Kouri, P. J.~K.  \harvardyearleft 1977\harvardyearright , International
 Kouri, P.~J. \harvardand\ Porter, M.  \harvardyearleft 1974\harvardyearright ,
   `International capital flows and portfolio equilibrium', {\em Journal of
   Political Economy} {\bf 82},~443--467.
-
-\harvarditem{Krugman}{1978}{Krugman1978PPP}
-Krugman, P.  \harvardyearleft 1978\harvardyearright , `Purchasing power parity
-  and exchange rates: another look at the evidence', {\em Journal of
-  International Economics} {\bf 8},~397--407.
 
 \harvarditem{Lane}{2001}{Lane2001}
 Lane, P.~R.  \harvardyearleft 2001\harvardyearright , `The new open economy
@@ -336,12 +252,6 @@ Meese, R. \harvardand\ Rogoff, K.  \harvardyearleft 1983\harvardyearright ,
   `Empirical exchange rate models of the seventies do they fit out of sample?',
   {\em Journal of International Economics} {\bf 14}(1-2),~3--24.
 
-\harvarditem{Mussa}{1976}{Mussa1976Money}
-Mussa, M.  \harvardyearleft 1976\harvardyearright , `The exchange rate, the
-  balance of payments and monetary and fiscal policy under a regime of
-  controlled floating', {\em Scandinavian Journal of Economics} {\bf
-  78},~229--248.
-
 \harvarditem{Obstfeld \harvardand\ Rogoff}{1995}{Obstfeld1995Redux}
 Obstfeld, M. \harvardand\ Rogoff, K.  \harvardyearleft 1995\harvardyearright ,
   `Exchange rate dynamics redux', {\em The Journal of Political Economy} {\bf
@@ -350,11 +260,6 @@ Obstfeld, M. \harvardand\ Rogoff, K.  \harvardyearleft 1995\harvardyearright ,
 \harvarditem{Obstfeld \harvardand\ Rogoff}{1996}{OandR}
 Obstfeld, M. \harvardand\ Rogoff, K.  \harvardyearleft 1996\harvardyearright ,
   {\em Foundations of International Macroeconomics}, The MIT Press.
-
-\harvarditem{Obstfeld \harvardand\ Rogoff}{2009}{Obstfeld2009Global}
-Obstfeld, M. \harvardand\ Rogoff, K.  \harvardyearleft 2009\harvardyearright ,
-  `Global imbalances and the financial crisis: Products of common causes', {\em
-  CEPR Discussion Paper} .
 
 \harvarditem{O'Hara}{1998}{maureen1998market}
 O'Hara, M.  \harvardyearleft 1998\harvardyearright , {\em Market Microstructure
@@ -373,11 +278,6 @@ Pfaff, B.  \harvardyearleft 2008{\em b}\harvardyearright , `{V}{A}{R}, {SVAR}
   Statistical Software} {\bf 27}(4).
 \newline\harvardurl{http://www.jstatsoft.org/v27/i04/}
 
-\harvarditem{Portes}{2009}{Portes2009Global}
-Portes, R.  \harvardyearleft 2009\harvardyearright , Global imbalances, {\em
-  in} M.~Dewartipont, X.~Freixas \harvardand\ M.~Portes, eds, `Macroeconomic
-  Stability and Financial Regulation'.
-
 \harvarditem{{R Core Team}}{2013}{R}
 {R Core Team}  \harvardyearleft 2013\harvardyearright , {\em R: A Language and
   Environment for Statistical Computing}, R Foundation for Statistical
@@ -392,11 +292,6 @@ Rogoff, K.  \harvardyearleft 1996\harvardyearright , `The purchasing power
 Sachs, J.  \harvardyearleft 1982\harvardyearright , `The current account in the
   macroeconomic adjustment process', {\em The Scandinavian Journal of
   Economics} {\bf 84}(2),~147--159.
-
-\harvarditem{Samuelson}{1964}{samuelson1964trade}
-Samuelson, P.~A.  \harvardyearleft 1964\harvardyearright , `Theoretical notes
-  on trade problems', {\em Review of Economics and Statistics} {\bf
-  46},~145--154.
 
 \harvarditem{Schwarz}{1978}{BIC}
 Schwarz, G.  \harvardyearleft 1978\harvardyearright , `Estimating the dimension
@@ -425,24 +320,10 @@ Siourounis, G.  \harvardyearleft 2004\harvardyearright , `Capital flows and
   exchange rates: An empirical analysis', {\em Social Science Research Network
   Working Paper Series} .
 
-\harvarditem{Taylor \harvardand\ Taylor}{2004}{Taylor2004Purchasing}
-Taylor, A. \harvardand\ Taylor, M.  \harvardyearleft 2004\harvardyearright ,
-  `The purchasing power parity debate', {\em Journal of Economic Perspectives}
-  {\bf 18}(4),~135--158.
-
-\harvarditem{Taylor}{2003}{TaylorPPP}
-Taylor, M.~P.  \harvardyearleft 2003\harvardyearright , `Purchasing power
-  parity', {\em Review of International Economics} {\bf 11},~436--452.
-
 \harvarditem{{{US} Treasury}}{2014}{TIC}
 {{US} Treasury}  \harvardyearleft 2014\harvardyearright , `Treasury
   international capital ({TIC}) system'.
 \newline\harvardurl{http://www.treasury.gov/resource-center/data-chart-center/tic/Pages/index.aspx}
-
-\harvarditem{Woodford}{2003}{Woodford2003}
-Woodford, M.  \harvardyearleft 2003\harvardyearright , {\em Interest and
-  Prices: Foundations of a Theory of Monetary Policy}, Princeton University
-  Press.
 
 \harvarditem{Working}{1925}{Working1925}
 Working, H.  \harvardyearleft 1925\harvardyearright , `The statistical
@@ -462,11 +343,5 @@ Zeileis, A., Hornik, F. \harvardand\ Kleiber, K.  \harvardyearleft
   structural change in linear regression models', {\em Journal of Statistical
   Software} {\bf 7}(2),~1--38.
 \newline\harvardurl{http://www.jstatsoft.org/v07/i02/.}
-
-\harvarditem{Zhou \harvardand\ Kutan}{2011}{ZhouKutanPPP}
-Zhou, S. \harvardand\ Kutan, A.~M.  \harvardyearleft 2011\harvardyearright ,
-  `Is the evidence for {PPP} reliable? a sustainability examination of the
-  stationarity of real exchange rates', {\em Journal of Banking and Finance}
-  {\bf 35},~2479 -- 2490.
 
 \end{thebibliography}

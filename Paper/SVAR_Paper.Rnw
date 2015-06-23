@@ -31,178 +31,18 @@
 The importance of gross international capital flows has become a more significant feature of the international financial system in the last 25 years.  As a result there has been increased attention paid to the nature of these flows and the effect that they have on the exchange rate and real economic activity.  This study seeks to augment portfolio flows with information about speculative activity to dientanble the portfolio adjustment from short-term activity.  A structural vector autorgressive model (SVAR) of these flows and the US real exchange rate indicates that shocks to speculative activity has real and persistent effects.   
 \end{abstract}
 \section{Introduction}
-Standard DSGE models can be opened up to the world to assess trade and exchange rates.  However, the nature of the model means that the main focus is the disturbance from equilibrium and the path back to stability.  These disturbances are stochastic and  not the main part of the analysis.\footnote{For an overview of the open economy models \citep{Obstfeld1995Redux} for a full treatment of the conventional DSGE models \citep{Woodford2003} and \citep{OandR}.}  One way to gain an understanding of the dynamics behind the disturbances to equilibrium is to leave the current account and to analyse the effect of capital flows on the real exchange rate.    The \emph{FIH} suggests that there will be significant and real macroeconomic effects from speculation.  The aim of this chapter is to understand more about the role of speculation on the real exchange rate and to see how far the addition of measures of speculative activity can add to the explanatory power of capital flow models of the exchange rate.    It is found that the addition of measures of speculative activity have real effects on the exchange rate and that these effects dominate those of net equity, bond and foreign direct investment, suggesting that speculation in the foreign exchange market is even more powerful and important than previously thought.  % Do we need something else here?   DSGE?  
-
-Standard monetary and portfolio balance models of foreign exchange have been augmented with non-linear relationships and incorporate recent developments in the modelling of expectations as well as a deeper analysis of the nature of the distribution of asset price returns.  However, while the medium-to long-term direction of exchange rates can sometimes be projected with some confidence, short-term foreign exchange forecasting has been much less successful.  In the first decade of the twenty first century, the US dollar has defied a widening current account deficit which would, on a range of conventional theories,  be expected to cause a large depreciation.  Large capital inflows, drawn by a buoyant economy and then by the apparent safety and liquidity of US assets,  are usually cited as reasons for the resilience of the US unit.  However, the empirical support for this assertion remains fragile. 
- 
-This paper seeks to get a fuller understanding of exchange rate dynamics by building a system to examine the interplay of exchange rates and capital flows.  A range of sources are used to construct series to measure the flow of international capital.   Vector Autogregression (VAR) is employed to deal with the issue of endogeneity with plausible and naive restrictions identifying the effect that shocks to a variety of different forms of capital flow have on the real exchange rate.   Understanding more about the relationship between capital flows and real exchange rate is important in a world where these financial account activities are becoming increasingly significant and where persistent current account imbalances have been seen to have major global consequences\footnote{There is a strand of thought that sees the global imbalance as one of the main causes of the recent financial crisis.  This view argues that the US current account deficit required a balancing inflow of capital to the US and that this capital flow either reduced long-term interest rates or removed a portion of safe assets from the market, as central banks bought safe and liquid treasuries.  The first of these reduced US long-term interest rates,combining with the Fed's easy policy to make house purchase more attractive.  The second encouraged the creation of synthetic 'safe' assets like the most credit-worthy tranches of CDOs and other financial innovations which increase the amount of credit in the US economy \citep{Eichengreen2006Global}, \citep{Obstfeld2009Global}, \citep{Portes2009Global} and others.} as well as more usual effects of real exchange rate misalignment can have on domestic economies\footnote{\label{note1}From Keynes' Economic Consequences of Mr. Churchill \citep{Keynes1925Churchill} through to current debate about competitiveness in the euro area, the level of the real exchange rate has been widely regarded as an important determinant of domestic economic conditions.  For a discussion of the issues that would determine the appropriate level for CEE and CIS countries to join the Euro \citep{Jens}.}.  This paper takes the US as its focus for three reasons:  there is a large amount of public data available about the international sale and purchase of US financial assets which can help to overcome the paucity of information that has been something of a constraint on testing of comprehensive capital flow models; the US represents a most significant example of the divergence between conventional theory and the evolution of exchange rates;  the US is at the heart of the global imbalance story.  
+As gross international capital flows have become a more signifcant part of the sale and purchase of currencies, so explanation of exchange rate movement have adjusted to incorporate a greater role for activity that involves transactions in international assets. A structural vector autoregression model is used to understand the relationship between capital flows and the real exchange rate.  The capital flows that are used in this model incorporate two measures of speculation that give try to measure the effect of speculative sentiment and speculative activity that is associated wtih the carry-trade.  It seem that innovations to speculative activity can have real and persistent effects on the real exchange rate out to 6 months.  In this module, net flow to equity and bond markets are not statistically or economically significant unless they are part of an intervention by a central bank.   
+This paper seeks to get a fuller understanding of exchange rate dynamics by building a model to examine the interplay of exchange rates and capital flows.  A range of sources are used to construct series to measure the flow of international capital.   Vector Autogregression (VAR) is employed to deal with the issue of endogeneity with plausible and naive restrictions identifying the effect that shocks to a variety of different forms of capital flow have on the real exchange rate.   Understanding more about the relationship between capital flows and real exchange rate is important in a world where these financial account activities are becoming increasingly significant and where persistent current account imbalances have been seen to have major global consequences. This paper takes the US as its focus for three reasons:  there is a large amount of public data available about the international sale and purchase of US financial assets which can help to overcome the paucity of information that has been something of a constraint on testing of comprehensive capital flow models; the US represents a most significant example of the divergence between conventional theory and the evolution of exchange rates;  the US is at the heart of the global imbalance story.  
 
 The main findings of the research are that capital flows associated with relative interest rates and speculative sentiment have significant effects on the level of the real exchange rate.  Net equity flows also appear to be positively related to the real exchange rate but the picture with net foreign direct investment and net bond flows is more ambiguous.  When bond flows are divided into those conducted by official organisations (like central banks) and others, the former have the expected positive effect, because they reflect central bank foreign exchange intervention, while the latter do not seem to be influential. The rest of this chapter proceeds as follows: section two reviews the literature; section three discusses methodological issues; section four presents the results; section five concludes. 
   
 \section{Literature review}
-There are two broad strands to the way that exchange rates are to be understood:  a focus on real goods and services and the current account, and a focus on capital flows and the financial account.\footnote{Throughout this work, the term 'financial account' will refer to the mirror of the current account of the balance of payments recording the main portfolio or real investment flows that take place between the home countries and the rest of the world.  This is consistent with the terminology used by the International Monetary Fund \citep[ch.2 p. 9]{IMFBOP}.  The term 'capital account', which is used for these activities in some places, is here reserved for valuation adjustments to holding of international assets and will not play a significant part in the story.} The former is based on the law of one price with the theory of purchasing power parity implying that exchange rates will adjust to ensure that price levels in different currencies will be broadly similar.  The latter seeks to understand the international flows of capital, usually by looking at international investors response to relative rates of return of different assets in different currencies.  
-
-\subsection{Purchasing power parity}  
-Gustav Cassel is credited with the first use of the term \emph{purchasing power parity} as the ``quotient between the purchasing power of money in one country and the other'' \citep[p.298]{Cassel1916Present}.  
-
-The average price of a basket of home goods and services is represented by $P$, those of another country by $P^*$, with the * superscript used throughout to represent overseas variables, and the exchange rate expressed as domestic currency per unit of overseas as $S$, if arbitrage is possible, the law of one price implies that price level of the domestic basket should be the same as the overseas basket. 
-
-\begin{equation}
- P^*S=P
-\end{equation}
-
-or, using lower case to denote logarithms and re-arranging,
-
-\begin{equation}
-\label{eqref:ppp}
-s = ln(S) = lnP - lnP^* = p-p^*
-\end{equation}
-
-Therefore, under PPP, the exchange rate should adjust to ensure that if prices in one country change, there is a potential arbitrage that will tend to bring them back into line.  The adjustment may come through the price via the effect of changes in demand at home and abroad or it may come through the exchange rate, if that is allowed to fluctuate, due to demand for currency used to satisfy purchase of relatively cheap products and services.   This may be called \emph{absolute PPP} while a less strict version of \emph{relative PPP} would imply that changes in relative price level or two countries will tend to equalise.
-
-\begin{equation}\label{relPPP}
-\Delta S=\frac{\Delta P}{\Delta P^*}
-\end{equation}
-
-The real exchange rate (Z)  is then the relative price of a representative basket of goods and services when domestic prices have been converted into a common unit.   
-
-\begin{subequations}
-\begin{align}
-Z=\frac{SP^*}{P}
-\end{align}
-so, in logs
-\begin{align}
-z = s + P^* - p
-\end{align}
-\end{subequations}
-
-where $z$ is the real exchange rate. Given two countries, an appreciation of the real exchange rate for the home country (a decrease in Z) means that its relative money prices have risen compared to the overseas country.  The theory of PPP says that the real exchange rate should be stable or that is should return to a long-run level. Therefore the test of the theory of  PPP is that the real exchange rate is stable, mean-reverting or stationary.\footnote{A stationary series is one that has, amongst other things, an arithmetic mean that is stable over time.   Therefore, statistical tests of stationarity, such as unit root tests,  have been used to test the PPP proposition.  These tests have been less conclusive than would be anticipated.  For more details about the issues associated with the statistical power of the tests of stationarity and the methods that have been used to try to overcome them \citep{TaylorPPP}.  One of these is the apparent positive relationship between the real exchange rate and the level of economic development or GDP per capita.  The Harod-Belassa-Samuelson theory is discussed more fully in Section \ref{secref:HBS}} 
-
-\subsection{Uncovered interest parity}
-\label{secref:UIP}
-The forward rate is the rate that is set now for an exchange of currencies in the future.  Covered Interest Parity (CIP) asserts that, given the free flow of international capital and competitive markets,  the difference between the spot rate and the forward rate must be equal to the interest rate differential for the two currencies for the same period.  Otherwise, there is an arbitrage opportunity that will encourage parity to be restored.  
-
-\begin{equation}
-\frac{F_{t, j}}{S_t} \times (1 + i_{t,j}^*) = (1 + i_{t,j})  
-\end{equation}
-
-%should I use I rather than i (which could be for logs)?
-where $F_{t, j}$ is the forward exchange rate at time t for domestic currency in terms of overseas for j periods ahead;  $S_t$ is spot exchange rate under the same terms at time t; $i_{t,j}$ is the interest rate for the home currency in period t for j periods ahead; $i_{t, j}^*$ is the interest rate for the overseas currency at time t for j periods ahead.
-
-Therefore, 
-
-\begin{equation}
-\frac{F_{t,j}}{S_t} = \frac{(1 + i_{t, j})}{(1 + i_{t, j}^*)} 
-\end{equation}
-
- Re-arranging
-
-\begin{equation}
-\label{eq:fw}
-\frac{F_{t,j} - S_t}{S_t} = \frac{(i_{t,j} - i_{t,j}^*)}{(1 + i_{t,j}^*)} 
- \end{equation}
-
-%we will have to add the reference to Muth here at some point. 
-If it is assumed that expectations are formed rationally, the forward rate should be the best, unbiased estimate of the future spot rate and therefore, Equation \ref{eq:fw} becomes.  
-
-\begin{equation}
-\frac{E[S_{t+j}] - S_t}{S_t} = \frac{(i_{t, j} - i_{t, j}^*)}{(1 + i_{t, j}^*)}
-\label{eq:UIP}
-\end{equation} 
-
-if $i^*$ is relatively small, this can be approximated by 
-
-\begin{equation}
-E[s_{t+j}] - s_t = i_{t,j} - i_{t,j}^* 
-\end{equation} 
-
-where $s_t$ is the log of the exchange rate at time t, $s_{t + j}$ is the log of the exchange rate at t plus j, $i_{t, j}$ is the j-period interest rate at time t and $^*i_{t, j}$ is the the foreign currency j-period interest rate at time t.  
-
-Assuming that CIP holds so that the forward rate can account for the interest rate differential, a test of UIP can take the form of 
-
-\begin{equation}
-\label{eq:uip}
-\Delta s_{t + j} = \beta_0 +\beta_1 f_{t+j} + \varepsilon
-\end{equation} 
-
-where $\Delta s_{t + j}$ is the change in the log of the exchange rate between period t and j, $f_{t+j}$ is the forward premium expressed as the difference between the logs of the spot rate and the forward rate for period j; $\varepsilon$ is an error term that is assumed to be an independent and identically distributed random variable with a mean of zero, while $\beta_0$ and $\beta_1$ are the coefficients to be estimated.  If UIP holds, $\beta_0$ should be equal to zero and $\beta_1$ should be equal to unity as the forward rate should be an unbiased estimate of the future exchange rate.   There may be frequent errors in the estimate (represented by $\varepsilon$), but these should on average be zero. 
-
-However, this standard test of UIP consistently finds that estimates of  $\beta_1$ are less than one.  A meta-study by Froot and Thaler found that the average of 75 published estimates had an average value of -0.88 for $\beta_1$ \citep*{FrootUIP}.   This is sometimes called the \emph{forward premium puzzle}.  Hodrick gives  a thorough overview of the evidence on unbiasedness \citep{Hodrick1988}.  
-%need further and more recent evidence here.  
-
-\subsection{Monetary approaches}
-\label{secref:money}
-To get a fuller understanding of the relationship between the exchange rate and other parts of the economy, economists have sought to augment the theory of PPP by adding theories for money and expectations.   Given the \emph{quantity theory of money}, which states that, assuming stable money demand and exogenous money supply, the price level is function of the quantity of money, thus PPP is determined by the growth of relative money supplies.       Expectations can start to play a role as relatively high money growth can create an instant anticipation that the exchange rate will adjust with a depreciation as relatively high money growth leads to an anticipated increase in relative prices, even if prices are sticky and adjustment takes some time. Therefore, there are two broad monetary models: the flexible price and sticky price models.  The first of these will assume that PPP always holds.  See, for example \citep{Frenkel1976Money},  \citep{Mussa1976Money} and \citep{Bilson1978Money}.  Here, the nominal exchange rate $(s)$ is a function of relative prices, as in Equation \ref{eqref:ppp}, 
-while the price level is determined by conditions in the money market at home
-
-\begin{equation}\label{moneyhome}
-m-p=\alpha y + \beta i 
-\end{equation}
-
-and abroad, assuming that domestic and overseas money demand functions equivalent. 
-
-\begin{equation}\label{moneyaway}
-m^*-p^*=\alpha y^* + \beta i^{*}
-\end{equation}
-
-Everything is in logs; $m$ is the stock of money, $p$ is the price level, $y$ is national income and $i$ is the nominal interest rate or, more appropriately, $m$, $p$ and $y$ are deviations from their long-run growth path, $\alpha$ and $\beta$ are parameters to be estimated for the income elasticity of money demand and the price elasticity of money demand measured by the interest rate opportunity cost.  Plugging these Equations \eqref{moneyhome} and \eqref{moneyaway} into the exchange rate Equation \eqref{eqref:ppp} gives
-
-\begin{equation}
-s=(m-m^*)-\alpha (y-y^*) - \beta(i-i^*)
-\end{equation}
-
-To the extent that relatively high money growth is not a function of an increase in relative money demand (as a consequence of a change in income or the opportunity cost of money), there is an effect on the exchange rate via price levels and the law of one price.  
-
-However, prices do not instantly adjust to changes in the stock of money.  With flexible exchange rates it is clear that there is a gap between the swift adjustment of exchange rates in the asset market and the more gradual adjustment of goods prices.  Therefore, the sticky price model of exchange rates is more widely known and more defensible against the empirical evidence of sluggish adjustment of prices to economic shocks (including monetary shocks).  This model also allows some integration of the two strands of exchange rate analysis as what is happening in the goods markets is combined with what is happening in the asset market.  One of the pioneering examples of the sticky price approach is the Dornbusch Overshooting model \citep{Dornbusch1976Expectations}. 
-
-The key to this model is the gap between the gradual adjustment of prices in the goods market and the more rapid change for asset market prices.  PPP does not always hold as there are short-run deviations as relative prices adjust to the relative growth of money stocks.  The model is augmented with uncovered interest parity (UIP) condition to make a connection to the asset markets.  
-
-\begin{equation}\label{UIP}
-E[\Delta s_{t+1}|\Omega_t]=\beta(i-i^*)
-\end{equation}
-
-Where $E$ is the expectations operator, $\Delta s_{t+1}$ is the change in the exchange rate between $t$ and $t + 1$ and $\Omega_t$ is the information set available at time $t$.  Then, given the level of prices and the interest rate differential, there is a long-run level for the exchange rate and a current spot rate that matches the interest rate differential. 
-
-\begin{equation} 
-s=(m-m^*)-\alpha(y-y^*)-E[\Delta s_{t+1}|\Omega_t]
-\end{equation}
-
-A permanent increase in nominal quantity of money will lead to an instant adjustment of the exchange rate which is a reflection of the long-run change in the relative price level and the short-run change in relative interest rates.  There is over-shooting here because for any given price level, the exchange rate adjusts instantly to clear the asset market.  In the case of a monetary expansion that will eventually lead to higher prices and a fall in the nominal exchange rate, there is overshooting of the exchange rate to maintain equilibrium in the asset market as money growth will also reduce the domestic interest rate relative to other countries and this requires an appreciation of the nominal exchange rate to compensate for the income loss, as demanded by the model's assumption of UIP.  While the overshooting model helped to explain the volatility of floating exchange rates and is consistent with the evidence of a positive relationship between interest rates and the exchange rate, the implication that overshooting would be followed by a gradual adjustment back to the appropriate PPP level does not appear to be supported.    
-
-\subsection{Harrod-Balassa-Samuelson}\label{secref:HBS}
-PPP occupies a central position in international economics and has acquired a number of extensions in the face of some discomforting empirical evidence \citep{TaylorPPP}.   Real exchange rates are stationary in many cases but there are also times when there appear to be deterministic trends \citep{Froot1995Purchasing}.  Tests on the stationarity of the real rate is very sensitive to the period studied and the existence of financial crises \citep{ZhouKutanPPP}.  For an an overview of empirical evidence \citep{Taylor2004Purchasing}.    The law of one price may hold for commodities which are traded and exchanged around the world.  However, while the price of some traded goods may be very similar in different countries, transaction costs, taxation or other frictions or barriers for many products and services very often start to drive a wedge between prices in different countries.  Though  Krugman  finds that PPP generally holds in the long-run despite significant short-run deviations, there is a tendency for the real exchange rate to appreciate with economic development \citep{Krugman1978PPP}.  
-%There are a lot of goods and services that are not easily arbitraged.  Non-traded good may be unaffected by international competition and prices.  If sheltered non-traded goods tend to be more service-orientated, the scope for productivity improvement may not be present.  Then, for a consumption basket that is made up in one part of a manufacturing traded good and one part of a non-traded service good, the improvement in productivity in the manufacturing sector will allow wages to increase without an equal increase in unit labour costs or prices while, assuming a labour market that is not segmented, the wage rise will tend to spill over to prices in the non-traded service sector where productivity has not improved.   This will raise the price of non-traded service goods relative to traded manufacturing goods and will push up a real exchange rate measured on a basket of traded and non-traded.  This will lead to an appreciation of the real exchange rate if it is measured as a basket of traded and non-traded goods.  
-
-
-Harrod outlined the main ideas of what has come to be known as \emph{Harrod-Ballasa-Saumuelson Effect} in some of the early editions of his \emph{International Economics} textbook \citep{Harrod1933International}.  Balassa identified the evidence of a positive relationship between the per capita income levels and the real exchange rate with the explanation that productivity gains were mostly concentrated in the traded goods sector and that wage competition between traded and non-traded sectors would push up the relative price of non-tradables with development.  He supported this assertion with information about the productivity levels in different sectors of the economy of major nations and the relationship between the ratio of the GNP deflator to manufacturing wholesale prices to manufacturing per capita output  \citep{Balassa1964PPP}.  
-
-This is the international outcome of \emph{Baumol's Effect} \citep{Baumol1966Performing} whereby the wages of those sectors of the economy that do not achieve productivity increases rise in some proportion to those sectors that do so as to maintain some equilibrium in the two sectors.   Baumol used the example of musicians playing a string quartet as an industry where productivity has not increased but where wages have risen in line with others in the economy.   De Gregorio conducted an analysis of sectoral price data for OECD countries in the period 1970 to 1985 and found that inflation in non-tradables exceeded that of tradables.  The investigation also found that a combination of a demand shift towards non-tradables and a faster pace of productivity growth in the traded goods sector were the main cause of this phenomenon \citep{DeGregorio1994International}. 
-
-
-Samuelson argues that the frequent and prolonged deviations from purchasing power parity that are seen are a result of the wide spectrum of goods where unit labour requirements can differ in different countries  \citep{samuelson1964trade}.  Using the * for overseas variables, $a_i$ for the unit labour requirement for good $i$ (as Samulelson did), $(w)$ for money wages and $(s)$ for the exchange rate measured as the foreign price of domestic currency, it is possible to project two extremes between which the economy would move from a position of competitive advantage for all goods to a competitive disadvantage for all goods. 
-
-\begin{equation}\label{samuelson}
-Min\frac{a_i}{a_i^*} \leq \frac{w}{sw^*} \leq Max\frac{a_i}{a_i^*}
-\end{equation}
-
-Productivity differentials ($a_i/a^*_i$) define the boundaries for wage costs once they are translated into a common currency.  For example, if the most extreme productivity differentials are $1/5$ this means that the exchange rate adjusted wage differential cannot go above $1/5$ before all goods are uncompetitive; if $8/1$ is the maximum productivity extreme, the barrier is $8/1$ before all goods are competitive for the home country.  Within this range, for a given exchange rate, there is a borderline product where cost of production at home or abroad will be very similar, such that 
-
-\begin{equation}
-s=\frac{w}{w*}\frac{a_i}{a_i^*}
-\end{equation}
-
-The exchange rate can fluctuate between the two extremes and there will be a trade surplus or trade deficit depending on what part of the productivity spectrum the exchange rate occupies at one particular time. 
-
-\begin{equation}
-\frac{w}{w^*} Min \left [\frac{a_i}{a^*_i} \right ]\leq s \leq \frac{w}{w^*}Max \left [ \frac{a_i}{a^*_i} \right ]
-\end{equation}
-
-The price of most goods and services will not be in equilibrium and the borderline good will change over time in response to changes in productivity, preferences and demand - as well as the exchange rate. Therefore, the relative price of most goods in two countries will be different and the real exchange rate can fluctuate substantially over time.  This is before capital flows are allowed to have some effect.  Samuelson  states that ``once we leave barter equilibrium aside and admit capital movements and gold flows into the picture, the sky becomes the limit'' for the real exchange rate \citep[p. 146]{samuelson1964trade}. 
-
 \subsection{The PPP adjustment process}
 It should be no surprise, therefore, that the real exchange rate can fluctuate substantially.  Even when there is a return to a mean PPP value, it appears that this can take a considerable amount of time.  It has been common to assess the adjustment by measuring the so-called {half-life} of the deviation process.  This is the time that the exchange rate takes to return half way to PPP level after a shock (see \citep{Frankel1986} and \citep{FrankelFroot1987}).  In the most well known investigation of the speed at which the real exchange rate returns to parity after a shock,  Rogoff found that it would take an average three to five years for the real exchange rate to move half-way back to its original position after a shock \citep{RogoffJournal}.   This leaves a wide window where factors other than relative price can have a major influence on exchange rates.  
 
-There are many historic examples where a significant deviation from PPP has been sustained for a considerable period.  In the Samuelson formulation, if there is one commodity for which there is comparative advantage, there can be others which become uncompetitive.  This deviation can be the result of having an endowment of one or more important commodities, goods or even services.  The \emph{Dutch Disease},\footnote{The Dutch Disease is the term coined by \emph{The Economist} for the experience of the Netherlands in the 1960s where discovery of large natural gas fields led to an increase in the trade surplus and some inflow of capital with a consequent appreciation of the real exchange rate to the point where the rest of the Dutch manufacturing sector became uncompetitive.  It is partly this experience which led the Norwegian government to create the Strategic Petroleum fund to hold receipts from Norwegian international crude oil sales in foreign currency to prevent real appreciation of the Norwegian Crown.  For a more formal overview of the Dutch Disease see \citep{CordenNeary}. Bruno and Sachs present a model of ``perfect foresight, intertemporal equilibrium''  that is used to analyse the effect that the discovery of north sea oil has on the UK economy \citep[p. 846]{SachsDutch}.} where the real exchange rate and wage rates are elevated to a point where much of the output of an economy is internationally uncompetitive, is an extreme example of this.  Though the appreciation of the real exchange rate in the Netherlands in the 1970s is the most usual example of this, the idea can also be more widely applied to cases like the UK where the presence of an international financial centre cause real exchange rate appreciation or the US where the production of safe and liquid international assets may also have the same effect.  In each case, there is evidence of this demand for assets having a substantial effect on capital flows that can lead a to sustained and significant effect on the real exchange rate.  
+There are many historic examples where a significant deviation from PPP has been sustained for a considerable period.  In the Samuelson formulation, if there is one commodity for which there is comparative advantage, there can be others which become uncompetitive.  This deviation can be the result of having an endowment of one or more important commodities, goods or even services.  The \emph{Dutch Disease}. Though the appreciation of the real exchange rate in the Netherlands in the 1970s is the most usual example of this, the idea can also be more widely applied to cases like the UK where the presence of an international financial centre cause real exchange rate appreciation or the US where the production of safe and liquid international assets may also have the same effect.  In each case, there is evidence of this demand for assets having a substantial effect on capital flows that can lead a to sustained and significant effect on the real exchange rate. 
+
+This paper will look at the effect of capital flows on the deviation of the real exchange rate from PPP.  
   
 \subsection{International capital markets}
 As a consequence of the rising prominence of international capital flows and as one response to the evidence of large and persistent deviations from PPP, there has been increased attention paid to the role of capital flows in determining  changes in the exchange rates.  To assess capital flows it is necessary to go back to the balance of payments and look at the relationship between trade and finance.  The standard model of international accounting defines the current account of the balance of payments as   
