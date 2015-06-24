@@ -1,0 +1,47 @@
+\documentclass[12pt, a4paper, oneside]{article} % Paper size, default font size and one-sided paper
+%\graphicspath{{./Figures/}} % Specifies the directory where pictures are stored
+%\usepackage[dcucite]{harvard}
+\usepackage{rotating}
+\usepackage{pdflscape}
+\usepackage[flushleft]{threeparttable}
+\usepackage{multirow}
+\usepackage[comma, sort&compress]{natbib}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{appendix}
+\usepackage{graphicx}
+%\bibliographystyle{plainnat}
+\bibliographystyle{agsm}
+\usepackage[colorlinks = true, citecolor = blue, linkcolor = blue]{hyperref}
+%\hypersetup{urlcolor=blue, colorlinks=true} % Colors hyperlinks in blue - change to black if annoying
+%\renewcommand[\harvardurl]{URL: \url}
+ \usepackage{listings}
+  \usepackage{tikz}
+ \usetikzlibrary{arrows,positioning}
+ \usepackage{color}
+ %\graphicspath{{../Pictures/}}
+\definecolor{mygrey}{gray}{0.95}
+\lstset{backgroundcolor=\color{mygrey}}
+\begin{document}
+\title{International Capital Flows and Speculation}
+\author{Rob Hayward\footnote{University of Brighton Business School, Lewes Road, Brighton, BN2 4AT; Telephone 01273 642586.  rh49@brighton.ac.uk. }} 
+\date{\today}
+\maketitle
+\begin{abstract}A SVAR model of the real exchange rate and intentional capital flows reveals that innovations to speculation can cause changes in competitiveness.  The addition of measures of speculation reduces the economic and statistical significance of conventional portfolio flows unless they are part of official intervention in the foreign exchange market.   This paper adds to the evidence that free movement international capital has disruptive effects that suggest policy intervention can be useful.  Official intervention is seen to be effective in this model.  
+\end{abstract}
+
+\section{Introduction} 
+The rapid rise in gross international capital flows (add some facts from Lane and Milessioretti and Rogoff and BIS) and the role that these flows have played in fostering international financial crisis has increased the attention on the relationships between capital flows, exchange rates and financial crisis over the last 20 years.  In the last 10 years, the evidence has accumulated that the link between international capital flows and economic development is not a evident in practice as it appears to be in theory (cite...); that international capital flows can have a very disruptive influence, whether they are flowing into a country (Dutch disease etc) or out (Sudden stops); that the disruptive effect of flow increase with their investment horizon, with foreign direct investment as the most beneficial and short-term speculative movements as the least beneficial and most disruptive (some evidence here). 
+
+Identifying speculative flows has been a challenge due to the scarcity of data.  A standard approach has been to use data for overseas bank lending by the Bank for International Settlements (BIS). This has certainly be very fruitful but it is difficult within this data to distinguish between bank lending for real business projects and that for speculative activity.  
+
+In this paper a structural model of international capital flows and the real exchange rate is augmented with two measures of speculation that seek to capture speculative sentiment and the carry trade.  The former uses the short-term positions of speculators in the foreign exchange futures market while the latter uses the interest rate differential. A Structural Vector Autoregressive model is presented with naive and plausible restrictions for identification.  Impulse Repose Functions (IRF) show that innovations to speculative activity drive the US real exchange rate, while innovations to FDI and net equity flow do not have a standard effect.  Innovations to net bond flows are only significant when the sub-category of official bond purchase are assessed.  These are the flows associated with the intervention of central banks in the foreign exchange market.  
+
+As such, the paper provides additional support to the evidence that international capital flows can drive the real exchange rate, it narrows down this effect to the more speculative activity and it provides some evidence that official intervention in the foreign exchange market to counter speculative activity can be beneficial.  The rest of the paper is organised as follows:  Section \ref{secref:2} surveys the literature, Section \ref{secref:3} presents the model; Section \ref{secref:4} outlines the results and Section \ref{secref:5} concludes. 
+
+\section{Literature}\label{secref:2}
+\section{Model}\label{secref:3}
+\section{Results}\label{secref:4}
+\section{Conclusion}\label{secref:5}
+
+\end{document}

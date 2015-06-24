@@ -28,19 +28,14 @@
 \date{\today}
 \maketitle
 \begin{abstract}
-The importance of gross international capital flows has become a more significant feature of the international financial system in the last 25 years.  As a result there has been increased attention paid to the nature of these flows and the effect that they have on the exchange rate and real economic activity.  This study seeks to augment portfolio flows with information about speculative activity to dientanble the portfolio adjustment from short-term activity.  A structural vector autorgressive model (SVAR) of these flows and the US real exchange rate indicates that shocks to speculative activity has real and persistent effects.   
+Gross international capital flows have become a more significant feature of the international financial system in the last 25 years.  As a result there has been increased attention paid to the nature of these flows and the effect that they have on the exchange rate and real economic activity.  This study seeks to augment portfolio flows with information about speculative activity to dientanble the portfolio adjustment from short-term activity.  A structural vector autorgressive model (SVAR) of these flows and the US real exchange rate indicates that shocks to speculative activity has real and persistent effects.   
 \end{abstract}
 \section{Introduction}
-<<<<<<< HEAD
-As gross international capital flows have become a more signifcant part of the sale and purchase of currencies, so explanation of exchange rate movement have adjusted to incorporate a greater role for activity that involves transactions in international assets. A structural vector autoregression model is used to understand the relationship between capital flows and the real exchange rate.  The capital flows that are used in this model incorporate two measures of speculation that give try to measure the effect of speculative sentiment and speculative activity that is associated wtih the carry-trade.  It seem that innovations to speculative activity can have real and persistent effects on the real exchange rate out to 6 months.  In this module, net flow to equity and bond markets are not statistically or economically significant unless they are part of an intervention by a central bank.   
-This paper seeks to get a fuller understanding of exchange rate dynamics by building a model to examine the interplay of exchange rates and capital flows.  A range of sources are used to construct series to measure the flow of international capital.   Vector Autogregression (VAR) is employed to deal with the issue of endogeneity with plausible and naive restrictions identifying the effect that shocks to a variety of different forms of capital flow have on the real exchange rate.   Understanding more about the relationship between capital flows and real exchange rate is important in a world where these financial account activities are becoming increasingly significant and where persistent current account imbalances have been seen to have major global consequences. This paper takes the US as its focus for three reasons:  there is a large amount of public data available about the international sale and purchase of US financial assets which can help to overcome the paucity of information that has been something of a constraint on testing of comprehensive capital flow models; the US represents a most significant example of the divergence between conventional theory and the evolution of exchange rates;  the US is at the heart of the global imbalance story.  
-Standard DSGE models can be opened up to the world to assess trade and exchange rates.  However, the nature of the model means that the main focus is the disturbance from equilibrium and the path back to stability.  These disturbances are stochastic and  not the main part of the analysis.\footnote{For an overview of the open economy models \citep{Obstfeld1995Redux} for a full treatment of the conventional DSGE models \citep{Woodford2003} and \citep{OandR}.}  One way to gain an understanding of the dynamics behind the disturbances to equilibrium is to leave the current account and to analyse the effect of capital flows on the real exchange rate.    The \emph{FIH} suggests that there will be significant and real macroeconomic effects from speculation.  The aim of this chapter is to understand more about the role of speculation on the real exchange rate and to see how far the addition of measures of speculative activity can add to the explanatory power of capital flow models of the exchange rate.    It is found that the addition of measures of speculative activity have real effects on the exchange rate and that these effects dominate those of net equity, bond and foreign direct investment, suggesting that speculation in the foreign exchange market is even more powerful and important than previously thought.  % Do we need something else here?   DSGE?  
+As gross international capital flows have become a more signifcant part of the sale and purchase of currencies, so explanation of exchange rate movement have adjusted to incorporate a greater role for activity that involves transactions in international assets. A structural vector autoregression model is used to understand the relationship between capital flows and the real exchange rate.  The capital flows that are used in this model incorporate two measures of speculation that try to understand the effect of speculative sentiment and speculative activity that is associated wtih the carry-trade.  It seem that innovations to speculative activity can have real and persistent effects on the real exchange rate out to 6 months.  In this model, net flow to equity and bond markets are not statistically or economically significant unless they are part of an intervention by a central bank.   
 
-Standard monetary and portfolio balance models of foreign exchange have been augmented with non-linear relationships and incorporate recent developments in the modelling of expectations as well as a deeper analysis of the nature of the distribution of asset price returns.  However, while the medium-to long-term direction of exchange rates can sometimes be projected with some confidence, short-term foreign exchange forecasting has been much less successful.  In the first decade of the twenty first century, the US dollar has defied a widening current account deficit which would, on a range of conventional theories,  be expected to cause a large depreciation.  Large capital inflows, drawn by a buoyant economy and then by the apparent safety and liquidity of US assets,  are usually cited as reasons for the resilience of the US unit.  However, the empirical support for this assertion remains fragile. 
- 
-This little old paper seeks to get a fuller understanding of exchange rate dynamics by building a system to examine the interplay of exchange rates and capital flows.  A range of sources are used to construct series to measure the flow of international capital.   Vector Autogregression (VAR) is employed to deal with the issue of endogeneity with plausible and naive restrictions identifying the effect that shocks to a variety of different forms of capital flow have on the real exchange rate.   Understanding more about the relationship between capital flows and real exchange rate is important in a world where these financial account activities are becoming increasingly significant and where persistent current account imbalances have been seen to have major global consequences\footnote{There is a strand of thought that sees the global imbalance as one of the main causes of the recent financial crisis.  This view argues that the US current account deficit required a balancing inflow of capital to the US and that this capital flow either reduced long-term interest rates or removed a portion of safe assets from the market, as central banks bought safe and liquid treasuries.  The first of these reduced US long-term interest rates,combining with the Fed's easy policy to make house purchase more attractive.  The second encouraged the creation of synthetic 'safe' assets like the most credit-worthy tranches of CDOs and other financial innovations which increase the amount of credit in the US economy \citep{Eichengreen2006Global}, \citep{Obstfeld2009Global}, \citep{Portes2009Global} and others.} as well as more usual effects of real exchange rate misalignment can have on domestic economies\footnote{\label{note1}From Keynes' Economic Consequences of Mr. Churchill \citep{Keynes1925Churchill} through to current debate about competitiveness in the euro area, the level of the real exchange rate has been widely regarded as an important determinant of domestic economic conditions.  For a discussion of the issues that would determine the appropriate level for CEE and CIS countries to join the Euro \citep{Jens}.}.  This paper takes the US as its focus for three reasons:  there is a large amount of public data available about the international sale and purchase of US financial assets which can help to overcome the paucity of information that has been something of a constraint on testing of comprehensive capital flow models; the US represents a most significant example of the divergence between conventional theory and the evolution of exchange rates;  the US is at the heart of the global imbalance story.  
+This paper seeks to get a fuller understanding of exchange rate dynamics by building a model to examine the interplay of exchange rates and capital flows.  A range of sources are used to construct series to measure the flow of international capital.   Vector Autogregression (VAR) is employed to deal with the issue of endogeneity with plausible and naive restrictions identifying the effect that shocks to a variety of different forms of capital flow have on the real exchange rate.   Understanding more about the relationship between capital flows and real exchange rate is important in a world where these financial account activities are becoming increasingly significant and where persistent current account imbalances have been seen to have major global consequences. 
 
-
+This paper takes the US as its focus for three reasons:  there is a large amount of public data available about the international sale and purchase of US financial assets which can help to overcome the paucity of information that has been something of a constraint on testing of comprehensive capital flow models; the US represents a most significant example of the divergence between conventional theory and the evolution of exchange rates;  the US is at the heart of the global imbalance story.  
 The main findings of the research are that capital flows associated with relative interest rates and speculative sentiment have significant effects on the level of the real exchange rate.  Net equity flows also appear to be positively related to the real exchange rate but the picture with net foreign direct investment and net bond flows is more ambiguous.  When bond flows are divided into those conducted by official organisations (like central banks) and others, the former have the expected positive effect, because they reflect central bank foreign exchange intervention, while the latter do not seem to be influential. The rest of this chapter proceeds as follows: section two reviews the literature; section three discusses methodological issues; section four presents the results; section five concludes. 
   
 \section{Literature review}
@@ -87,6 +82,7 @@ Y_t+Y^*_t=(C_t+C^*_t) + (G_t +G^*_t)+(I_t +I^*_t)
 \end{equation}
 
 The standard forward-looking representative agent used in these models would seek to smooth consumption over time and would therefore adjust savings and consumption to maximise utility in each period given expectations about future income and evolving preferences.\footnote{This smoothing can take place in a closed economy only if agents have heterogeneous endowments, preferences or expectations.  The idea is the same here, but the heterogeneity is across countries.}  Given the assumptions of this model, an increase in productivity and expected future income should lead to a current account deficit as the representative household takes advantage of a rise in the present value of future income.  The rundown in net foreign assets is compensated by the increased net present value of future income.  Obstfeld and Rogoff present a model of permanent balance of payment components based on an annuity value at the current interest rate to give a \emph{fundamental equation for the current account} \citep[p. 74]{OandR}.
+
 Sachs provides one of the first of these long-run, dynamic, intertemporal models of current account (and therefore financial account) adjustment \citep{SachsCA}.  
 
 \begin{equation} 
@@ -101,94 +97,12 @@ E[\bar{Y}]=\frac{r}{1+r}\sum_{t=s}^{t=\infty}\left (\frac{1}{1+r}\right)^{s-t}Y_
 
 This is an annuity of the component at the set interest rate.  This can be solved as infinite-period version of the standard two-period utility optimisation subject to budget constraints.\footnote{As such, this is a version of Friedman's \emph{permanent income theory} \citep{FriedmanConsumption}.  In the simple case where the representative agent's time preference (denoted $\beta$) is $1/(1+r)$, there is no government (G) or business activity (I) and output is exogenous and set a constant level $\bar{Y}$, the optimal consumption will be $C = \bar{C} =rB + Y$.  As simplifying assumptions are relaxed, the calculation becomes more complex, but the basic idea remains the same: any change in expectations about future output, spending or interest rates results in an adjustment of inter-temporal consumption through the current account and, therefore, the financial account \citep[pp. 59-89]{OandR}.}    This implies that current account imbalances are the result of changes in expected long-run levels of income, investment or government spending and the rate of interest or preferences.   The model suggests that if the capital accumulation required for economic development cannot be satisfied by domestic savings, the imbalance of savings and investment require a current account deficit or a financial account surplus and a run-down of net foreign assets, balanced by an increase in expected future income. 
 
-When the other parts of the conventional new-Keynesian macroeconomic model are added, this is the basis for the open economy dynamic stochastic general equilibrium model.  Again, see \citep{Obstfeld1995Redux} for a comprehensive overview of the main features of the model and \citep{Lane2001} for a survey of the different varieties of open-economy DSGE model. 
 
-However, as is the case with the more general criticism of DSGE models, when the model is opened up to the rest of the world (and called an open-economy dynamic general equilibrium model), equilibrium is assumed and the main focus therefore is to assess the way back to the equilibrium once at shock has created a disturbance.  The, perhaps more interesting, cause of the shocks or the immediate consequences of the shocks are largely ignored.  For the exchange rate, the anchor is the path of relative money growth and relative consumption demand at home and abroad.  As a result of a money, preference or productivity shock, the exchange rate jumps immediately to the new trajectory that is consistent with equilibrium, prices may adjust in a sticky fashion, but there is no scope for deviations from the short-run path back to equilibrium.  As indicated in the footnotes, Obstfeld and Rogoff ``are assuming away speculative exchange rate bubbles'' \citep[p 640]{Obstfeld1995Redux}.  In addition, the models usually assume that representative households are risk averse and fully diversified, leaving no unsystematic risk.  To get to an analysis of the short-term capital flows that can affect the exchange rate outside of the equilibrium, it is necessary to make the models increasingly complex\footnote{See \citep{Devereux2011Portfolio} for an example of an attempt to apply portfolio optimisation to the international financial economics.  The big difficulty is that optimisation weights have to be constructed but, in turn, portfolio weights will determine the return on international assets.  Devereux and Southerland find a complex solution to this as one way of understanding international asset allocation.  However, it is not clear that this method would be able to deal with short-run disturbances and exchange rate shocks.} %need a reference for these DSGE models with additions
-or to break away from general equilibrium to focus on individual parts of the economy.  To understand how international demand for assets can drive exchange rates general equilibrium, representative agents and long-run expectations about income and productivity must be abandoned. To examine the relationship between short-term capital flows and the exchange rate it is necessary to put capital flows back to the centre of the analysis. 
- 
+
 \subsection{Portfolio flows}
-To focus exchange rate models on capital flows is not entirely new.  Portfolio balance models have been around since at least the 1970s.  Amongst those that have contributed to this research are \citep{Kouri1974International} \citep{Kouri1977}, and \citep{Branson1985International}.  % these references need to be completed
-
-%here are some up-to-date references. 
-%http://www.econbrowser.com/archives/2008/07/disorderly_adju.html
-%http://www.econbrowser.com/archives/2008/09/implications_of.html
-
-Portfolio balance models can look at either stocks of international assets or the flow of funds into international assets.   The major problem that the early versions of these models encountered was the lack of data against which they could be evaluated.   Information about the flow of capital has traditionally been very difficult to collect.  As a result the early models tended to simplify capital flows. The first of the models would only include international bonds $B$ as being representative of broader asset markets and the supply of bonds was frequently measured as the accumulation of government debt.   This is a two country model. 
-
-\begin{equation} 
-B_f=\beta W_d
-\end{equation}
-
-Where $B_d$ are domestic bonds and $B_f$ are foreign bonds as denoted by the sub-script.  $\beta$ is the share of domestic wealth (denoted $W_d$) that is allocated to overseas bonds.    For these models, it is  assumed that the share of $B_f$ would be determined by rates of return, relative interest rates and expected changes in the exchange rate\citep{Kouri1974International}.  Indeed, this can be seen as a portfolio optimisation problem where the share of international assets in a portfolio is determined by adjusting the expected return for the expected amount of risk. The demand equations for domestic and foreign bonds become. 
-
-\begin{equation}
-B_d=[a_d+b(i-i^* - \Delta s^e)]W_d
-\end{equation}
-
-\begin{equation}
-B_f=[a_f+b(i-i^* - \Delta s^e)]W_f
-\end{equation}  
-
-Where $a_d$ is the autonomous demand for domestic bonds and $a_f$ is the autonomous demand for foreign bonds, $i$ is the domestic interest rate, $i^*$ is the overseas interest rate, $\Delta s^e$ is the expected change in the exchange rate, defined as overseas units of domestic currency, $b$ is the interest elasticity of capital flows.  The equations can be amalgamated to get an equation for world wealth. 
-
-\begin{equation}
-B=a_dW_d+a_fW_f+b(i-i^*-\Delta s^e)W
-\end{equation}
-
-Re-arrange for the risk premium
-
-\begin{equation}
-i+i^*-\Delta s^e=\frac{1}{b}\left(\frac{B}{W}\right)-\frac{a_d}{b}\left(\frac{W_d}{W}\right)-\frac{a_f}{b}\left(\frac{W_f}{W}\right)
-\end{equation}
-
-An increase in the share of domestic assets relative to the world assets $\left(\frac{W_d}{W}\right)$ will require an increase in autonomous demand for assets from domestic sources ($a_d$) or an increase in relative interest rates ($i+i^*$) or an expected appreciation of the domestic currency ($\Delta s^e$).  This can be used as an exchange rate model if interest rates are anchored with uncovered interest parity (UIP) and the purchasing-power-parity link to money growth is added to tie down long-run exchange rate expectations.    The exchange rate adjusts to bring the supply and demand for international assets into balance.  There are two strands to this adjustment: expected changes in the value of the exchange rate affect expected asset returns; the exchange rate affects the balance of payments via the trade balance and this causes an offsetting adjustment in the financial account. 
-
-The most basic form of this model, which is restricted to the bond market and relies only on the return to bonds, is based on three demand equations: for money ($M$), domestic bonds ($B$) and foreign bonds ($B^*$) respectively.  Demand is determined by the domestic interest rate ($i$) and the expected change in the exchange rate ($E[\Delta s_{t+1}|\Omega_t]$). The subscript shows the sign of the relationship.  
-
-\begin{equation}
-M=\big ( i \underset{-}, \quad E[\Delta s_{t+1}\underset{+}|\Omega_t ] \big)
-\end{equation}
-
-\begin{equation}
-B=\big ( i \underset{+}, \quad E[\Delta s_{t+1}\underset{+}|\Omega_t ] \big)
-\end{equation}
-
-\begin{equation}
-B^*=\big ( i \underset{-}, \quad E[\Delta s_{t+1}\underset{-}|\Omega_t ] \big)
-\end{equation}
-
-Therefore, demand for money is a negative function of the domestic interest rate and a positive function of exchange rate expectations; demand for domestic bonds is positively associated with domestic interest rates and with exchange rate expectations; foreign bond demand is negatively affected by domestic interest rates and expectations about the domestic exchange rate.  There are two additional constraints to complete the model.  All wealth $(W$) must be allocated to these assets, 
-
-\begin{equation}
-W=M+B+B^*
-\end{equation}
-
-and the balance of payments must balance so the financial account must equal the current account.  Therefore the holdings of foreign bonds must be equal to the trade balance ($TB$) and the interest received on holdings of foreign bonds ($i^*B^*$).  An increased return (often called a risk premium) is required to encourage domestic and overseas investors to hold more assets.  
-
-\begin{equation}
-\Delta B^*= TB + i^* B^*
-\end{equation} 
-
-This ties the investment side to the real economy and trade because a trade deficit may be financed by surplus on the financial account, but the increase in the net overseas debt will tend to increase the risk to foreign investors of holding domestic debt and they will require an increased risk premium to compensate for that.  \citep{Kouri1974International} focus on cumulative bonds for four international markets (Australia, Italy, the Netherlands and Germany) and show that their restricted portfolio balance model can explain much of the international bond market flow in the period between the first quarter of 1960 and the final quarter of 1970.  %maybe a little more is needed here. #
-
-%There has been a renewed focus on these models in recent years in response to the evidence that capital flows can cause significant deviations from PPP and increased data availability.  These models aim to look at the flow of international capital and the factors that can influence the flow.  These flows may then be used to try to understand exchange rate movements.   The models can incorporate a wide variety in levels of sophistication.  At one extreme, mean-variance optimisation is used to determine the most 'efficient' portfolio and changes in the parameters can cause a change in the 'efficient' portfolio and a consequent change in portfolio flows.    
-% Do we need the Southerland ref? 
-%However, as is the case in the domestic environment, the modelling and calculation of expected returns and expected risk is rather difficult.  Higher returns should result in a flow of capital, unless the increased return is merely a compensation for an increased risk premium.  As is the case with uncovered interest parity, the difference in the return for two assets is assumed to  represent the difference in the risk premium attached to the two assets.  Then, however, this means that empirical evidence against the model will not be able to distinguish between a rejection of the overall model or rejection of the way that the risk-premium is estimated. 
-
-\subsection{Measuring capital flow}
-A turn in attention back to portfolio balance models has been encouraged by the increased availability of data.  This has allowed new models to be tested against  the empirical evidence.  Key international organisations have sought to improve the information that is being provided about international capital flows. This includes the IMF, the World Bank and the BIS \citep{website:imfportfolio}, \citep{website:worldbankdebt} and  \citep{website:bisdata}. A number of economists have sought to use existing information to create data series that can be used to analyse the key components of international capital.  Amongst these are \citep{PLane2007} as well as \citep{BoEdata}. 
-
-%Is more needed in the next paragraph?  I think 'yes'. 
-Therefore, after a period when these capital flow models disappeared from view, attention has turned again to the flows associated with the re-balancing of international asset portfolios.  For example, Hau and Rey develop a model where the relationship between exchange rates, stock prices and capital flows are assessed and tested against a data set that records the transaction of US global mutual funds.  They find that higher returns in the home equity market relative to the foreign equity market are associated with domestic currency depreciation, like an equity market version of UIP, while net equity flows into a foreign equity market are associated with a foreign currency appreciation \citep{HauEquity}.  As mentioned before, other attempts have sought to mix open economy models with optimisation of country portfolios \citep{Devereux2011Portfolio}.  This is a very complex system that seeks to balance the problems of simultaneously defining the optimal allocation of assets with the expected returns that are a consequence of that optimisation.  However, the model cannot break away from the DSGE system and remains a model of deviations from the steady state.  
-% More is needed here. 
-
-Siourounis constructs a model of international capital flows.  A vector autoregression (VAR) model is used with monthly capital flows, equity return and interest rate data.  The net position between the US and the UK, Germany and Switzerland is recorded for the period between January 1988 and December 2000.   Incorporating net equity flows to a standard exchange rate model is shown to improve the out of sample forecasting ability while the use of net bond flows does not make any substantial improvement; improvement in relative equity returns encourages capital inflow and exchange rate appreciation while an increase in relative interest rates is more likely to be offset by currency depreciation \citep{Siourounis2004Capital}.   The minimal influence that net bond flows have on the exchange rate is explained by the propensity to hedge bond positions.  A survey of 200 bond funds finds that more than 90\% of international bond buying is hedged compared to just less than 12\% for equities \citep[p. 3]{Siourounis2004Capital}.  
-
-While there have been positive developments in the modelling of exchange rates with capital flows, there remains only a limited understanding of the short-run adjustment process. This is where a fuller focus on speculation and its effect may be useful.  None of the models presented so far makes any attempt to consider the role of speculative activity.  
-
-
+This approach aims to use the microstructure model of Lyons and Evans at the macro level.  The motivation behind the flow is not identified as the attention is on the effect on the real exchange rate.  While this may not be totally satisfying, it does allow the effect of international capital flows to be examined.  The most important issue is to identify that part of the international portfolio flow that is forcing change from that facilitating adjustment. In the terminology of Lyons and Evans, it is to distinguish the initiator of the transaction from that of the passive market-maker.  While these aggregate figures do not identify indivudla transactions of economic entities in teh same say, they are highligting a similar economic force for change and it is this force for change that is deemeed to be the factor that will cause the exchange rate to make an adjustment in price.    
 \subsection{Microstructure}
-There is also a  literature on exchange rates from the field of microstructure which puts the emphasis on the way that the market institutions and market processes can affect the evolution of asset prices.   For example, \citep{Evans2002Order} and  \citep{Lyons1995Microstructure} give an overview of the microstructure approach to exchange rates.  The approach combines microstucure techniques that have been developed in the area of equity markets \citep{maureen1998market} with the unique features of the dealer-orientated foreign exchange market to use order flow to enhance exchange rate models.   Lyons and Evans use a unique dataset that records deals undertaken by foreign exchange market-markers (or dealers).  The data show active or \emph{signed} deals as well as passive deals. Signed deals are the ones that initiate the transaction.  It is the party that makes the call that ends in a transaction. Information about signed foreign exchange orders are added to regular macroeconomic variables to create the following model
+ For example, \citep{Evans2002Order} and  \citep{Lyons1995Microstructure} give an overview of the microstructure approach to exchange rates.  The approach combines microstucure techniques that have been developed in the area of equity markets \citep{maureen1998market} with the unique features of the dealer-orientated foreign exchange market to use order flow to enhance exchange rate models.   Lyons and Evans use a unique dataset that records deals undertaken by foreign exchange market-markers (or dealers).  The data show active or \emph{signed} deals as well as passive deals. Signed deals are the ones that initiate the transaction.  It is the party that makes the call that ends in a transaction. Information about signed foreign exchange orders are added to regular macroeconomic variables to create the following model
 
 \begin{equation}
  \Delta s_t=f(i,m,z,)+g(X,I,Z)+\epsilon_t
@@ -202,8 +116,6 @@ At first glance, this seems to show no more than increased demand raises price, 
 
 There are a number of links between the microstructure approach and the analysis of capital flows.  Order flow is not the same as demand.  Lyons finds that orders from financial institutions are more important and have a greater price impact that that of orders from other institutions. This, it is suggested, is because the orders from financial institutions are more likely to contain information; they are deliberate and considered actions.  The orders that come from other institutions may be more likely to be passive, liquidity-driven and passively responding to changes that are taking place elsewhere \citep[p.188] {Lyons1995Microstructure}.  One of the aims of the current study is to establish whether different varieties of capital flow have varying effects on the real exchange rate.   
 
-%?
-\newpage
 
 \section{Methodology}
 There are two %this can go back to three (parameter instability) if we look at different time periods). 
@@ -385,9 +297,8 @@ Remarkably, there is a rebound in the stock of overseas net holdings of US debt 
 \includegraphics[scale=0.7] {nfdi}
 \end{figure}
 
-The evolution of foreign direct investment is also of some interest.  The cumulative net equity and net FDI series reveal the large real and portfolio flows to the US the last few years of the 1990s.  This seems to be associated with the boom in technology stocks.  The bubble burst and the NASDAQ index peaked in March 2000.   This leads to a reversal of equity and FDI flows.   The FDI data show a consistent outflow since that point which may be consistent with the offshoring that is said to have taken place in US business over the last 10 years.  Rough calculations indicate that the swing from a positive net FDI balance of 5\% of GDP in 2000 to a deficit or liability of 10\% in 2010  amounts to about \$500bn in net investment.  See Figure \ref{fig:nfdi}.
-
 There have also been some substantial changes in speculative flows.  The SPREAD series show that the US has moved from a position of having interest rates much lower than the rest of the world at the beginning of the 1980s to being equal to slightly higher than the average of its trading partners in the more recent period.  The speculative sentiment index reveals a gradual move away from the US through the 1980s and a reversal through the 1990s but this is much more volatile and subject to short-term trends as would be anticipated.  
+
 \subsection{Dummy variables}\label{secref:dummy}
 The time series plots are also useful for identifying special situations or extreme circumstances that may not be easily understood by the model and where it may be useful to add some \emph{dummy variables}.  These are a form of \emph{transfer function} that seek to account for particular exogenous events.  It is proposed that three dummy variables be created and their ability to improve the performance of the model assessed.  The first dummy (D1) is going to cover the period from the third quarter of 1986 to the first quarter of 1988.  This is an extreme move in the variable SPREAD1 caused by a sharp movement in Mexican interest rates. This, of course, is not needed if the SPREAD2 variable that excludes Mexican interest rates is used.  The second dummy (D2) covers the period from the second quarter of 1994 to the second quarter of 1995 to cover the shock of the increase in US interest rates and the dramatic international outflows from the US bond market.   The third dummy (D3) runs from the third quarter of 2007 to the end of 2008 and represents the disturbance caused by the financial crisis. Dummies for the dot.com boom and for the 9/11 event could also be considered.   
 
@@ -396,212 +307,9 @@ A transfer function could also be used to account for a structural shift in the 
 \subsection{Endogeneity}\label{secref:endogeneity}
 The second important methodological issue is that of endogeneity.  The statistical difficulties that emerge when trying to estimate parameters when there is feedback from the dependent variable onto explanatory variables had already been noted by people like Kouri and Porter as early as 1974  \citep[pp. 464-465]{Kouri1974International} as part of their criticism of the Branson model \citep{Branson1968} and \citep{Branson1971}.  A more general explanation of issues that arise when the dependent variable is endogenous is provided by Hamilton in an analysis of the estimation of the supply and demand for oranges \citep[pp. 235-238]{Hamilton}.  
 
-Price and quantity are determined simultaneously and are endogenous if the system is represented by two equations. 
-
-\begin{equation}
-\label{eqref:demand}
-q_t^d=\beta p_t + \varepsilon_t^d
-\end{equation}
-
-For demand, with $q_t^d $ quantity demanded, $p$ price, $\beta$ the parameter to be estimated for the response of price to a change in demand and $\varepsilon_t^d$, a \emph{random variable} representing all the other factors that affect demand that have not been included. 
-
-\begin{equation}
-\label{eqref:supply}
-q_t^s=\gamma p_t+\varepsilon_t^s
-\end{equation} 
-
-For supply, with $q_t^s$ the quantity supplied, $p$ is again price, $\gamma$ is to be estimated as the response of price to a change in supply, $\varepsilon_t^s$ is a random variable representing all the other factors that may affect supply but not included here.  The equality condition (supply equals demand) means that  
-
-\begin{equation}
-\label{eqref:sd}
-\beta p_t + \epsilon_t^d=\gamma p_t+\varepsilon_t^s
-\end{equation}
-
-However, if Equation \ref{eqref:demand} or Equation \ref{eqref:supply} are estimated by ordinary least squares (OLS), the estimates of coefficients will be biased as the price is not independent of the error term in either case and therefore the OLS assumptions that $E[p_t\varepsilon_t^d] = 0$ and $E[p_t\varepsilon_t^s] = 0$ have been violated.    
-
-Re-arranging equation \ref{eqref:sd} gives
-
-\begin{equation}
-\label{eqref:rdemand}
-p_t = \frac{\varepsilon_t^d - \varepsilon_t^s}{\gamma-\beta}
-\end{equation}
-
-substituting equation \ref{eqref:rdemand} back into equation \ref{eqref:supply}
-
-\begin{equation}
-\label{eqref:ds}
-q_t=\gamma \frac{\varepsilon_t^d - \varepsilon_t^s}{\gamma - \beta}+\varepsilon_t^s
-\end{equation}
-
-\begin{equation}
-q_t=\frac{\gamma \varepsilon_t^d}{\gamma-\beta}-\frac{\gamma \varepsilon_t^s}{\gamma - \beta} + \frac{(\gamma-\beta) \varepsilon_t^s}{\gamma - \beta}
-\end{equation}
-
-and therefore
-
-\begin{equation}
-\label{eqref:ss}
-q_t=\frac{\gamma}{\gamma - \beta} \varepsilon_t^d - \frac{\beta}{\gamma - \beta} \varepsilon_t^s
-\end{equation}
-
-If equation \ref{eqref:demand} is estimated by OLS, the estimate of $b_t$ would be 
-
-\begin{equation}
-\label{eqref:ols}
-b_t=\frac{1/T \sum_{i=1}^{T} p_t q_t}{1/T \sum_{i=1}^{T} p_t^2}
-\end{equation}
-
-substituting equations \ref{eqref:rdemand} and \ref{eqref:ss} back into \ref{eqref:ols} gives, 
-
-%page 234 Hamilton.  
-\begin{equation}
-\frac{1}{T} \sum_{i=1}^{T} p_t q_t = \frac{1}{T} \sum_{i=1}^{T} \left [ \frac{1}{\gamma - \beta} \varepsilon_t^d - \frac{1}{\gamma - \beta} \varepsilon_t^s  \right ]  \left [ \frac{\gamma}{\gamma - \beta} \varepsilon_t^d - \frac{\beta}{\gamma - \beta} \varepsilon_t^s \right ] 
-\end{equation}
-
-therefore 
-
-\begin{equation}
-\label{eqref:olsnum}
-\frac{1}{T} \sum_{i=1}^{T} p_t q_t \overset{p}{\rightarrow} \frac{\gamma \sigma_d^2 +\beta \sigma_s^2}{(\gamma - \beta)^2}
-\end{equation}
-
-and 
-
-\begin{equation} 
-\frac{1}{T} \sum_{i=1}^{T} p_t^2 = \frac{1}{T} \sum_{i=1}^{T} \left [ \frac{1}{\gamma - \beta} \varepsilon_t^d - \frac{1}{\gamma - \beta} \varepsilon_t^s \right ]^2\
-\end{equation}
-
-therefore 
-. 
-\begin{equation}
-\label{eqref:olsden}
-\frac{1}{T} \sum_{i=1}^{T} p_t^2 \overset{p}{\rightarrow} \frac{\sigma_d^2 + \sigma_s^2}{(\gamma + \beta)^2} 
-\end{equation}
-
-substitute \ref{eqref:olsnum} and \ref{eqref:olsden} back into \ref{eqref:ols}
-
-\begin{equation}
-\label{eqref:sim}
-b_t \overset{p}{\rightarrow} \frac{\gamma \sigma_d^2 + \beta \sigma_s^2}{\sigma_d^2 - \sigma_s^2}
-\end{equation}
-
-The estimate of $b$ is not the price elasticity of demand ($\hat{\beta}$) but an average of the price elasticity of demand $\hat{\beta}$ and the price elasticity of supply ($\hat{\gamma}$).  Therefore, if price elasticity of supply ($\hat{\gamma}$) is zero, the estimate of $b$ converges to ($\hat{\beta}$) but the larger the price effect on supply, the more biased the estimate becomes. 
 
 Sims made an important link between the use of reduced form equations and the problems with forecasting in his seminal paper \emph{Macroeconomics and Reality} \citep{Sims1980Macroeconomics}.\footnote{The analysis was not original.  \citep{Working1925} discussed this issue when trying to determine a demand schedule for potato prices, \citep[p. 2]{Haavelmo1943} analysed the difficulty of solving simultaneous equations when there are stochastic elements, presenting Equation \ref{eqref:sim}, and \citep{Liu1960Identification}, cited by Sims, called for more complete structural models to replace the \emph{underidentified} models that had been cropped due to the statistical difficulty of assessing significance of variables when there is covariance between them. However, Sims emphasised the link between endogeneity and the poor forecasting performance of the existing models and he also proposed a solution, which is used in the work here.} 
 % there is also Working (1926) and Haavelmo (1943) cited in Green.  There are also references Goldberger (1964 p. 311, Hausman (1983 pp 402-403 and Riersol (1950) in Green p 387 for VAR issues when distribution is not normal.  
-This work built on the known difficulties posed by endogeneity, where there is feedback between the dependent variable and the regressors, by suggesting that there would be very few cases where true exogeneity would be present and criticising the large number of implicit assumptions that had to be made to establish supposedly \emph{reduced form} equations.  Reduced form is one that depends only on exogenous variables and past realisations of the endogenous variables.  However, in establishing these reduced-form equations decisions must be taken about which variables to include and which to exclude.  Those excluded are essentially given a zero restriction.   Sims was particularly critical of the large-scale, macroeconomic models that were built from a large number of interlocking reduced forms, arguing that the problems of endogeneity and implicit restrictions would be magnified in this case.  
-
-To consider some of these issues in relation to exchange rate forecasting, consider the well-known and often-cited analysis of empirical tests of  exchange rate models that was undertaken by Meese and Rogoff, who found that major economic exchange rate models have no better forecasting ability than a random walk \citep{Meese1983Empirical}.  
-The general equation estimated was
-
-\begin{equation}\label{MeeseEmpirical}
-s=a_{0}+a_{1}(m-m^*)+a_{2}(y-y^*)+a_{3}(r-r^*)
-+a_{4}(\pi^e-\pi^{e*})+a_{5}\bar{TB}+a_{6}\bar{TB}^*+u
-%there is more of this in the Froot paper%
-\end{equation}
-
-where. following Meese and Rogoff,  $s$ is the logarithm of the dollar price of the foreign currency, $m-m^*$ is the ratio of the log of the domestic to overseas money supply, $y-y^*$ is the ratio of the log of domestic to overseas income, $r-r^*$ is the short-term nominal interest rate differential, $\pi^{e}-\pi^{e*}$ is the expected long-run inflation differential and where $\bar{TB}$ and $\bar{TB}^*$ are the cumulative domestic and overseas trade balances.   Amongst the empirical work discussed, there are various methods used, including \emph{generalised least squares}, to deal with the serial correlation of the residuals and the assumption that money supply, expected long-term inflation and interest rates are endogenous \citep{Fair1970}.  There is also some allowance made for lagged adjustment. 
-
-It is assumed that $a_{1}$ is unity in all models, the Frenkel-Bilson monetary model without sticky prices forces purchasing power parity by setting $a_{4}=a_{5}=a_{6}=0$; the Dornbusch-Frankel model allows prices to adjust gradually by setting $a_{5}=a_{6}=0$; while the Hooper-Morton model allows for the real exchange rate to adjust by leaving all the coefficients open.  These models are compared with a random walk, a random walk with drift and a VAR.  The sample is taken from March 1973 until June 1981.  Forecasts from the model are made at one, three, six and twelve month horizons.   Using mean error (ME), mean absolute error (MAE) and root mean square error (RMSE), model forecasts are compared to actual exchange rate changes and the random walk forecast.  No model achieves a lower RMSE than a random walk at any horizon.  Subsequent work by Frankel has extended the tests to monetary and portfolio balance models with limited additional success \citep{Frankel1984tests}. 
-%more needed here? 
-
-One way that Meese and Rogoff deal with the problem of endogeneity is to use instruments to try to isolate the required effect.   To return to Hamilton's orange market example, it is necessary to find a variable that will adjust with the supply curve and not the demand curve.  Hamilton suggests that in the market for oranges, the weather may be used \citep[p. 235]{Hamilton}.  As $\varepsilon_t^s$ represents all those factors that affect supply other than price, it is possible  to run the following regression. 
-
-\begin{equation}
-\label{eqref:ins}
-\varepsilon_t^s = hw_t + u_t^s
-\end{equation}
-
-where h is the coefficient obtained from the regression which, by definition, is unrelated to $u_t^s$.  Going back to Equations \ref{eqref:demand} and \ref{eqref:supply}, $\varepsilon_t^d$ represents all those factors that affect demand other than price.  The weather should only affect demand via the price (as it affects supply) and therefore, should not be related to $\varepsilon_t^d$.  Changes in the price that are the result of the weather represent a shift in the supply curve not the demand curve.  
-
-If $p^*$ is the OLS estimate of the relationship between $p_t$ and $w_t$, substitute \ref{eqref:ins} back into \ref{eqref:rdemand}, 
-
-\begin{equation}
-p = \frac{\varepsilon_t^d - hw_t -u_t^s}{\gamma - \beta}
-\end{equation}
-
-and then, as $p^*$ is the projection of $p$ on $w$.  
-
-\begin{equation}
-p^* = \frac{-h}{\gamma - \beta} w_t
-\end{equation}
-
-as $\varepsilon_t^d$ and $u_t^s$ are uncorrelated with $w_t$, 
-
-%check u_t^s not u_t^2
-\begin{equation}
-\label{eqref:pp}
-p=p^*+\frac{\varepsilon_t^d - u_t^s}{\gamma - \beta}
-\end{equation}
-
-Substitute \ref{eqref:pp} back into \ref{eqref:demand}, 
-
-\begin{equation}
-\label{eqref:ins1}
-q_t^d=\beta \left( p^* + \frac{\varepsilon_t^d - u_t^s}{\gamma - \beta} \right) + \varepsilon_t^d
-\end{equation}
-
-and 
-
-\begin{equation}
-\label{eqref:ins2}
-q_t^d=\beta p^*+v
-\end{equation}
-
-when 
-\begin{equation}
-v=\frac{-\beta u_t^s}{\gamma - \beta} + \frac{\gamma \varepsilon_t^d}{\gamma - \beta}
-\end{equation}
-%check u_t^s and not u_t^2
-if $u_t^s$ and $\varepsilon_t^d$ are uncorrelated with $p^*$, $v$ is uncorrelated with $p^*$.  Now if  \ref{eqref:ins1} or \ref{eqref:ins2} are estimated  by OLS, it would provide a consistent estimate of $\beta$.
-
-Return to \ref{eqref:ols} and use 
-
-\begin{equation}
-\hat{\beta_t^*}=\frac{1/T \sum_{i=1}^{T} p_t^* q_t}{1/T \sum_{i=1}^{T} (p_t^*)^2}
-\end{equation}
-
-\begin{equation}
-\hat{\beta_t^*}=\frac{(1/T) \sum_{i=1}^T p_t^* (\beta (p_t^* + v_t)}{(1/T) \sum_{i=1}^T [p_t^*]^2}
-\end{equation}
- 
-\begin{equation}
-\hat{\beta_t^*}=\beta + \frac{(1/T) \sum_{i=1}^T p_t^*  v_t)}{(1/T) \sum_{i=1}^T [p_t^*]^2}
-\end{equation}
-
-\begin{equation}
-\hat{\beta_t^*} \overset{p}{\rightarrow} \beta
-\end{equation}
-
-The process of estimating $p^*$ from the initial projection of 
-
-\begin{equation}
-p_t=\hat{\delta_I}w_t
-\end{equation}
-
-is called \emph{two-stage least squares} (2SLS) and the exogenous variable $w_t$ (weather in this case) is called the \emph{instrument} in a method of \emph{instrumental variables} where the instrument is a tool to estimate the relationship between $q_t$ and $p_t$.  The instrument must be correlated with the endogenous variable (price in this case) but not with the error term (it only affects demand through price).  
-
-However, the big problem that is found in trying to apply this approach to the study of exchange rates is finding an equivalent of the weather for the international capital flows. The aim is to find something that will affect international capital flows but will not directly have an influence on the real exchange rate.  For example, an increased US government deficit or a changing in the credit rating could affect the net flow to the US bond market.  However, it is very likely that this would also have a direct effect on the exchange rate itself and therefore this instrument would also be related to the error term.  US corporate profitability could affect the net flow to US equities and monetary policy expectations could affect speculative flows driven by interest rate differentials, but these are sure also to affect the exchange rate. 
-
-Finding truly exogenous variables is not easy.  Sims addressed the question of exogeneity in \emph{Money, Income and Causality} \citep{Sims1972Money}.   Sims suggested that the dependent variable be regressed on past and future values of the explanatory variables and that only if the coefficient on future values appeared to be zero could it be said that the causality was unidirectional.  If the coefficients on future values were statistically or economically significant, bidirectional causality should be assumed. This method is part of the suite of Granger-Sims causality tests that have been used to try to determine cause and effect and to test for exogeneity \citep{GrangerCause} and \citep{Sims1972Money}.    %   Need to have some of the results that have been found.  There is a section in the Palgrave book on econometrics that is useful.  
-
-Sims used the method to assess whether money M could be called \emph{strictly exogenous} in an estimate of quarterly data of money supply and Gross National Product (GNP) for the period 1947 to 1969.    As future values of money did not appear to explain GNP he concluded that   ``The evidence agrees quite well with a null hypothesis that causality runs entirely from money to GNP, without feedback" \citet[p. 541]{Sims1972Money}.    The result was to find some support for the implicit exogeneity of the money in the \emph{St. Louis Fed reduced form equations}.\footnote{\emph{The St. Louis Fed equations} is the term given to work done using reduced-form equations by the research department at the St. Louis Fed and the broad debate about the role of fiscal and monetary policy in the business cycle.  The equations assess the relationship between government spending, money and the economy and the relative importance of fiscal and monetary action.  The original article \citep{StLouisFed} asserted that the effect of fiscal policy on the economy was relatively small and statistically insignificant.  The results were controversial and prompted a range of discussion including the argument that endogeneity of the variables meant that the estimates of the parameters established using such techniques were unreliable. Sims' contribution is a small part of this debate.} 
-
-However, even here it may just be a matter of degree.  Clearly some aspects of monetary growth are a response to changes in economic activity and the conclusion of exogeneity may just be an artifact of the imprecision with which the test is made.  At its extreme, as \citet{Lucas1976Critique} argued, even exogenous variables can become endogenised if they become policy variables and start to affect behaviour of economic agents.  For example,  the relationship between money and economic activity can change if the monetary authorities start to change the stock of money in response to a nominal GNP target.\footnote{This is a more formal version of \emph{Goodhart's Law}, which states that statistical regularity will tend to change when a (monetary) variable is used for policy purposes  \citep{Goodhart1975Monetary}. It is part of a wider problem of feedback in the measurement and modelling of expectations which was also addressed by Sims \citep{Sims1980Macroeconomics}.}  The issue is one that is very relevant to the question of real exchange rates and capital flows because the two key instruments that the monetary authorities have to control the economy are the level of interest rates and direct intervention in the foreign exchange market.  In the former case, there will be an effect on interest rate differentials and possibly bond markets; in the latter, there will be a change in the composition of foreign exchange reserves, the central bank balance sheet and possibly also the net flow to international bond markets.   
-
-It is hard to make the case that international capital flows are exogenous.  Any overseas transaction has to take some account of the expected change in the value of the exchange rate; the performance of the currency will also have an effect on the profitability of exporters, viability of overseas investment projects and macroeconomic variables that are important for the valuation of securities such as the effect of short-term interest rates and inflation on bonds.  In addition, the purchase of US government bonds by overseas monetary authorities is designed to ensure that a variety of other countries fix their exchange rate against the US dollar.  The factors that speculators use to assess future exchange rate movements are surely broad and ever-changing.  They must, at some point, include all the variables that have been considered for the capital-flow model.     
-
-Granger causality tests take the form
-\begin{subequations}
-\begin{equation}
-y_t = \alpha_0 + \sum_{i=1}^{i=p} \beta_i y_{t-i} + \sum_{j=1}^{j=p} \gamma_j x_{t-j} + \varepsilon_t
-\end{equation}
-\begin{equation}
-x_t = \alpha_0 + \sum_{i=1}^{i=p} \beta_i x_{t-i} + \sum_{j=1}^{j=p} \gamma_j y_{t-j} + \varepsilon_t
-\end{equation}
-\end{subequations}
-
-where the null hypothesis that $x$ does not Granger-cause $y$ is that the estimated value of all $\gamma$ are equal to zero.  An F-test of the null that the real exchange rate (RTWI) does not Granger-cause' the other variables is rejected.  The confirmation that changes in the value of the real exchange rate tends to lead changes in capital flows suggests a feedback from the exchange rate to capital flows that supports the use of a system-type model.   
 
 \subsection{Vector autoregression}
 This econometric technique proposed by Sims to overcome the problems caused by endogeneity and the implicit restrictions imposed on reduced form equations has come to be known as the Vector Autoregression (VAR). All the left-hand-side or dependent variables are also  explanatory variables; a wide range of variables are used; there are no initial restrictions on the parameters, including zero restrictions on the lagged variables.   The essence of the VAR is to set up a system that is made up of all the important variables, assume that they are endogenous and that there are significant lags.  Exogenous variables can be added, but these are usually restricted to things that are clearly determined outside of the system such as seasonal or special dummies, trends and constants.   The variables that will be included in the list of endogenous variables should be determined by economic theory. The lag order is eventually determined by the use of information criteria that will assess whether the addition of extra lags adds more to the explanation than it loses in terms of degrees of freedom.  
