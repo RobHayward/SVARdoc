@@ -1,0 +1,179 @@
+\begin{thebibliography}{xx}
+
+\harvarditem{Akaike}{1981}{AIC}
+Akaike, H.  \harvardyearleft 1981\harvardyearright , `Likelihood of a model and
+  information criteria', {\em Journal of Econometrics} {\bf 16}(1),~3--14.
+
+\harvarditem{Balassa}{1964}{balassa1964ppp}
+Balassa, B.  \harvardyearleft 1964\harvardyearright , `The purchasing power
+  parity doctrin: A reappraisal', {\em Journal of Political Economy} {\bf
+  72},~584--596.
+
+\harvarditem{Bernanke}{1986}{Bernanke1986}
+Bernanke, B.  \harvardyearleft 1986\harvardyearright , `Alternative explanation
+  of the money-income correlation', {\em NBER Working Papers} {\bf 1842}.
+
+\harvarditem{{\em BIS Statistics}}{2012}{website:bisdata}
+{\em BIS Statistics}  \harvardyearleft 2012\harvardyearright .
+\newline\harvardurl{http://www.bis.org/statistics/index.htm}
+
+\harvarditem{Blanchard \harvardand\ Quah}{1987}{BlanchardQuah}
+Blanchard, O. \harvardand\ Quah, D.  \harvardyearleft 1987\harvardyearright ,
+  `The dynamic effects of aggregate demand and supply disturbances', {\em
+  American Economic Review} {\bf 79}(4),~655--673.
+
+\harvarditem{Branson}{1968}{Branson1968}
+Branson, W.~H.  \harvardyearleft 1968\harvardyearright , {\em Financial Capital
+  Flows in the US Balance of Payments}, Amsterdam.
+
+\harvarditem{Branson \harvardand\ Hill}{1971}{Branson1971}
+Branson, W.~H. \harvardand\ Hill, R.  \harvardyearleft 1971\harvardyearright ,
+  `Capital movements in the {OECD} area', {\em OECD Economic Outlook}
+  (Occasional Studies).
+
+\harvarditem{Calvo}{1998}{CalvoSS}
+Calvo, G.~A.  \harvardyearleft 1998\harvardyearright , `Capital flows and
+  capital-market crises {:} the simple economics of sudden stops', {\em Journal
+  of Applied Economcs} {\bf 1}(1),~34 -- 54.
+
+\harvarditem{{CFTC}}{2012}{cot}
+{CFTC}  \harvardyearleft 2012\harvardyearright , `Us commodity futures trading
+  commission: Cot'.
+\newline\harvardurl{http://www.cftc.gov/marketreports/commitmentsoftraders/index.htm}
+
+\harvarditem{Chris~Kubelec}{2010}{BoEdata}
+Chris~Kubelec, F.~S.  \harvardyearleft 2010\harvardyearright , `The
+  geographical composition of national external balance sheets: 1980-2005',
+  {\em Bank of England Working Paper} (384).
+
+\harvarditem{{\em Coordinated Portfolio Investment
+  Survey}}{2012}{website:imfportfolio}
+{\em Coordinated Portfolio Investment Survey}  \harvardyearleft
+  2012\harvardyearright .
+\newline\harvardurl{http://cpis.imf.org/}
+
+\harvarditem{Dahl}{2012}{xtable}
+Dahl, D.~B.  \harvardyearleft 2012\harvardyearright , {\em xtable: Export
+  tables to LaTeX or HTML}.
+\newblock R package version 1.7-0.
+\newline\harvardurl{http://CRAN.R-project.org/package=xtable}
+
+\harvarditem{Devereux \harvardand\ Sutherland}{2011}{Devereux2011Portfolio}
+Devereux, M.~B. \harvardand\ Sutherland, A.  \harvardyearleft
+  2011\harvardyearright , `Country portfolios in open economy macro models',
+  {\em Journal of the European Economic Association} {\bf 9}(2),~337--369.
+
+\harvarditem{Dornbusch \harvardand\ Werner}{1995}{DornbuschSS}
+Dornbusch, R. \harvardand\ Werner, A.  \harvardyearleft 1995\harvardyearright ,
+  `Currenc crises and collapses', {\em Brookings Papers in Economic Activity}
+  {\bf 1995}(2),~219 -- 293.
+
+\harvarditem{Evans \harvardand\ Lyons}{2002}{Evans2002Order}
+Evans, M.~D. \harvardand\ Lyons, R.  \harvardyearleft 2002\harvardyearright ,
+  `Order flow and exchange rate dynamics', {\em The Journal of Political
+  Economy} {\bf 10}(1),~170--180.
+
+\harvarditem{Hamilton}{1994}{Hamilton}
+Hamilton, J.~D.  \harvardyearleft 1994\harvardyearright , {\em Time Series
+  Analysis}, Princton University Press.
+
+\harvarditem{Harrod}{1933}{harrod1933international}
+Harrod, R.  \harvardyearleft 1933\harvardyearright , {\em International
+  Economics}, Palgrave Macmillan, London.
+
+\harvarditem{Hau \harvardand\ Rey}{2006}{HauEquity}
+Hau, H. \harvardand\ Rey, H.  \harvardyearleft 2006\harvardyearright ,
+  `Exchange rates, equity prices and capital flows', {\em Review of Financial
+  Studies} {\bf 19}(1),~273 -- 317.
+
+\harvarditem{Kouri \harvardand\ Porter}{1974}{Kouri1974International}
+Kouri, P.~J. \harvardand\ Porter, M.  \harvardyearleft 1974\harvardyearright ,
+  `International capital flows and portfolio equilibrium', {\em Journal of
+  Political Economy} {\bf 82},~443--467.
+
+\harvarditem{Krugman}{2000}{KrugmanSS}
+Krugman, P., ed.  \harvardyearleft 2000\harvardyearright , {\em Currency
+  Crises}, University of Chicago Press, Chicago.
+
+\harvarditem{Lane \harvardand\ Milesi-Ferretti}{2007}{PLane2007}
+Lane, P.~R. \harvardand\ Milesi-Ferretti, G.~M.  \harvardyearleft
+  2007\harvardyearright , `The external wealth of nations part 2: Revised and
+  extended estimates of foreign assets and liabilities 1970-2004', {\em Journal
+  of International Economics} {\bf 73}(2),~223--250.
+
+\harvarditem{Lorentan}{2005}{Fedtwi}
+Lorentan, M.  \harvardyearleft 2005\harvardyearright , `Indexes of the foreign
+  exchange value of the dollar', {\em Federal Reserve Bulletin} (Winter).
+
+\harvarditem{Lyons}{1995}{Lyons1995Microstructure}
+Lyons, R.~K.  \harvardyearleft 1995\harvardyearright , `Tests of the
+  microstruture hypothesis in the foreign exchange market', {\em Journal of
+  Financial Economics} {\bf 39}(2-3),~321--351.
+
+\harvarditem{O'Hara}{1998}{maureen1998market}
+O'Hara, M.  \harvardyearleft 1998\harvardyearright , {\em Market Microstructure
+  Theory}, Blackwell Business.
+
+\harvarditem{Pfaff}{2008{\em a}}{varsb}
+Pfaff, B.  \harvardyearleft 2008{\em a}\harvardyearright , {\em Analysis of
+  Integrated and Cointegrated Time Series with R}, second edn, Springer, New
+  York.
+\newblock ISBN 0-387-27960-1.
+\newline\harvardurl{http://www.pfaffikus.de}
+
+\harvarditem{Pfaff}{2008{\em b}}{varsa}
+Pfaff, B.  \harvardyearleft 2008{\em b}\harvardyearright , `{V}{A}{R}, {SVAR}
+  and {SVEC} models: Implementation within {R} package {vars}', {\em Journal of
+  Statistical Software} {\bf 27}(4).
+\newline\harvardurl{http://www.jstatsoft.org/v27/i04/}
+
+\harvarditem{{R Core Team}}{2013}{R}
+{R Core Team}  \harvardyearleft 2013\harvardyearright , {\em R: A Language and
+  Environment for Statistical Computing}, R Foundation for Statistical
+  Computing, Vienna, Austria.
+\newline\harvardurl{http://www.R-project.org}
+
+\harvarditem{Samuelson}{1964}{samuelson1964trade}
+Samuelson, P.~A.  \harvardyearleft 1964\harvardyearright , `Theoretical notes
+  on trade problems', {\em Review of Economics and Statistics} {\bf
+  46},~145--154.
+
+\harvarditem{Schwarz}{1978}{BIC}
+Schwarz, G.  \harvardyearleft 1978\harvardyearright , `Estimating the dimension
+  of a model', {\em Annals of Statistics} {\bf 6}(2),~461 -- 464.
+
+\harvarditem{Sims}{1980}{Sims1980Macroeconomics}
+Sims, C.~A.  \harvardyearleft 1980\harvardyearright , `Macroeconomics and
+  reality', {\em Econometrica} {\bf 48}(1).
+
+\harvarditem{Sims}{1986}{Sims1986}
+Sims, C.~A.  \harvardyearleft 1986\harvardyearright , `Are forecasting models
+  usable for policy analysis?', {\em Federal Reserve Bank of Minneapolis
+  Quarterly Review} {\bf 10}(Winter),~2 -- 16.
+
+\harvarditem[Sims et~al.]{Sims, Stock \harvardand\ Watson}{1990}{Sims1990Unit}
+Sims, C.~A., Stock, J. \harvardand\ Watson, M.~W.  \harvardyearleft
+  1990\harvardyearright , `Inference in linear time series models with some
+  unit roots', {\em Econometrica} {\bf 58},~113--44.
+
+\harvarditem{Siourounis}{2004}{Siourounis2004Capital}
+Siourounis, G.  \harvardyearleft 2004\harvardyearright , `Capital flows and
+  exchange rates: An empirical analysis', {\em Social Science Research Network
+  Working Paper Series} .
+
+\harvarditem{Taylor}{2003}{TaylorPPP}
+Taylor, M.~P.  \harvardyearleft 2003\harvardyearright , `Purchasing power
+  parity', {\em Review of International Economics} {\bf 11},~436--452.
+
+\harvarditem{{{US} Treasury}}{2014}{TIC}
+{{US} Treasury}  \harvardyearleft 2014\harvardyearright , `Treasury
+  international capital ({TIC}) system'.
+\newline\harvardurl{http://www.treasury.gov/resource-center/data-chart-center/tic/Pages/index.aspx}
+
+\harvarditem{{\em World Bank Quarterly External Debt
+  Statistics}}{2012}{website:worldbankdebt}
+{\em World Bank Quarterly External Debt Statistics}  \harvardyearleft
+  2012\harvardyearright .
+\newline\harvardurl{http://web.worldbank.org/datastatistics/extdecqeds}
+
+\end{thebibliography}
