@@ -55,40 +55,22 @@ The findings are that (check, the paper is in citulike and there are some notes 
 
 
 \section{The Model}\label{secref:3}
-One of the aims of this paper is to understand more about the deviations in the exchange rate from fundamental or intrinsic value.  There are different views about fundamental value.  However, here it will be assumed that Purchasing Power Parity (PPP) determines the fundamental value.  
+The model is an extension of the one used in Hau and Rey.  That concentrates on the financial account of the balanceof payments rather than the current account as has been done traditionally by the open-economy literature.  See Meese and Rogoff etc for fuller details. This is a model that brings microstructure theories of the exchange rate (as presented in Lyond and Evans) with into contact with theories that use capital flows to explain exchange rate movement in the medium term.  In this case, it is used to explain deviations from purchasing power partiy. The main difference in the module used here form teh one that has been presented is that speculative flows and foreign direct investment are included and the idea that international assets are in elastic supplty is not just restricted to the bond market. 
 
-The average price of a basket of home goods and services is represented by $P$, those of another country by $P^*$, with the * superscript used throughout to represent overseas variables, and the exchange rate expressed as domestic currency per unit of overseas as $S$, if arbitrage is possible, the law of one price implies that price level of the domestic basket should be the same as the overseas basket. 
+Maybe something about microstucture. 
 
-\begin{equation}
- P^*S=P
-\end{equation}
-
-or, using lower case to denote logarithms and re-arranging,
+On the assumption that all dividends are repatriated, Hau and Rey express the capital outflow for the equity market $(Q_t)$ as
 
 \begin{equation}
-\label{eqref:ppp}
-s = ln(S) = lnP - lnP^* = p-p^*
+dQ_t = E_tK_t^{h*}D_t^hdt - K_t^fD_t^fdt + dK_t^fP_t^f - E_tdK_t^{h*}P_t^h
 \end{equation}
+where $E_t$ is the exchange rate at time $t$ expressed as foreign units of domestic currency; equity holding at time $t$ are $K_t$$, divided between home equities $K_t^h$ and foreign $K_t^f$. 
 
-Therefore, under PPP, the exchange rate should adjust to ensure that if prices in one country change, there is a potential arbitrage that will tend to bring them back into line.  The adjustment may come through the price via the effect of changes in demand at home and abroad or it may come through the exchange rate, if that is allowed to fluctuate, due to demand for currency used to satisfy purchase of relatively cheap products and services.   This may be called \emph{absolute PPP} while a less strict version of \emph{relative PPP} would imply that changes in relative price level or two countries will tend to equalise.
+The additions means that demand for foreign direct investment, bonds and speculative activity can now affect the foreign exchange market 
 
-\begin{equation}\label{relPPP}
-\Delta S=\frac{\Delta P}{\Delta P^*}
-\end{equation}
+Note 20 closes the model.  The flow is offset by a movement of currency that is absorbed by the central bank.  
 
-The real exchange rate (Z)  is then the relative price of a representative basket of goods and services when domestic prices have been converted into a common unit.   
-
-\begin{subequations}
-\begin{align}
-Z=\frac{SP^*}{P}
-\end{align}
-so, in logs
-\begin{align}
-z = s + P^* - p
-\end{align}
-\end{subequations}
-
-where $z$ is the real exchange rate. Given two countries, an appreciation of the real exchange rate for the home country (a decrease in Z) means that its relative money prices have risen compared to the overseas country.  The theory of PPP says that the real exchange rate should be stable or that is should return to a long-run level. There is ample evidence that the real exchange rate is not stable.  For example, the \emph{Penn Effects} is the tendency of the real exchange rate to increase with the level of economic development (reference).  The interest here is how far capital flows can influence the level of the real exchange rate. 
+This is a world half-way between financial autarchy where investors hold only domestic assets and where there is complete risk sharing through the use of foreign exchange derivatives and domestic and foreign equities are held in proportion to their capitalisation (50:50 in the model). 
 
 The balance of payments must balance and the foreign exchange market must balance.  However, the aim of this model is to identify whether the increase in the price is a consequence of a rise in demand or a fall in supply and to find the reason for this driver of change.  There will be a facilitating action that will allow the transaction to be carried out.  However, in most cases this will only happen because of the change in price. Therefore, the aim is to find the forcing or active part of the transaction.  In the microstruture literature, the initiator of a transaction is the entity asking for a price in a market-maker system of the type presented in Kyle (1986) and Gloston-Milgrom (1985); or the entity submitting a market-order in an order-driven market of the ??? variety (O Hara??)
 
