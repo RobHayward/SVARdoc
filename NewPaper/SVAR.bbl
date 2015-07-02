@@ -13,6 +13,11 @@ Balassa, B.  \harvardyearleft 1964\harvardyearright , `The purchasing power
 Bernanke, B.  \harvardyearleft 1986\harvardyearright , `Alternative explanation
   of the money-income correlation', {\em NBER Working Papers} {\bf 1842}.
 
+\harvarditem{BIS}{2013}{BISFX2013}
+BIS  \harvardyearleft 2013\harvardyearright , `Triennial central bank survey of
+  foreign exchange and derivatives market activity in 2013'.
+\newline\harvardurl{http://www.bis.org/publ/rpfxf10t.htm}
+
 \harvarditem{{\em BIS Statistics}}{2012}{website:bisdata}
 {\em BIS Statistics}  \harvardyearleft 2012\harvardyearright .
 \newline\harvardurl{http://www.bis.org/statistics/index.htm}
@@ -35,6 +40,10 @@ Branson, W.~H. \harvardand\ Hill, R.  \harvardyearleft 1971\harvardyearright ,
 Calvo, G.~A.  \harvardyearleft 1998\harvardyearright , `Capital flows and
   capital-market crises {:} the simple economics of sudden stops', {\em Journal
   of Applied Economcs} {\bf 1}(1),~34 -- 54.
+
+\harvarditem{Cassel}{1916}{Cassel1916Present}
+Cassel, G.  \harvardyearleft 1916\harvardyearright , `The present situation of
+  the foreign exchanges', {\em Economic Journal} {\bf 26}(23),~319--323.
 
 \harvarditem{{CFTC}}{2012}{cot}
 {CFTC}  \harvardyearleft 2012\harvardyearright , `Us commodity futures trading

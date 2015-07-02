@@ -33,7 +33,7 @@
 \section{Introduction} 
       The rise in gross and net international capital flows that has taken place in the last 20 years has been well documented (see \citet{PLane2007} and \citet{BISFX2013} and increased attention on the role that these flows have played in fostering international financial crisis has increased the attention on the relationships between capital flows, exchange rates and financial crisis.  The evidence has accumulated that the link between international capital flows and economic development is not as evident in practice as it appears to be in theory.  For example, even before the GFC, Mishkin identified the failure of capital to flow from developed to less developed countries.   \citet{HauEquity} reviews the evidence on the benefits of international financial flows and finds it elusive.  Indeed, international capital flows can have a very disruptive influence.  citet{CalvoSS}, \citet{KrugmanSS} and Calvo again ref , Krugman, Calvo et have studied the effect of \emph{sudden stops} when countries suffer the financial shock of a disruption or reversal of capital inflow. 
       
-A sudden inflow can also cause the real exchange rate to appreciate, damaging the traded-goods sector of the economy\footnote{The Dutch Disease is the term coined by \emph{The Economist} for the experience of the Netherlands in the 1960s where discovery of large natural gas fields led to an increase in the trade surplus and some inflow of capital with a consequent appreciation of the real exchange rate to the point where the rest of the Dutch manufacturing sector became uncompetitive.   
+A sudden inflow can also cause the real exchange rate to appreciate, damaging the traded-goods sector of the economy\footnote{The Dutch Disease is the term coined by \emph{The Economist} for the experience of the Netherlands in the 1960s where discovery of large natural gas fields led to an increase in the trade surplus and some inflow of capital with a consequent appreciation of the real exchange rate to the point where the rest of the Dutch manufacturing sector became uncompetitive.}.   
 
 
 The idea that the benefits of free flowing international capital may be elusive together with rising evidence of the cost of crisis have renewed interest in capital controls.  Brunnermeier and Sanniko develop a two-country neoclassical stochastic growth model where banking credit can be excessive and can reverse.  Capital controls or macroprudential measures can improve welfare.  Kitano (cituliked) compares the welfare effect of capital controls and perfect capital mobility and finds that the less efficient the financial system the more likely that capital controls will be welfare enhancing. Korniek makes the case for capital flows on the basis that individual investors do not internalise the increase in the size of the aggregate financial shock that individual inflows cause.  He calls for liquidity-adjusted taxes to price this externality.   
@@ -47,7 +47,7 @@ The endogenous nature of capital flows and the real exchange rate argue for a st
 As such, the paper provides additional support to the evidence that international capital flows can drive the real exchange rate, it narrows down this effect to the more speculative activity and it provides some evidence that official intervention in the foreign exchange market to counter speculative activity can be beneficial.  The rest of the paper is organised as follows:  Section \ref{secref:2} surveys the literature, Section \ref{secref:3} presents the model; Section \ref{secref:4} outlines the results and Section \ref{secref:5} concludes. 
 
 \section{Literature}\label{secref:2}
-  Purchasing power parity (PPP) remains the standard long-run method to understand exchange rates.  \citet{Cassel1917Present} is credited with first identifying the relationship between relative prices and the exchange rate wile \citep{TaylorPPP} provides a summary of the literature.  However, there is some debate about how far PPP holds and the \emph{Penn Effect} whereby the real exchange rate appears to appreciate with economic development suggests that this is not a stable relationship.    There is plenty of evidence that exchange rates can show persistent divergence from the `equilibrium' of PPP causing, in many cases, adverse effects on economic activity. Need some examples here (for instance Keynes and Churchill and US recent example etc). 
+  Purchasing power parity (PPP) remains the standard long-run method to understand exchange rates.  \citet{Cassel1916Present} is credited with first identifying the relationship between relative prices and the exchange rate wile \citep{TaylorPPP} provides a summary of the literature.  However, there is some debate about how far PPP holds and the \emph{Penn Effect} whereby the real exchange rate appears to appreciate with economic development suggests that this is not a stable relationship.    There is plenty of evidence that exchange rates can show persistent divergence from the `equilibrium' of PPP causing, in many cases, adverse effects on economic activity. Need some examples here (for instance Keynes and Churchill and US recent example etc). 
   
 Some of the explanations for this revolve around the change in unit labour costs and the real exchange rate.  See \citep{harrod1933international}, \citep{balassa1964ppp} and \citep{samuelson1964trade} amongst others for an overview of this. More specifically, this over-valuation may also be a consequence an energy windfall that improves the balance of payments and drive up the value of the exchange rate. Though the original idea of the \emph{Dutch Disease} was associated with energy, it has been extended to other sectors, including financial services.  As such, the UK economy has bee said to suffer from a version of this whereby the financial status of London draws in capital from the rest of the world elevating the exchange rate beyond that suggested by relative prices. In this case it is financial flow rather than trade that is causing the over-valuation.
 
@@ -60,6 +60,37 @@ The findings are that (check, the paper is in citulike and there are some notes 
 
 
 \section{The Model}\label{secref:3}
+A lot of work on this at the start of the millenium as people struggled to understand the initial weakenss of the euro against the US dollar and the related disconnect between the rise in the US current account deficit and the steady standing of the US dollar.  
+
+May 2001 World Economic Outlook. December 2000 issue of Bank of England's Financial Stability Review. 
+
+Standard linear empirical excahnge rate model used by Gregorios Siourounis. 
+
+Siourounis and Hau test whether higher foreign equity returns are consistent with rebalancing or home portfolios that reduce weighting, return capital and appreciate the value of the domestic currency. Siourounis finds that net US equity purchase has a stable and consistent impact on UK, German and Swiss excahnge rates; that net purchase of US or overseas bonds have not effect. A one-standard deviation shock to exchange rate purchase has the effect of a 10\% appreciation that is statistically significant for 13 months on average. Positive innovations in overseas equity retunrs are associated with short-run US dollar appreciation and equity inflow for three of the four countries. Positive shocks to US interest rates cause US appreciation, rather than the depreciation that UIP would imply. 
+
+Note 5 on page 4 speaks about the performance of exhange rate models. 
+
+Rime (2001) is another microstructure approach. 
+
+Siourounis finds that bond flows are very differnet from equity flows. VAR.  Use of impulse reponose functions and variance decomposition. The naive way that the VAR is identified is rested by re-ordering the variables. There are also suggestions that the relationship between teh exchange rate and the currency have changed over time.  Hau and Rey and Siourounis split the data into two perilds; before and after 1994.  Also a breat at 2002.  Hau and Rey report that the relationship between equity flows and the exchange rate has become stronger.
+
+Brooks, Edison, Kumar and Slok assesses the ability of portfolio and foreign direct investment to track movements in teh US dollar against the Yen and the Euro. They find that net flows from Europe into US equity markets track the performance of the Euro against the US dolloar, net FDI flows are less important; the movement of the Japanese yen is more tied to conventional variables like the current account and the interest rate differential. The look at the relationship between the excess returns on the US market relative to that of the Euro area as an explanation for the capital flow. 
+
+Traditional models have looked at long and short-term interts rate differentials.  These models have not been very successful. 
+
+Estimate a simple least-squares reduced form model where the log of the exchange rate is regressed on net inflow of govvernment, agency and corporate bonds, net equities and net FDI. Also included are relative long and shoert term interest rates, relative economic growth rates and relative stock returns. For the Euro, there is some evidence that bond flows are effect, particularly when associated with govenrment activity.   There is evidence of positive correlaction between net equity flows and the US-Euro exchange rate. Consistent with other findings, there is a negative coefficient on the relative equity returns.  Investors repatriate profits? There is a positive but statistially insignificant coefficient for FDI. Long-term interet rates are an important determinant.  For the Yen, long-term itnerest rates are the most important.  Others factors are not significant. 
+
+R squared are never exceeeds 0.10 and in most cases is below 0.05. 
+
+Structure model as identified by Brooks in note 14 on page 527. 
+
+
+One of the major issues has been how to reconcile the increase in the US current account deficit with the strength of the US dollar.  There is a note on page 516 of Brooks that speaks about some of the limitations of the US Treasury International Capital (TIC) data. In particular, the data reflec the location of the transaction.  As such, the UK is over-represented.  Use of aggtregate data means that this is less impoertant in this study.  Effect of mergers financed by share swaps may be distorting:  initial payment of equity is not recorded by TIC. Siourounis records some of these transactions on page 18. 
+
+Siourounis reports on the problems of measurement error. Wansbeek and Meijer (2002).  This can bias coefficients towards zero. 
+
+Pavlova and Rigobon (2007) have a model of comovement of bond, stock and foreign exchange markets.  A two-country model suffers demand and productivity shocks. 
+
 The model is an extension of the one used in Hau and Rey.  That concentrates on the financial account of the balanceof payments rather than the current account as has been done traditionally by the open-economy literature.  See Meese and Rogoff etc for fuller details. This is a model that brings microstructure theories of the exchange rate (as presented in Lyond and Evans) with into contact with theories that use capital flows to explain exchange rate movement in the medium term.  In this case, it is used to explain deviations from purchasing power partiy. The main difference in the module used here form teh one that has been presented is that speculative flows and foreign direct investment are included and the idea that international assets are in elastic supplty is not just restricted to the bond market. 
 
 Maybe something about microstucture. 
@@ -69,7 +100,7 @@ On the assumption that all dividends are repatriated, Hau and Rey express the ca
 \begin{equation}
 dQ_t = E_tK_t^{h*}D_t^hdt - K_t^fD_t^fdt + dK_t^fP_t^f - E_tdK_t^{h*}P_t^h
 \end{equation}
-where $E_t$ is the exchange rate at time $t$ expressed as foreign units of domestic currency; equity holding at time $t$ are $K_t$$, divided between home equities $K_t^h$ and foreign $K_t^f$. 
+where $E_t$ is the exchange rate at time $t$ expressed as foreign units of domestic currency; equity holding at time $t$ are $K_t$, divided between home equities $K_t^h$ and foreign $K_t^f$. 
 
 The additions means that demand for foreign direct investment, bonds and speculative activity can now affect the foreign exchange market 
 
@@ -217,7 +248,7 @@ Q1 2010 & -219.52 & -2.58 & 9.95 & 1.58 & -11.48 & 2.82 & 83.65 & -0.56 & -0.10 
 \caption{Cumulative capital flows and USD}
 \label{figref:ts}
 \includegraphics[scale=0.5]{timeseries}
-\end{figure}
+\end{figure}\label{fig:timeseries}
 
 
 
