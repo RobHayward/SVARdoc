@@ -128,12 +128,11 @@ Therefore, there are seven main variables that are to be used in the analysis an
 A sample of the data are presented in Table \ref{tab:capflow}.   The capital flow and current account are percentage of GDP, the trade-weighted exchange rate are indices, interest-rate spreads are percentage point differences and the speculative sentiment are a percentage of total derivative positions. The main thing to note is that the current account to GDP ratio is substantially larger than any of the other series.  
 
 Table \ref{tab:capflow} and Figure \ref{fig:timeseries} provide an overview of the data that will be used in the capital flow model.   
-\begin{landscape}
+\begin{sidewaystable}
 %this comes from the R file.  
 %pdflandscape is required to facilitate the landscape position. 
 % latex table generated in R 2.15.0 by xtable 1.7-0 package
 % Sun Jun 10 12:46:12 2012
-\begin{table}[t]
 \begin{threeparttable}
 \caption{Important capital flows and exchange rate data}
 \begin{tabular}{p{4cm}rrrrrrrrrrr}  
@@ -161,8 +160,7 @@ Q1 2010 & -219.52 & -2.58 & 9.95 & 1.58 & -11.48 & 2.82 & 83.65 & -0.56 & -0.10 
 \item These are the data that are used in the analysis.   CCA is the cumulative current account normalised by GDP; DCCA is the change in the cumulative current account; CNB is the cumulative net bond position per GDP; CNE is the cumulative net equity position per GDP; CNFDI is the cumulative net flow of foreign direct investment per GDP; COT is cumulative official treasuries purchase per GDP; RTWI is the real trade-weighted index of major currencies; SPREAD is the spread between US 3 month LIBOR and a basket of equivalent overseas rates (the same currencies as the trade-weighted index); S1 and S2 are indexes of speculative sentiment based on the average speculative positions disclosed to the CFTC by buyers of currency futures relative to the US dollar (Japanese yen, Swiss Franc, Euro or Deutschemark and Pound Sterling).  S1 is the net position of speculators relative to speculative positions; S2 is the net position of speculators relative to the open interest (total of all outstanding open positions).  A positive number is a US asset, an appreciation of the exchange rate, a US interest rate advantage or speculation in favour of the US dollar. 
 \end{tablenotes}
 \end{threeparttable}  
-\end{table}
-\end{landscape}
+\end{sidewaystable}
 
 %it was [h!] now
 \begin{figure}[t]
@@ -297,15 +295,13 @@ For the other major flows, there is a great deal more ambiguity.  The effect of 
 
 The overall impression is one where speculation has a much more precise and significant effect on the real exchange rate than the other capital flows.  It is clear that speculation can have a effect that is not just short-term in nature and that this can have a real effect on the economy.  A very similar pattern is noted in the impulse response functions that are derived from the other specifications (see Figures \ref{fig:IRF2} and \ref{fig:IRF3}.  The results are robust to alternative specifications.  This increases the confidence in the results as it appears that it is not the method of identifying the VAR or the restrictions that have been imposed having a major effect on the outcome.  
 
-\begin{landscape}
-\begin{figure}[t]
+\begin{sidewaysfigure}[h]
 \graphicspath{{../Figures2/}}
 \centering
 \caption{Impulse Response Functions for RTWI for System Three}
 \label{fig:IRF1}
 \includegraphics[scale=0.8]{IRF3}
-\end{figure}
-\end{landscape} 
+\end{sidewaysfigure}
 
 
 
@@ -316,33 +312,18 @@ The are a number of different specifications that can be made to the model.  The
 
 The preferred model, according to the range of information and diagnostics outlined in Table \ref{tabref:model} is the one that does not include the current account, has four lags and uses the three dummy variables, SPREAD2 and S1.  A model with a linear trend and a constant is the one that produces the lowest values of the AIC and BIC.  The summary information on model 8 reveals that the system is stable as the roots of the autoregressive coefficients are all within the unit circle.  The dummy variables are significant. 
 
-\begin{landscape}
-\begin{figure}[t]
+\begin{sidewaysfigure}[h]
 \graphicspath{{../Figures2/}}
 \centering
 \caption{Impulse Response Functions for RTWI for System One}
 \label{fig:IRF2}  
 \includegraphics[scale=0.8]{IRF1}
-\end{figure}
-\end{landscape}
+\end{sidewaysfigure}
 
 \subsection{Comparison of identification methods}
 It is encouraging that the broad patterns identified in the IRFs remain very similar no matter which of the three methods is used to identify the system (see Figures \ref{fig:IRF1}, \ref{fig:IRF2} and \ref{fig:IRF3} for IRFs created with Systems 1, 2 and 3 respectively).  The speculative effects related to sentiment and interest rate differentials are unequivocally positive in all three cases. The other major effect that is identified is that of the positive relationship between the official purchase of treasuries and the exchange rate.  The different methods of identifying the system all indicate that the other capital flows have a very uncertain effect on the real exchange rate.  
 
-The one difference that is evident in the IRF from the three different system is that for System One the initial impact of a positive shock to the purchase of bonds by foreign official institutions is negative and then turns positive in line with the other two systems.  This may be the result of reverse causation as it is most likely that the foreign exchange intervention will take place at times of US dollar weakness as, by definition, this is the time when overseas currencies are appreciating against the US unit. 
-
-\begin{landscape}
-\begin{figure}[t]
-\graphicspath{{../Figures2/}}
-\centering
-\caption{Impulse Response Functions for RTWI for System Two}
-\label{fig:IRF3}
-\includegraphics[scale=0.8]{IRF2}
-\end{figure}
-\end{landscape} 
-
-\
-
+The one difference that is evident in the IRF from the three different system is that for System One the initial impact of a positive shock to the purchase of bonds by foreign official institutions is negative and then turns positive in line with the other two systems.  This may be the result of reverse causation as it is most likely that the foreign exchange intervention will take place at 
 \section{Conclusion}\label{secref:5}
 A model of international capital flow and the real exchange rate has been presented.  A VAR has been used to estimate the parameters of the system, using data that has been collected from a variety of sources, and these estimated parameters are used to create IRFs that show how the system returns to stability once it has been hit by a shock.  Unlike most attempts to assess the relationship between capital flow and the exchange rate, this model includes a role for speculation, and some methods have been proposed here to measure speculative activity.  These measures seek to capture two types of speculative activity:  sentiment driven and interest rate driven.  
 
