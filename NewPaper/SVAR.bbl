@@ -67,11 +67,6 @@ Dahl, D.~B.  \harvardyearleft 2012\harvardyearright , {\em xtable: Export
 \newblock R package version 1.7-0.
 \newline\harvardurl{http://CRAN.R-project.org/package=xtable}
 
-\harvarditem{Devereux \harvardand\ Sutherland}{2011}{Devereux2011Portfolio}
-Devereux, M.~B. \harvardand\ Sutherland, A.  \harvardyearleft
-  2011\harvardyearright , `Country portfolios in open economy macro models',
-  {\em Journal of the European Economic Association} {\bf 9}(2),~337--369.
-
 \harvarditem{Dornbusch \harvardand\ Werner}{1995}{DornbuschSS}
 Dornbusch, R. \harvardand\ Werner, A.  \harvardyearleft 1995\harvardyearright ,
   `Currenc crises and collapses', {\em Brookings Papers in Economic Activity}
@@ -159,11 +154,6 @@ Sims, C.~A.  \harvardyearleft 1980\harvardyearright , `Macroeconomics and
 Sims, C.~A.  \harvardyearleft 1986\harvardyearright , `Are forecasting models
   usable for policy analysis?', {\em Federal Reserve Bank of Minneapolis
   Quarterly Review} {\bf 10}(Winter),~2 -- 16.
-
-\harvarditem[Sims et~al.]{Sims, Stock \harvardand\ Watson}{1990}{Sims1990Unit}
-Sims, C.~A., Stock, J. \harvardand\ Watson, M.~W.  \harvardyearleft
-  1990\harvardyearright , `Inference in linear time series models with some
-  unit roots', {\em Econometrica} {\bf 58},~113--44.
 
 \harvarditem{Siourounis}{2004}{Siourounis2004Capital}
 Siourounis, G.  \harvardyearleft 2004\harvardyearright , `Capital flows and
