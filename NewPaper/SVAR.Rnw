@@ -141,9 +141,8 @@ Where NE is net equity; NUSE is net US equities; NFE is net foreign equities.  A
 The other data that are available from the US Treasury are details on the transactions carried out by international monetary authorities.  These \emph{official} institutions are mostly central banks but can also include the IMF and other quasi-official organisations.  These data provide an insight to the activities of central banks as they take action in teh foreign exchange market to fix their currencies \citet{TIC}.
 
 The first speculative money market series are compiled to account for speculative sentiment, momentum or technical tracing flows.  The series for the speculative flows are the positions held by speculative funds in the main currency futures markets in the US.  These are positions that must be reported to the US derivative regulator, the US Commodity Futures Trading Commission (CFTC).  The positions are held in foreign currency vs the US dollar.  The key contracts are Canadian Dollar (contract of 100,000 Canadian dollars), UK Sterling (contract of 62,500 sterling), Japanese yen (12,500,000 yen), Swiss franc (125,000 CHF) and Euro (125,000 EUR) or Deutschmark before the introduction of ECU trading.  The data and explanation about the differentiation between commercial (hedgers) and non-commercial (speculators) is available from the CFTC web site \citet{cot}.   The outstanding long or short speculative positions are amalgamated across currencies and normalised to the total number of speculative positions (S1) or the total open interest positions (S2) to get an overall measure of sentiment.  Once the two series are constructed, they are multiplied by -10 to make something easier to work with and to ensure that a speculative inflow to the US is a positive number. 
-% there may be more information on this.  The are a couple of references.  Which chapter speaks of this first? 
 
-The interest rate data are taken from the IMF International Financial Statistics.  The interest rates are short-term interest rates and usually 'money market rates' where available.  The three month rate is used. An index of international money rates is compiled and compared to the equivalent US interest rate.
+The second speculative series is based on the activity of the \emph{carry-trade} which is an attempt to take advantage of a breakdown in uncovered interest parity (UIP).  See citations requred. The interest rate data are taken from the IMF International Financial Statistics.  The interest rates are short-term interest rates and usually 'money market rates' where available.  The three month rate is used. An index of international money rates is compiled and compared to the equivalent US interest rate.
 
 Therefore, there are seven main variables that are to be used in the analysis and a number of variations that can be applied to the model.  The main variables are: the cumulative current account balance per GDP (CCA); the cumulative net bond per GDP (CNB); the cumulative net equity per GDP (CNE); cumulative net foreign direct investment per GDP (CNFDI); cumulative net official treasuries per GDP (COT); the real trade-weighted index (RTWI); and the nominal trade-weighted index (NTWI); the spread between US short rates and the rates of the main trading partners (SPREAD1 includes Mexico and SPREAD2 does not); and, a measure of speculative sentiment measured in two ways (S1 and S2).  The full data set run from the first quarter of 1973 through to the first quarter of 2010.  However, the series taken from the Transactions in Long Term Securities data (TIC) only begin in the second quarter of 1977, the data on official holdings of US Treasury bonds begin in the second quarter of 1978 and the sentiment data begin in the first quarter of 1986.   
 
@@ -151,39 +150,6 @@ A sample of the data are presented in Table \ref{tab:capflow}.   The capital flo
 
 
 Table \ref{tab:capflow} and Figure \ref{fig:timeseries} provide an overview of the data that will be used in the capital flow model.   
-\begin{sidewaystable}
-%this comes from the R file.  
-%pdflandscape is required to facilitate the landscape position. 
-% latex table generated in R 2.15.0 by xtable 1.7-0 package
-% Sun Jun 10 12:46:12 2012
-\begin{threeparttable}
-\caption{Important capital flows and exchange rate data}
-\begin{tabular}{p{4cm}rrrrrrrrrrr}  
-   \hline
- & CCA & DCCA & CNB & CNE & CNFDI & COT & RTWI & SPREAD & S1 & S2 \\ 
-  \hline
-Q1 2007  & -179.02 & -5.22 & 12.92 & -0.55 & -2.99 & 0.71 & 89.89 & 2.63 & -0.08 & -0.12 \\ 
-Q2 2007  & -181.66 & -5.44 & 13.80 & 2.37 & -3.27 & 0.28 & 87.68 & 2.38 & 0.02 & 0.02 \\ 
-Q3 2007  & -184.95 & -5.21 & 7.67 & 0.27 & -3.21 & -0.31 & 85.45 & 2.00 & 0.14 & 0.23 \\ 
-Q4 2007 & -187.92 & -4.62 & 5.45 & 0.49 & -5.32 & -0.19 & 81.58 & 1.46 & 0.21 & 0.33 \\ 
-Q1 2008  & -191.90 & -4.25 & 9.53 & 2.55 & -6.07 & 2.13 & 80.40 & 0.42 & 0.15 & 0.25 \\ 
-Q2 2008  & -194.88 & -4.87 & 11.26 & -0.17 & -6.19 & 2.23 & 79.34 & -0.57 & 0.04 & 0.07 \\ 
-Q3 2008  & -200.48 & -5.32 & 8.52 & 0.22 & -6.51 & 1.10 & 82.82 & -0.73 & -0.08 & -0.14 \\ 
-Q4 2008  & -209.21 & -4.26 & 0.52 & 2.02 & -6.03 & -0.11 & 90.14 & -0.99 & -0.08 & -0.15 \\ 
-Q1 2009 & -214.35 & -2.31 & -0.36 & 1.92 & -7.46 & 0.04 & 91.40 & -0.63 & -0.08 & -0.14 \\ 
-Q2 2009  & -217.36 & -2.40 & 3.24 & 0.74 & -8.45 & 1.24 & 88.12 & -0.50 & -0.03 & -0.06 \\ 
-Q3 2009  & -219.53 & -3.21 & 4.07 & 1.13 & -9.21 & 1.89 & 84.08 & -0.52 & 0.16 & 0.25 \\ 
-Q4 2009 & -219.87 & -2.94 & 6.70 & 1.93 & -9.83 & 3.36 & 81.46 & -0.57 & 0.12 & 0.19 \\ 
-Q1 2010 & -219.52 & -2.58 & 9.95 & 1.58 & -11.48 & 2.82 & 83.65 & -0.56 & -0.10 & -0.16 \\ 
-   \hline
-\label{tab:capflow}
-\end{tabular}
-\begin{tablenotes}
-\small
-\item These are the data that are used in the analysis.   CCA is the cumulative current account normalised by GDP; DCCA is the change in the cumulative current account; CNB is the cumulative net bond position per GDP; CNE is the cumulative net equity position per GDP; CNFDI is the cumulative net flow of foreign direct investment per GDP; COT is cumulative official treasuries purchase per GDP; RTWI is the real trade-weighted index of major currencies; SPREAD is the spread between US 3 month LIBOR and a basket of equivalent overseas rates (the same currencies as the trade-weighted index); S1 and S2 are indexes of speculative sentiment based on the average speculative positions disclosed to the CFTC by buyers of currency futures relative to the US dollar (Japanese yen, Swiss Franc, Euro or Deutschemark and Pound Sterling).  S1 is the net position of speculators relative to speculative positions; S2 is the net position of speculators relative to the open interest (total of all outstanding open positions).  A positive number is a US asset, an appreciation of the exchange rate, a US interest rate advantage or speculation in favour of the US dollar. 
-\end{tablenotes}
-\end{threeparttable}  
-\end{sidewaystable}
 
 %it was [h!] now
 \begin{figure}[t]
@@ -274,17 +240,18 @@ x_{t}=a_{20}+a_{21}x_{t-1}+a_{22}y_{t-1}+e_{1t}
 \end{equation}
 \end{subequations}
 
-Now the equations can be estimated with OLS because the variables are uncorrelated with the error term.  Hamilton shows that this is the equivalent to the Maximum Likelihood Estimator (MLE) \citet[p. 293]{Hamilton}.  However, though the model can be estimated with ease, because of the transformation that has been undertaken.  However, some method must be established to deal with the problem of identification.  In general, $K(K-1)/2$ restrictions will be required, where K is the number of endogenous  variables in the VAR. 
+Now the equations can be estimated with OLS because the variables are uncorrelated with the error term.  Hamilton shows that this is the equivalent to the Maximum Likelihood Estimator (MLE) \citet[p. 293]{Hamilton}.  However, though the model can be estimated with ease, because of the transformation that has been undertaken, some method must be established to deal with the problem of identification.  In general, $K(K-1)/2$ restrictions will be required, where K is the number of endogenous  variables in the VAR. 
 
 \subsection{Identification}\label{secref:ident}
-There are a wide variety of restrictions that can be placed on Equations \ref{primitivevarone} and \ref{primitivevartwo}. Sims proposed a six-variable VAR including variables like GNP, money supply, interest rates, inflation, investment and unemployment and made 17 restrictions that the system was \emph{over-identified}, meaning that there are more equations than unknown coefficients to be estimated \citet{Sims1986}, while Bernanke makes a number of explicit restrictions to support his assertion that the relationship between money and income is intermediated by credit rather than being the result of money illusion or causality running from income to money \citet{Bernanke1986}.  
-The Sims-Bernanke approach is adopted here.  There are are seven variables in the model being estimated. This means that  twenty one restrictions ($K(K-1)/2$) are needed for system identification.     It is now possible to consider the economic arguments for restrictions and to impose these on the model.  For example, in this paper, there will be seven variables which can be represented by seven equations along the lines of Equations \ref{primitivevarone} and \ref{primitivevartwo} where there is a seven-by-seven B matrix like that in Equation \ref{transitionvar} and Table \ref{tabref:svar1} is the first matrix of Equation \ref{transitionvar2}.  Table \ref{tabref:svar1} gives an overview of of the restrictions suggested.  
+There are a wide variety of restrictions that can be placed on Equations \ref{primitivevarone} and \ref{primitivevartwo}. The Sims-Bernanke approach is adopted here. Sims proposed a six-variable VAR including variables like GNP, money supply, interest rates, inflation, investment and unemployment and made 17 restrictions that the system was \emph{over-identified}, meaning that there are more equations than unknown coefficients to be estimated \citet{Sims1986}. While Bernanke makes a number of explicit restrictions to support his assertion that the relationship between money and income is intermediated by credit rather than being the result of money illusion or causality running from income to money \citet{Bernanke1986}.  
+
+There are are seven variables in the model being estimated. This means that  twenty one restrictions ($K(K-1)/2$) are needed for system identification.     It is now possible to consider the economic arguments for restrictions and to impose these on the model.  For example, in this paper, there will be seven variables which can be represented by seven equations along the lines of Equations \ref{primitivevarone} and \ref{primitivevartwo} where there is a seven-by-seven B matrix like that in Equation \ref{transitionvar} and Table \ref{tabref:svar1} is the first matrix of Equation \ref{transitionvar2}.  Table \ref{tabref:svar1} gives an overview of of the restrictions suggested.  
 
  
 \begin{table}[t]
 \begin{threeparttable}
 \caption{SVAR Restrictions}
-\begin{tabular}{p{4cm} rrrrrrrrr}  
+\begin{tabular}{p{3cm} rrrrrrrrr}  
   \hline
  &  CNB & CNE & CNFDI & COT & RTWI & SPREAD & S1 \\ 
   \hline
@@ -312,23 +279,21 @@ Reading across the row for each equation in turn. The cumulative net bond equati
 
 It is, of course, possible to argue about some of the restrictions that have been imposed here.  However, at least the restrictions are out in the open, can be debated and can be assessed against the available data evidence.  This marks an improvement on the \emph{ad hoc} or \emph{naive} methods.  It is  of course possible to run the model, assess the outcome and then make adjustments to the restrictions.  However, this would increase the risk of \emph{data mining} or \emph{over-fitting} and it is not done here.  However, as a robustness check, three models are assessed:  the first is one that is restricted using the Cholesky decomposition (called System One); the second takes a random ordering of the variables and again restricts the coefficients on the lower triangle to be zero (called System Two); the final version uses the structural restrictions noted above (System Three).  If all three methods give similar results, there should be greater confidence that the outcome is not just a function of the ordering of the variables or the assumptions that have been made. % reference code.  
 
-
-
-
 \section{Results}\label{secref:4}
 The main results are presented in Figure \ref{fig:IRF1} where it is evident that innovations to sentiment and interest rate based speculation can have a significant effect on the real exchange rate.  \emph{Impulse Response Functions} show that a one unit innovation or shock to the S1 series, equal to a ten percentage point change in the net position of speculators relative to the total speculative position, will have on average a positive effect of close to 4\% on the real trade-weighted exchange rate over the next eight quarters.  The 95\% confidence intervals, denoted by the red, dashed lines, reveal that it is very likely that there is a positive effect.  For speculative flows that are linked to the interest rate differential, a one-unit or one hundred basis-point improvement in US interest rate advantage tends on average to have an effect of increasing the US real trade-weighted index by about 10\%.  Here there is more uncertainty and there are times when the effect is quite minimal. 
+
+\begin{sidewaysfigure}
+\graphicspath{{../Figures2/}}
+\centering
+\caption{Impulse Response Functions for RTWI for Specification One}
+\label{fig:IRF1}
+\includegraphics[scale=0.8]{IRF3}
+\end{sidewaysfigure}
 
 For the other major flows, there is a great deal more ambiguity.  The effect of a one-unit increase in the net cumulative bond position relative to GDP (equivalent to about \$35bn at the beginning of 2010) is close to zero over the following four quarters and slightly negative beyond that point.  The impulse response functions show a range of possible outcomes that are centred around zero.  The average effect of an innovation to the net inflow to US equities of one percentage point of GDP or about \$35bn is on average zero but the confidence intervals are wide, suggesting that sometimes the equity inflow is associated with an appreciation of the real exchange rate and sometimes with a depreciation.    The net flow associated with foreign direct investment is very similar, but slightly more positive,  to that of equities.  The action of overseas central banks, cumulative official treasuries (COT),  is associated with a positive effect of an average 4\% over the next four quarters.    Here the causation is likely to be running from the exchange rate to inflows as the overseas central banks respond to US dollar weakness by buying dollars and US government bonds to help to maintain their exchange rate pegs.  The width of the confidence intervals indicates that there are many occasions when the capital flow associated with central bank intervention does not have the desired effect and weakness in the US real trade-weighted index continues.   
 
 The overall impression is one where speculation has a much more precise and significant effect on the real exchange rate than the other capital flows.  It is clear that speculation can have a effect that is not just short-term in nature and that this can have a real effect on the economy.  A very similar pattern is noted in the impulse response functions that are derived from the other specifications (see Figures \ref{fig:IRF2} and \ref{fig:IRF3}.  The results are robust to alternative specifications.  This increases the confidence in the results as it appears that it is not the method of identifying the VAR or the restrictions that have been imposed having a major effect on the outcome.  
 
-\begin{sidewaysfigure}[h]
-\graphicspath{{../Figures2/}}
-\centering
-\caption{Impulse Response Functions for RTWI for System Three}
-\label{fig:IRF1}
-\includegraphics[scale=0.8]{IRF3}
-\end{sidewaysfigure}
 
 \subsection{Dummy variables}\label{secref:dummy}
 The time series plots are also useful for identifying special situations or extreme circumstances that may not be easily understood by the model and where it may be useful to add some \emph{dummy variables}.  These are a form of \emph{transfer function} that seek to account for particular exogenous events.  It is proposed that three dummy variables be created and their ability to improve the performance of the model assessed.  The first dummy (D1) is going to cover the period from the third quarter of 1986 to the first quarter of 1988.  This is an extreme move in the variable SPREAD1 caused by a sharp movement in Mexican interest rates. This, of course, is not needed if the SPREAD2 variable that excludes Mexican interest rates is used.  The second dummy (D2) covers the period from the second quarter of 1994 to the second quarter of 1995 to cover the shock of the increase in US interest rates and the dramatic international outflows from the US bond market.   The third dummy (D3) runs from the third quarter of 2007 to the end of 2008 and represents the disturbance caused by the financial crisis. Dummies for the dot.com boom and for the 9/11 event could also be considered.   
@@ -343,12 +308,20 @@ The are a number of different specifications that can be made to the model.  The
 
 The preferred model, according to the range of information and diagnostics outlined in Table \ref{tabref:model} is the one that does not include the current account, has four lags and uses the three dummy variables, SPREAD2 and S1.  A model with a linear trend and a constant is the one that produces the lowest values of the AIC and BIC.  The summary information on model 8 reveals that the system is stable as the roots of the autoregressive coefficients are all within the unit circle.  The dummy variables are significant. 
 
-\begin{sidewaysfigure}[h]
+\begin{sidewaysfigure}
 \graphicspath{{../Figures2/}}
 \centering
-\caption{Impulse Response Functions for RTWI for System One}
+\caption{Impulse Response Functions for RTWI for Specificatin Two}
 \label{fig:IRF2}  
 \includegraphics[scale=0.8]{IRF1}
+\end{sidewaysfigure}
+
+\begin{sidewaysfigure}
+\graphicspath{{../Figures2/}}
+\centering
+\caption{Impulse Response Functions for RTWI for Specification Three}
+\label{fig:IRF2}  
+\includegraphics[scale=0.8]{IRF2}
 \end{sidewaysfigure}
 
 \subsection{Comparison of identification methods}
@@ -404,6 +377,39 @@ The interest rate data are taken from the IMF International Financial Statistics
 
 \subsection{Data preparation}
 Therefore, there are seven main variables that are to be used in the analysis and a number of variations that can be applied to the model.  The main variables are: the cumulative current account balance per GDP (CCA); the cumulative net bond per GDP (CNB); the cumulative net equity per GDP (CNE); cumulative net foreign direct investment per GDP (CNFDI); cumulative net official treasuries per GDP (COT); the real trade-weighted index (RTWI); and the nominal trade-weighted index (NTWI); the spread between US short rates and the rates of the main trading partners (SPREAD1 includes Mexico and SPREAD2 does not); and, a measure of speculative sentiment measured in two ways (S1 and S2).  The full data set run from the first quarter of 1973 through to the first quarter of 2010.  However, the series taken from the Transactions in Long Term Securities data (TIC) only begin in the second quarter of 1977, the data on official holdings of US Treasury bonds begin in the second quarter of 1978 and the sentiment data begin in the first quarter of 1986.   
+\begin{sidewaystable}
+%this comes from the R file.  
+%pdflandscape is required to facilitate the landscape position. 
+% latex table generated in R 2.15.0 by xtable 1.7-0 package
+% Sun Jun 10 12:46:12 2012
+\begin{threeparttable}
+\caption{Important capital flows and exchange rate data}
+\begin{tabular}{p{4cm}rrrrrrrrrrr}  
+   \hline
+ & CCA & DCCA & CNB & CNE & CNFDI & COT & RTWI & SPREAD & S1 & S2 \\ 
+  \hline
+Q1 2007  & -179.02 & -5.22 & 12.92 & -0.55 & -2.99 & 0.71 & 89.89 & 2.63 & -0.08 & -0.12 \\ 
+Q2 2007  & -181.66 & -5.44 & 13.80 & 2.37 & -3.27 & 0.28 & 87.68 & 2.38 & 0.02 & 0.02 \\ 
+Q3 2007  & -184.95 & -5.21 & 7.67 & 0.27 & -3.21 & -0.31 & 85.45 & 2.00 & 0.14 & 0.23 \\ 
+Q4 2007 & -187.92 & -4.62 & 5.45 & 0.49 & -5.32 & -0.19 & 81.58 & 1.46 & 0.21 & 0.33 \\ 
+Q1 2008  & -191.90 & -4.25 & 9.53 & 2.55 & -6.07 & 2.13 & 80.40 & 0.42 & 0.15 & 0.25 \\ 
+Q2 2008  & -194.88 & -4.87 & 11.26 & -0.17 & -6.19 & 2.23 & 79.34 & -0.57 & 0.04 & 0.07 \\ 
+Q3 2008  & -200.48 & -5.32 & 8.52 & 0.22 & -6.51 & 1.10 & 82.82 & -0.73 & -0.08 & -0.14 \\ 
+Q4 2008  & -209.21 & -4.26 & 0.52 & 2.02 & -6.03 & -0.11 & 90.14 & -0.99 & -0.08 & -0.15 \\ 
+Q1 2009 & -214.35 & -2.31 & -0.36 & 1.92 & -7.46 & 0.04 & 91.40 & -0.63 & -0.08 & -0.14 \\ 
+Q2 2009  & -217.36 & -2.40 & 3.24 & 0.74 & -8.45 & 1.24 & 88.12 & -0.50 & -0.03 & -0.06 \\ 
+Q3 2009  & -219.53 & -3.21 & 4.07 & 1.13 & -9.21 & 1.89 & 84.08 & -0.52 & 0.16 & 0.25 \\ 
+Q4 2009 & -219.87 & -2.94 & 6.70 & 1.93 & -9.83 & 3.36 & 81.46 & -0.57 & 0.12 & 0.19 \\ 
+Q1 2010 & -219.52 & -2.58 & 9.95 & 1.58 & -11.48 & 2.82 & 83.65 & -0.56 & -0.10 & -0.16 \\ 
+   \hline
+\label{tab:capflow}
+\end{tabular}
+\begin{tablenotes}
+\small
+\item These are the data that are used in the analysis.   CCA is the cumulative current account normalised by GDP; DCCA is the change in the cumulative current account; CNB is the cumulative net bond position per GDP; CNE is the cumulative net equity position per GDP; CNFDI is the cumulative net flow of foreign direct investment per GDP; COT is cumulative official treasuries purchase per GDP; RTWI is the real trade-weighted index of major currencies; SPREAD is the spread between US 3 month LIBOR and a basket of equivalent overseas rates (the same currencies as the trade-weighted index); S1 and S2 are indexes of speculative sentiment based on the average speculative positions disclosed to the CFTC by buyers of currency futures relative to the US dollar (Japanese yen, Swiss Franc, Euro or Deutschemark and Pound Sterling).  S1 is the net position of speculators relative to speculative positions; S2 is the net position of speculators relative to the open interest (total of all outstanding open positions).  A positive number is a US asset, an appreciation of the exchange rate, a US interest rate advantage or speculation in favour of the US dollar. 
+\end{tablenotes}
+\end{threeparttable}  
+\end{sidewaystable}
 
 \end{appendices}
 \end{document}
