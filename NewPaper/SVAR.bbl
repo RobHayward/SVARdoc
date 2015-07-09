@@ -1,5 +1,12 @@
 \begin{thebibliography}{xx}
 
+\harvarditem[Adams-Kane et~al.]{Adams-Kane, Jia \harvardand\
+  Lim}{n.d.}{AdamsKaneGlobal}
+Adams-Kane, J., Jia, Y. \harvardand\ Lim, J.~J.  \harvardyearleft
+  n.d.\harvardyearright , `Global transmission channels for international bank
+  lending in the 2007-09 financial crisis', {\em Journal of International Money
+  and Finance} {\bf 56}.
+
 \harvarditem{Balassa}{1964}{balassa1964ppp}
 Balassa, B.  \harvardyearleft 1964\harvardyearright , `The purchasing power
   parity doctrin: A reappraisal', {\em Journal of Political Economy} {\bf
@@ -29,6 +36,11 @@ Brunnermeier, M.~K. \harvardand\ Sannikov, Y.  \harvardyearleft
   2014\harvardyearright , International credit flows and pecuniary
   externalities, Technical report, National Bureau of Economic Research.
 
+\harvarditem{Bruno \harvardand\ Shin}{2014}{Bruno2014}
+Bruno, V. \harvardand\ Shin, H.~S.  \harvardyearleft 2014\harvardyearright ,
+  Cross-border banking and global liquidity.
+\newblock mimeo, Princeton University.
+
 \harvarditem{Calvo}{1998}{CalvoSS}
 Calvo, G.~A.  \harvardyearleft 1998\harvardyearright , `Capital flows and
   capital-market crises {:} the simple economics of sudden stops', {\em Journal
@@ -45,6 +57,12 @@ Cavallo, E., Powell, A., Pedemonte, M. \harvardand\ Tavella, P.
   Which Sudden Stops should countries be most concerned about?}', {\em Journal
   of International Money and Finance} {\bf 51},~47--70.
 \newline\harvardurl{http://dx.doi.org/10.1016/j.jimonfin.2014.10.001}
+
+\harvarditem[Ceruttie et~al.]{Ceruttie, Claessens \harvardand\
+  Ratnovski}{2014}{Cerutti2014}
+Ceruttie, E., Claessens, S. \harvardand\ Ratnovski, L.  \harvardyearleft
+  2014\harvardyearright , `Global liquiity and drivers of cross-border bank
+  flows', {\em IMF Working Paper} {\bf 14}(69).
 
 \harvarditem{{CFTC}}{2012}{cot}
 {CFTC}  \harvardyearleft 2012\harvardyearright , `Us commodity futures trading
@@ -71,6 +89,11 @@ Dornbusch, R. \harvardand\ Werner, A.  \harvardyearleft 1995\harvardyearright ,
 Evans, M.~D. \harvardand\ Lyons, R.  \harvardyearleft 2002\harvardyearright ,
   `Order flow and exchange rate dynamics', {\em The Journal of Political
   Economy} {\bf 10}(1),~170--180.
+
+\harvarditem{Fund}{2001}{imfweo2001}
+Fund, I.~M.  \harvardyearleft 2001\harvardyearright , World economic outlook,
+  Technical report, International Monetary Fund.
+\newline\harvardurl{http://www.imf.org/external/pubs/ft/weo/2001/01/}
 
 \harvarditem{Gourinchas \harvardand\ Rey}{2007}{gourinchas2007world}
 Gourinchas, P.-O. \harvardand\ Rey, H.  \harvardyearleft 2007\harvardyearright
@@ -134,10 +157,6 @@ Lyons, R.~K.  \harvardyearleft 1995\harvardyearright , `Tests of the
 \harvarditem{Obstfeld \harvardand\ Rogoff}{1996}{OandR}
 Obstfeld, M. \harvardand\ Rogoff, K.  \harvardyearleft 1996\harvardyearright ,
   {\em Foundations of International Macroeconomics}, The MIT Press.
-
-\harvarditem{O'Hara}{1998}{maureen1998market}
-O'Hara, M.  \harvardyearleft 1998\harvardyearright , {\em Market Microstructure
-  Theory}, Blackwell Business.
 
 \harvarditem{Samuelson}{1964}{samuelson1964trade}
 Samuelson, P.~A.  \harvardyearleft 1964\harvardyearright , `Theoretical notes
