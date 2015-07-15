@@ -1,9 +1,9 @@
 \begin{thebibliography}{xx}
 
 \harvarditem[Adams-Kane et~al.]{Adams-Kane, Jia \harvardand\
-  Lim}{n.d.}{AdamsKaneGlobal}
+  Lim}{2015}{AdamsKaneGlobal}
 Adams-Kane, J., Jia, Y. \harvardand\ Lim, J.~J.  \harvardyearleft
-  n.d.\harvardyearright , `Global transmission channels for international bank
+  2015\harvardyearright , `Global transmission channels for international bank
   lending in the 2007-09 financial crisis', {\em Journal of International Money
   and Finance} {\bf 56}.
 
@@ -25,6 +25,10 @@ BIS  \harvardyearleft 2013\harvardyearright , `Triennial central bank survey of
 {\em BIS Statistics}  \harvardyearleft 2012\harvardyearright .
 \newline\harvardurl{http://www.bis.org/statistics/index.htm}
 
+\harvarditem{Branson}{1968}{Branson1968}
+Branson, W.~H.  \harvardyearleft 1968\harvardyearright , {\em Financial Capital
+  Flows in the US Balance of Payments}, Amsterdam.
+
 \harvarditem{Branson \harvardand\ Hill}{1971}{Branson1971}
 Branson, W.~H. \harvardand\ Hill, R.  \harvardyearleft 1971\harvardyearright ,
   `Capital movements in the {OECD} area', {\em OECD Economic Outlook}
@@ -35,6 +39,11 @@ Branson, W.~H. \harvardand\ Hill, R.  \harvardyearleft 1971\harvardyearright ,
 Brunnermeier, M.~K. \harvardand\ Sannikov, Y.  \harvardyearleft
   2014\harvardyearright , International credit flows and pecuniary
   externalities, Technical report, National Bureau of Economic Research.
+
+\harvarditem{Bruno \harvardand\ Sachs}{1982}{SachsDutch}
+Bruno, M. \harvardand\ Sachs, J.  \harvardyearleft 1982\harvardyearright ,
+  `Energy and resource allocation: A dynamic model of the '{D}utch disease'',
+  {\em Review of Economic Studies} {\bf 49},~845--859.
 
 \harvarditem{Bruno \harvardand\ Shin}{2014}{Bruno2014}
 Bruno, V. \harvardand\ Shin, H.~S.  \harvardyearleft 2014\harvardyearright ,
@@ -65,8 +74,8 @@ Ceruttie, E., Claessens, S. \harvardand\ Ratnovski, L.  \harvardyearleft
   flows', {\em IMF Working Paper} {\bf 14}(69).
 
 \harvarditem{{CFTC}}{2012}{cot}
-{CFTC}  \harvardyearleft 2012\harvardyearright , `Us commodity futures trading
-  commission: Cot'.
+{CFTC}  \harvardyearleft 2012\harvardyearright , `{US} commodity futures
+  trading commission: Cot'.
 \newline\harvardurl{http://www.cftc.gov/marketreports/commitmentsoftraders/index.htm}
 
 \harvarditem{Chris~Kubelec}{2010}{BoEdata}
@@ -80,6 +89,11 @@ Chris~Kubelec, F.~S.  \harvardyearleft 2010\harvardyearright , `The
   2012\harvardyearright .
 \newline\harvardurl{http://cpis.imf.org/}
 
+\harvarditem{Corden \harvardand\ Neary}{1982}{CordenNeary}
+Corden, W.~M. \harvardand\ Neary, J.  \harvardyearleft 1982\harvardyearright ,
+  `Booming sector and de-industrialisation in a small open economy', {\em The
+  Economic Journal} {\bf 92}(Dec),~825--848.
+
 \harvarditem{Dornbusch \harvardand\ Werner}{1995}{DornbuschSS}
 Dornbusch, R. \harvardand\ Werner, A.  \harvardyearleft 1995\harvardyearright ,
   `Currenc crises and collapses', {\em Brookings Papers in Economic Activity}
@@ -89,6 +103,10 @@ Dornbusch, R. \harvardand\ Werner, A.  \harvardyearleft 1995\harvardyearright ,
 Evans, M.~D. \harvardand\ Lyons, R.  \harvardyearleft 2002\harvardyearright ,
   `Order flow and exchange rate dynamics', {\em The Journal of Political
   Economy} {\bf 10}(1),~170--180.
+
+\harvarditem{{\em Exchange rates and capital flows}}{2004}{brookscapital}
+{\em Exchange rates and capital flows}  \harvardyearleft 2004\harvardyearright
+  , {\em European Financial Management} {\bf 10}(3),~511--533.
 
 \harvarditem{Fund}{2001}{imfweo2001}
 Fund, I.~M.  \harvardyearleft 2001\harvardyearright , World economic outlook,
