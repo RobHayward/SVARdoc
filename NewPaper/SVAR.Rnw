@@ -32,29 +32,33 @@
 \end{abstract}
 
 \section{Introduction} 
-      The rise in gross and net international capital flows that has taken place in the last 20 years has been well documented by \citet{PLane2007} and \citet{BISFX2013} and others. The evidence has accumulated that the link between international capital flows and economic development is not as prominent in practice as it appears to be in theory.  For example, even before the Global Financial Crisis (GFC), Mishkin identified the failure of capital to flow from developed to less developed countries.   \citet{HauEquity} review the evidence on the benefits of international financial flows and find it elusive.  Indeed, international capital flows can have a very disruptive influence.   This has also increased the attention on the relationships between capital flows, exchange rates and financial crisis.  \citet{CalvoSS},\citet{DornbuschSS} and \citet{KrugmanSS} have studied the effect of \emph{sudden stops} when countries suffer the financial shock of a disruption or reversal of capital inflow. The research has expanded to assess the combined influence of the \emph{sudden surge} that proceeds the outflow and to a consideration of the range of gross inflows and outflows that affect the balance of payments.  For example, \citet{cavalloSS} provides an analysis and taxonomy of stops based on the gross driving force for a net change. For example, with no other changes, a sudden stop to the gross inflow of capital will lead to a net outflow and a balance of payments deficit.  
+The rise in gross and net international capital flows that has taken place in the last 20 years has been well documented by \citet{PLane2007} \citet{BISFX2013} and others. The evidence has accumulated that the link between international capital flows and economic development is not as prominent in practice as it appears to be in theory.  For example, even before the Global Financial Crisis (GFC), Mishkin identified the failure of capital to flow from developed to less developed countries; \citet{HauEquity} review the evidence on the benefits of international financial flows and find it elusive.  Indeed, international capital flows can have a very disruptive influence.   This has also increased the attention on the relationships between capital flows, exchange rates and financial crisis.  \citet{CalvoSS},\citet{DornbuschSS} and \citet{KrugmanSS} have studied the effect of \emph{sudden stops} when countries suffer the financial shock of a disruption or reversal of capital inflow. The research has expanded to assess the combined influence of the \emph{sudden surge} that proceeds the outflow and to a consideration of the range of gross inflows and outflows that affect the balance of payments.  For example, \citet{cavalloSS} provide an analysis and taxonomy of stops based on the gross driving force for a net change: with no other changes, a sudden stop to the gross inflow of capital will lead to a net outflow and a balance of payments deficit.  
       
-This increased skepticism over the benefits of the free-flow of capital has renewed interest in capital controls.  The priocess is help by apparent evidence from Malaysia, China and Brazil that they are effective in practice.  \citet{brunnermeier2014international} develop a two-country neoclassical stochastic growth model where banking credit can be excessive and can reverse.  Capital controls or macroprudential measures can improve welfare. \citet{KatanoCapital} compares the welfare effect of capital controls and perfect capital mobility and finds that the less efficient the financial system the more likely that capital controls will be welfare enhancing. \citet{Korinek2011} makes the case for capital flows on the basis that individual investors do not internalise the increase in the size of the aggregate financial shock that individual inflows cause.  He calls for liquidity-adjusted taxes to price this externality.   
+This increased skepticism over the benefits of the free-flow of capital has renewed interest in capital controls.  This is help by apparent evidence from Malaysia, China and Brazil that they are effective in practice.  \citet{brunnermeier2014international} develop a two-country neoclassical stochastic growth model where banking credit can be excessive and can reverse.  Capital controls or macroprudential measures can improve model outcomes. \citet{KatanoCapital} compares the effect of capital controls and perfect capital mobility and finds that the less efficient the financial system the more likely that capital controls will be welfare enhancing. \citet{Korinek2011} makes the case for capital flows on the basis that individual investors do not internalise the increase in the size of the aggregate financial shock that individual inflows cause.  He calls for liquidity-adjusted taxes to price this externality.   
 
 Most of the evidence suggests that the more short-term and speculative the capital flow, the more disruptive and less beneficial:  foreign direct investment can have a positive influence and is slow to reverse; portfolio flows are less helpful and can be swiftly withdrawn; there is much less evidence on speculation. Need a reference for sudden stops and the composition of capital flows. \cite{Gregoriocapcont} assesses Chinese capita controls and finds that though they do not have a major effectve on the level of the exchange rate, they encourge capital inflows of a longer maturity.   
 % there needs to be some evidence for this. 
 
-Identifying speculative flows has been a challenge due to the scarcity of data.  A standard approach has been to use data for overseas bank lending by the Bank for International Settlements (BIS). For example, \citet{Bruno2014}, \citet{AdamsKaneGlobal} and \citet{Cerutti2014}. This has certainly be very fruitful but it is difficult within this data to distinguish between bank lending for real business projects and that for speculative activity.  A bank loan that originates from overseas is much more likely to be beneficial for the recipient country than one that is merely financing an exchange rate speculation.  
+Razin, Sadka and Yuen (1998) identify a pecking order to financial flows with FDI having the least cost in terms of risk of reversal; equity flows generally being less prone to stops and reversals and debt, particularly with short maturity, being the most risky. Roderick and Velasco study xx countries and find that those with the highest oroportion of debt are teh most likely to suffer financial flow reversal. 
+
+One of the biggest risks is the inflow and outflow that is associated with the carry-trade. The carry trade is that which tried to take advantage of the failure of Uncovered-interest-parity (UIP) to hold.  It usually involves borrowing at releatively low rates n \emph{funding currencies} such as the US dollar, Japanese yen, Swiss franc or Euro and using the proceeds to deposit in higher interest rates currencies.  This can cause disruption when large inflows become a constraint on monetary policy and even larger problems when inflows revers. 
+
+However, identifying speculative flows has been a challenge due to the scarcity of data.  A standard approach has been to use data for overseas bank lending by the Bank for International Settlements (BIS). For example, \citet{Bruno2014}, \citet{AdamsKaneGlobal} and \citet{Cerutti2014}. This has certainly be very fruitful but it is difficult within this data to distinguish between bank lending for real business projects and that for speculative activity.  A bank loan that originates from overseas is much more likely to be beneficial for the recipient country than one that is merely financing an exchange rate speculation.  
 
 There are three important contributions:  creating a structural model of international capita flows and the real exchange rate; adding speculation to the capital flows that are assessed; assessing the effect of speuclation in the model.   
 
 \section{The model}\label{secref:2}
 \subsection{Equilibrium}
-  Purchasing power parity (PPP) remains the standard  method to understand the long-run evolution of exchange rates.  \citet{Cassel1916Present} is credited with first identifying the relationship between relative prices and the exchange rate while \citet{TaylorPPP} provides a summary of the literature.  However, there is some debate about how far PPP holds and the \emph{Penn Effect}, whereby the real exchange rate appears to appreciate with economic development, suggests that this is not a stable relationship.    There is evidence that exchange rates can show persistent divergence from the `equilibrium' of PPP causing, in many cases, adverse effects on economic activity. As well as more usual effects of real exchange rate misalignment can have on domestic economies\footnote{\label{note1}From Keynes' Economic Consequences of Mr. Churchill \citep{Keynes1925Churchill} through to current debate about competitiveness in the euro area, the level of the real exchange rate has been widely regarded as an important determinant of domestic economic conditions.}. 
+Purchasing power parity (PPP) remains the standard  method to understand the long-run evolution of exchange rates.  \citet{Cassel1916Present} is credited with first identifying the relationship between relative prices and the exchange rate while \citet{TaylorPPP} provides a summary of the literature.  However, there is some debate about how far PPP holds and the \emph{Penn Effect}, whereby the real exchange rate appears to appreciate with economic development, suggests that this relationship is not stable. There is evidence that exchange rates can show persistent divergence from the `equilibrium' of PPP causing, in many cases, adverse effects on economic activity\footnote{\label{note1}From Keynes' Economic Consequences of Mr. Churchill \citep{Keynes1925Churchill} through to current debate about competitiveness in the euro area, the level of the real exchange rate has been widely regarded as an important determinant of domestic economic conditions.}. 
 
-Some of the explanations for the deviations from PPP equilibrium revolve around the way that productivity in the traded-goods sector differs from that for non-traded. See \citet{harrod1933international}, \citet{balassa1964ppp} and \citet{samuelson1964trade} amongst others for an overview of this. Alternatively, this over-valuation may also be a consequence natural resource or other endowements that improve the balance of payments and drive up the value of the exchange rate relative to the PPP valuation. 
+Some of the explanations for the deviations from PPP equilibrium revolve around the way that productivity in the traded-goods sector differs from that for non-traded. See \citet{harrod1933international}, \citet{balassa1964ppp} and \citet{samuelson1964trade} amongst others for an overview of this. Alternatively, this over-valuation may also be a consequence natural resource or other endowements that improve the balance of payments and drive up the value of the exchange rate relative to the PPP valuation.  More recently, there has also been attention on the way that capital flows can affet the real exchange rate.  
 
 \subsection{Capital Flow}\label{secref:3}
-As such, there is some attention on the way that capital flows can drive exchange rates away from equilibrium.  While the \emph{Dutch disease} refers to the effect of a natural endowment can have on the real exchange rate and competitiveness, there has also been more recent attention on the way that a developed financial sector has affected the traded goods sector of countries like the US and the UK see \citet{CordenNeary} for a formal overview of the Dutch disease and \citet{SachsDutch} for an application to the UK.  
+While the \emph{Dutch disease} refers to the effect of a natural endowment can have on the real exchange rate and competitiveness, there has also been more recent attention on the way that a developed financial sector has affected the traded goods sector of countries like the US and the UK see \citet{CordenNeary} for a formal overview of the Dutch disease and \citet{SachsDutch} for an application of this to the UK. Here the infow of capital is regarded as a key factor behind the loss of competitiveness.   
 
-However, the standard models of exchange rates and capital flows have put the emphasis on the current account. \citet{OandR} provide an overview of the standard open-economy macro model that concentrates on relative prices and the adjustment via the current account.  International financial flows can be incorporated so that there are adustments to country-specific exogenous innovations like productivity shocks through inter-temporal adjustments.  See \citet{obstfeld2000new}, \citet{OandRedux} and \citet{lane2001new} for a survey of the literature. 
+However, standard models of exchange rates have put the emphasis on the goods market. \citet{OandR} provide an overview of the most widely used open-economy macro model that concentrates on relative prices and the adjustment via the current account.  International financial flows can be incorporated so that there are adustments to country-specific exogenous innovations like productivity shocks through inter-temporal adjustments.  This involves capital flows and changes in the stock of net international investments. See \citet{obstfeld2000new}, \citet{OandRedux} and \citet{lane2001new} for a survey of the literature. 
 
-The financial account and the role that portfolio adjustment plays in the evolution of exchange rates has generally received less attention.  One of the founding models of international capital flows was presented by \citet{Branson1971}. This is a stock, equilibrium, reduced-form model where changes in capital flows depend on changes in relative interest rates and changes in the the size of the overall stock of savings.  This takes the form
+The financial account and the role that portfolio adjustment plays in the evolution of exchange rates has generally received less attention.  One of the founding models of international capital flows was presented by \citet{Branson1971}. This is a stock, equilibrium, reduced-form model where changes in capital flows depend on changes in relative interest rates and changes in the the size of the overall stock of savings.  This model takes the form
 
 \begin{equation}
 \Delta B^f = a_0 + a_1 \Delta R + a_2 \Delta R^* + a_3 \Delta E + u
@@ -62,162 +66,60 @@ The financial account and the role that portfolio adjustment plays in the evolut
 
 where $B^f$ is the share of foreign assets in the portfolio, $R$ is the domestic interest rate, $R^*$ is the overseas interest rate and $E$ is the level of risk aversion.  In this fixed-exchange-rate era, the risk on foreign assets is primarily an excahange rate realignment risk that is acccomodated, in this case, by a shift in the empirical analysis through the use of dummy variables. 
 
-The model is criticised by  \citet{Kouri1974International} and others for provding biased estimates of the elasticity of capital flows to interest rates, due to the failure to deal with the issue of endogeneity and for abstracting from the effect of the domestic bond supply on capital outflows \citet{Kouri1974International} develop a Portfolio Equilibrium model and extended the model by augmenting the traditional monetary approach to the balance of payments. Capital flows area now affected by the domestic excess demand for money and interest rates are endogenous.   The model is very effective in explaining the capital flows in Germany, Italy, the Netherlands and Australia in the perild fixed exchange rate period of 1964 to 1970.  
+The model is criticised by  \citet{Kouri1974International} and others for provding biased estimates of the elasticity of capital flows to interest rates, due to the failure to deal with the issue of endogeneity and for abstracting from the effect of the domestic bond supply on capital outflows. \citet{Kouri1974International} develop a Portfolio Equilibrium model and extend Branson by adding the traditional monetary approach to the balance of payments. Capital flows are therefore affected by the domestic excess demand for money and interest rates are endogenous.   The model is very effective in explaining the capital flows in Germany, Italy, the Netherlands and Australia in the perild fixed exchange rate period of 1964 to 1970. It is estimated as,   
+
+\begin{equation}
+TC = \Delta Y + \Delta R^* + \Delta NDA + \Delta RR, 
+\end{equation}
+
+where $TC$ are the total private capital flows, $Y$ is national income, $NDA$ are the net domestic assets of the central bank and $RR$ are the reserve requirements. In thoery the equation will also include domestic and overseas wealth and overseas income.  However, these elements have been dropped. The exchange rate is included, but in this case it is generally covered by a series of dummy variables to acccount for a change in expectations about discrete changes in the fixed peg.  
+A new practical interest in the relationship between the real exchange rate and capital flows developed at start of the millenium amidst the struggle to understand the initial weakenss of the euro against the US dollar and the related disconnect between the rise in the US current account deficit and the steady standing of the US dollar.  For example the May 2001 World Economic Outlook from the IMF highlighted the failure of the models of the current account or interest rate differentials to account for US dollar strength \citet{imfweo2001} and the December 20000 issue of the Bank of England's Financial Stability Review considered the effect of portfolio flows.  The latter highlighting the \$206.1bn turnaround in US erquity and foreign direct investment flows from an outflow of \$76.0bn in 1995-96 to an inflow of \$130.1bn in 1999-2000 as well as the mirror increase in the current account deficit \citet{BOEFSR2000}.  
+
+The increased availability of data has encouraged this interest in capital flows and the exchange rate.  Key international organisations have sought to improve the information that is being provided about international capital flows. This includes the IMF, the World Bank and the BIS \citet{website:imfportfolio}, \citet{website:worldbankdebt} and  \citet{website:bisdata}. There have also been a number of studies that have sought to use existing information to create data series that can be used to analyse the key components of international capital.  Amongst these are \citet{PLane2007} as well as \citet{BoEdata}. More detailed and complete data has allowed more attention to be devoted to capital flows and their effects as well as details like the relationship between gross and net flows (example) and valuation effects from \citet{gourinchas2007world}. This has allowed new models to be tested against  the empirical evidence.   
+
+The model used in this paper is an extension to the one used in \citet{HauEquity}.  That model concentrates on the financial account of the balance of payments and uses the microstructure idea of order-flow to account for changes in the exchange rate.  However, while the likes of  \citet{Evans2002Order}, \citet{Lyons1995Microstructure} and \citet{rime2010exchange} explain movements in currency with knowledge about market-maker and dealer orders, here the movement of international capital is the fulcrum of adjustment.
+
+On the assumption that all dividends are repatriated, Hau and Rey express the capital outflow for the equity market $(Q_t)$ as
 
 \begin{equation}
 TC = \Delta Y + \Delta R^* + \Delta NDA + \Delta RR 
 \end{equation}
 
-where $TC$ are the total private capital flows, $Y$ is national income, $NDA$ are the net domestic assets of the central bank and $RR$ are the reserve requirements. In thoery the equation will also include domestic and overseas wealth and overseas income.  However, these elements have been dropped. The exchange rate is can also be included but in this case it is generally covered by a series of dummy variables to acccount for a change in expectations.  
-
-A new interest in the relationship between the real exchange rate and capital flows developed at start of the millenium as people struggled to understand the initial weakenss of the euro against the US dollar and the related disconnect between the rise in the US current account deficit and the steady standing of the US dollar.  For example the May 2001 World Economic Outlook from the IMF highlighted the failure of the models of the current account or interest rate differentials to account for US dollar strength \citet{imfweo2001} and the December 20000 issue of the Bank of England's Financial Stability Review considered the effect of portfolio flows.  The latter highlighting the \$206.1bn turnaround in US erquity and foreign direct investment flows from an outflow of \$76.0bn in 1995-96 to an inflow of \$130.1bn in 1999-2000 as well as the mirror increase in the current account deficit \citet{BOEFSR2000}.  
-
-Since that point, the increased availability of data has encouraged this interest in capital flows and the exchange rate.  Key international organisations have sought to improve the information that is being provided about international capital flows. This includes the IMF, the World Bank and the BIS \citet{website:imfportfolio}, \citet{website:worldbankdebt} and  \citet{website:bisdata}. A number of economists have sought to use existing information to create data series that can be used to analyse the key components of international capital.  Amongst these are \citet{PLane2007} as well as \citet{BoEdata}. More detailed and complete data has allowed more attention to be devoted to capital flows and their effects as well as details like the relationship between gross and net flows (example) and valuation effects from \citet{gourinchas2007world}. This has allowed new models to be tested against  the empirical evidence.   
-
-The model used in this paper is an extension to the one used in \citet{HauEquity}.  That model concentrates on the financial account of the balance of payments and uses the microstructure idea of order-flow to account for changes in the exchange rate.  However, while the likes of  \citet{Evans2002Order}, \citet{Lyons1995Microstructure} and \citet{rime2010exchange} explain movements in currency with knowledge about market-maker and deler orders, here the movement of international capital is the fulcrum of adjustment.
-
-On the assumption that all dividends are repatriated, Hau and Rey express the capital outflow for the equity market $(Q_t)$ as
-
-\begin{equation}
-dQ_t = E_tK_t^{h*}D_t^hdt - K_t^fD_t^fdt + dK_t^fP_t^f - E_tdK_t^{h*}P_t^h
-\end{equation}
-
 where $E_t$ is the exchange rate at time $t$ expressed as foreign units of domestic currency; equity holding at time $t$ are $K_t$, divided between home equities $K_t^h$ and foreign $K_t^f$. 
+%this needs to be completed. Check paper
 
-\citet{HauEquity} only assess equity market flows with bond supplies in home and overseas assumed to be perfectly price elastic.  Interest rates are equal and exogenous; the supply of equity is fixed while the supply of foreign exchange is less than perfectly elastic.  They find that net equity flows into overseas markets are positively associated with the foreign currency appreciation and that higher overseas equity returns relative to those at home are associated with domestic currency appreciation via a capital repatriation. 
-
-This paper proposes the addition of less than elastic supply of bonds, money market instruments and real investment opportunities or expectations that the value of these assets and instruments can change.  The additions means that demand for foreign direct investment, bonds and speculative activity can now affect the foreign exchange market. In that case it would be anticipated that the net flows for all these variables will affect the exchange rate.  
-
-Note 20 closes the model.  The flow is offset by a movement of currency that is absorbed by the central bank.  
-
-In this case, international capital flows are used to explain deviations from purchasing power partiy and a vector autoregression is utilise to deal with the endogeneity problem.   The statistical difficulties that emerge when trying to estimate parameters when there is feedback from the dependent variable onto explanatory variables had already been noted. As part of their criticism of the Branson model \citet{Branson1968} and \citet{Branson1971}  \citet{Kouri} shows that a linear regression of capital flows on interest rate differentials will systematically under-estimate the sensitivity of capital flows.   A more general explanation of issues that arise when the dependent variable is endogenous is provided by Hamilton in an analysis of the estimation of the supply and demand for oranges \citet[pp. 235-238]{Hamilton}. 
+%Note 20 closes the model.  The flow is offset by a movement of currency that is absorbed by the central bank.  
 
 % Can this be used at some ponit. The two extremes of the Hau Rau model. This is a world half-way between financial autarchy where investors hold only domestic assets and where there is complete risk sharing through the use of foreign exchange derivatives and domestic and foreign equities are held in proportion to their capitalisation (50:50 in the model). 
-\subsection{Vector autoregression}
-Vector autoregression is one way of dealing with the issue of endogeneity.  The method was initially suggested by \citet{Sims1980Macroeconomics}.  An overview of developments and extensions can be found in \citet{lutkepohlvar} and \citet{Hamilton}. 
-
-The essence of the VAR is to set up a system that is made up of all the important variables, assume that they are endogenous and that there are significant lags.  Exogenous variables can be added, but these are usually restricted to things that are clearly determined outside of the system such as seasonal or special dummies, trends and constants.   The variables that will be included in the list of endogenous variables should be determined by economic theory. The lag order is eventually determined by the use of information criteria that will assess whether the addition of extra lags adds more to the explanation than it loses in terms of degrees of freedom.  
-
-\begin{subequations}
-\begin{equation}\label{primitivevarone}
-x_{t}=b_{10}+b_{12}y_t+\gamma_{11}y_{t-1}+\gamma_{12}x_{t-1}+\epsilon_{xt}, 
-\end{equation}
-
-\begin{equation}\label{primitivevartwo}
-y_{t}=b_{20}+b_{22}x_t+\gamma_{21}x_{t-1}+\gamma_{22}y_{t-1}+\epsilon_{yt},
- \end{equation}
-\end{subequations}
-
-It is assumed that $ \epsilon_{xt}$ and $\epsilon_{yt}$ are independent of each other, are normally distributed with a constant variance\footnote{Though the independence assumption appears quite onerous, it should be remembered that this is independence of innovation.  It does not mean that there is no relationship between the two variables ($x$ and $y$ here). A shock to either variable will have an effect on the other via the contemporaneous relationship (which is $b_{11}$ and $b_{21}$ in Equations \ref{primitivevarone} and \ref{primitivevartwo}).}.  To remove the endogeneity, the structural or primitive equations can be transformed so that ordinary least squares (OLS) can be utilised. 
-
-In matrix form, \ref{primitivevarone} and \ref{primitivevartwo} can be written as, 
-
-\begin{equation}
-\label{transitionvar2}
-\begin{bmatrix}
- 1 & b_{12}\\
- b_{21} & 1
-\end{bmatrix}
-\begin{bmatrix}
-x_{t}\\
-y_{t}
-\end{bmatrix}=
-\begin{bmatrix}
-b_{10}\\
-b_{20}
-\end{bmatrix}+
-\begin{bmatrix}
-\gamma_{11} & \gamma_{12}\\
-\gamma_{21} & \gamma_{22}
-\end{bmatrix}
-\begin{bmatrix}
-x_{t-1}\\
-y_{t-1}
-\end{bmatrix}+
-\begin{bmatrix}
-\epsilon_{xt}\\
-\epsilon_{yt}
-\end{bmatrix}
-\end{equation}
-
-A more general characterisation would be 
-
-\begin{equation}\label{transitionvar}
-Bx_{t}=\Gamma_{0}+\Gamma_{1}x_{t-1}+\epsilon_{t}
-\end{equation}
-
-Multiplying through by $B^{-1}$ will give the \emph{standard form of the VAR}
-
-\begin{equation}\label{standardvar}
-x_t=A_0+A_1x_{t-1}+e_t
-\end{equation}
-
-\begin{subequations}
-Now with $A_0=B^{-1}\Gamma_0$, $A_1=B^{-1}\Gamma_1$ and $e_t=B^{-1}\epsilon_t$, 
-and returning to the equivalent form
-
-\begin{equation}\label{standardvarone}
-y_t=a_{10}+a_{11}y_{t-1}+a_{12}x_{t-1}+e_{1t}\end{equation}
-
-\begin{equation}\label{standardvartwo}
-x_{t}=a_{20}+a_{21}x_{t-1}+a_{22}y_{t-1}+e_{1t}
-\end{equation}
-\end{subequations}
-
-Now the equations can be estimated with OLS because the variables are uncorrelated with the error term.  Hamilton shows that this is the equivalent to the Maximum Likelihood Estimator (MLE) \citet[p. 293]{Hamilton}.  However, though the model can be estimated with ease, because of the transformation that has been undertaken, some method must be established to deal with the problem of identification.  In general, $K(K-1)/2$ restrictions will be required, where K is the number of endogenous  variables in the VAR. 
-
+ 
 \subsection{Other models}
-A standard linear empirical excahnge rate model used by \citet{Siourounis2004Capital} finds that net US equity purchase has a stable and consistent impact on UK, German and Swiss excahnge rates; that net purchase of US or overseas bonds have not effect. A one-standard deviation shock to exchange rate purchase has the effect of a 10\% appreciation that is statistically significant for 13 months on average. Positive innovations in overseas equity retunrs are associated with short-run US dollar appreciation and equity inflow for three of the four countries. Positive shocks to US interest rates cause US appreciation, rather than the depreciation that UIP would imply. 
+\citet{brookscapital} assess the ability of portfolio and foreign direct investment to track movements in the US dollar against the Yen and the Euro. They look at the relationship between the excess returns for the US market relative to that of the Euro area as an explanation for the capital flow and exchange rate changes. They estimate a simple least-squares reduced form model where the log of the exchange rate is regressed on net inflow of government, agency and corporate bonds, net equities and net FDI. Also included are relative long and shoert term interest rates, relative economic growth rates and relative stock returns. 
 
-%Note 5 on page 4 speaks about the performance of exhange rate models. 
-
-\citet{Siourounis2004Capital} finds that bond flows are very differnet from equity flows. VAR.  Use of impulse reponose functions and variance decomposition. The naive way that the VAR is identified is rested by re-ordering the variables. There are also suggestions that the relationship between teh exchange rate and the currency have changed over time.  Hau and Rey and Siourounis split the data into two perilds; before and after 1994.  Also a breat at 2002.  Hau and Rey report that the relationship between equity flows and the exchange rate has become stronger.
-
-\citet{brookscapital} assess the ability of portfolio and foreign direct investment to track movements in teh US dollar against the Yen and the Euro. They find that net flows from Europe into US equity markets track the performance of the Euro against the US dolloar, net FDI flows are less important; the movement of the Japanese yen is more tied to conventional variables like the current account and the interest rate differential. The look at the relationship between the excess returns on the US market relative to that of the Euro area as an explanation for the capital flow. 
-
-They Estimate a simple least-squares reduced form model where the log of the exchange rate is regressed on net inflow of govvernment, agency and corporate bonds, net equities and net FDI. Also included are relative long and shoert term interest rates, relative economic growth rates and relative stock returns. For the Euro, there is some evidence that bond flows are effect, particularly when associated with govenrment activity.   There is evidence of positive correlaction between net equity flows and the US-Euro exchange rate. Consistent with other findings, there is a negative coefficient on the relative equity returns.  Investors repatriate profits? There is a positive but statistially insignificant coefficient for FDI. Long-term interet rates are an important determinant.  For the Yen, long-term itnerest rates are the most important.  Others factors are not significant. 
-
-This model suffers from being reduced form. \citet[note. 14, p 527]{brookscapital} identify this as an issue themselves. The $R^2$ in their regression never rise above 0.1.   
-
+They find that net flows from Europe into US equity markets track the performance of the Euro against the US dolloar, net FDI flows are less important; the movement of the Japanese yen is more tied to conventional variables like the current account and the interest rate differential. 
 
 Pavlova and Rigobon (2007) have a model of comovement of bond, stock and foreign exchange markets.  A two-country model suffers demand and productivity shocks. 
+%more is needed on Pavlova. 
+A standard linear empirical exchange rate model used by \citet{Siourounis2004Capital} finds that net US equity purchase has a stable and consistent impact on UK, German and Swiss excahnge rates and that net purchase of US or overseas bonds have no effect.   A vector auto-regression is used and impulse response functions (IRF) and variance decomposition are used to understand the relative improtance of difference types of capital flow.  
 
-In this paper a structural model of international capital flows and the real exchange rate is augmented with two measures of speculation that seek to capture speculative sentiment and the carry trade.  The former uses the short-term positions of speculators in the foreign exchange futures market while the latter uses the interest rate differential. A Structural Vector Autoregressive (SVAR) model is presented with naive and plausible restrictions for identification.  Impulse Repose Functions (IRF) show that innovations to speculative activity drive the US real exchange rate, while innovations to FDI and net equity flow do not have a standard effect.  Innovations to net bond flows are only significant when the sub-category of official bond purchase are assessed.  These are the flows associated with the intervention of central banks in the foreign exchange market.  
+%This should go in the discussion of identification,.  The naive way that the VAR is identified is rested by re-ordering the variables. This shooul go in the later discussion.  There are also suggestions that the relationship between teh exchange rate and the currency have changed over time.  Hau and Rey and Siourounis split the data into two perilds; before and after 1994.  Also a breat at 2002.  Hau and Rey report that the relationship between equity flows and the exchange rate has become stronger.
 
-As such, the paper provides additional support to the evidence that international capital flows can drive the real exchange rate, it narrows down this effect to the more speculative activity and it provides some evidence that official intervention in the foreign exchange market to counter speculative activity can be beneficial.  The rest of the paper is organised as follows:  Section \ref{secref:2} surveys the literature, Section \ref{secref:3} presents the model; Section \ref{secref:4} outlines the results and Section \ref{secref:5} concludes. 
+A one-standard deviation shock to exchange rate purchase has the effect of a 10\% appreciation that is statistically significant for 13 months on average. Positive innovations in overseas equity returns are associated with short-run US dollar appreciation and equity inflow for three of the four countries. Positive shocks to US interest rates cause US appreciation, rather than the depreciation that UIP would imply. 
 
-\section{Data and their preparation}
-A full report on the data and the preparation is provided in Appendix \ref{app1}.  The current account data are taken from the US balance of payments that are released by the Bureau of Labor Statistics.  The data on capital flows are derived from a number of sources. The foreign direct investment data are from the US balance of payuments figures.   The US Treasury has released a monthly report providing significant detail about the changes in the holding of long-term securities amongst US and overseas investors. This report is part of a series of reports under the Treasury International Capital Department (commonly known as the TIC data). 
-See \citet[p. 29]{Siourounis2004Capital} and the US Treasury \citet{TIC} for more details on the data.  A series for gross flows are constrcuted for bonds and equities in the following way. 
+In this paper a structural model of international capital flows and the real exchange rate based on \citet{Hauequity} is augmented with two measures of speculation that seek to capture firstly momentum-based speculative sentiment and secondly the carry trade.  The former uses the short-term positions of speculators in the foreign exchange futures market while the latter uses the interest rate differential. A Structural Vector Autoregressive (SVAR) model addresses the issue of endogeneity as in \citet{Siourounis2004Capital} with plausible restrictions added for identification.  Impulse Repose Functions (IRF) show that innovations to speculative activity drive the US real exchange rate, while innovations to FDI and net equity flow do not have a standard effect.  Innovations to net bond flows are only significant when the sub-category of official bond purchase are used.  These are the flows associated with the intervention of central banks in the foreign exchange market.  
 
-\begin{equation}
-NB= NUSB + NFB
-\end{equation}
-Where NB is net bonds; NUSB is net US bonds; NFB is net foreign bonds. 
-\begin{equation}
-NUSB = NT + NA + NC
-\end{equation}
-NT is net treasuries; NA is net agency securities; and, NC is net corporate bonds.  The net position is calculated by subtracting the gross sale of securities by overseas investors to US residents from the gross purchase of securities from overseas investors from US residents. 
+The paper provides additional support to the evidence that international capital flows can drive the real exchange rate, it narrows down this effect to the more speculative activity and it provides some evidence that official intervention in the foreign exchange market to counter speculative activity can be beneficial.  The rest of the paper is organised as follows:  Section \ref{secref:2} surveys the literature, Section \ref{secref:3} presents the model; Section \ref{secref:4} outlines the results and Section \ref{secref:5} concludes. 
 
-\begin{equation}
-NE = NUSE + NFE
-\end{equation} 
-Where NE is net equity; NUSE is net US equities; NFE is net foreign equities.  As before, the net position is the difference between gross purchase and gross sales by US residents.  
+\subsection{The model}
+There are two methodological issues to be addressed:  the forcing variables in the model and the endogenedity.  \citet{HauEquity} only assess equity market flows. Bond supplies in home and overseas are assumed to be perfectly price elastic.  Rather than impose these restrictions, this paper proposes to allow the exchange rate to be affected by a variety of international portfolio flows.  
+The Brooks model suffers from being reduced form and therefore failing to deal wthi the issue of endogeneity.  This is something that is acknowledged by the authors \citet[note. 14, p 527]{brookscapital}. The $R^2$ in their regression never rise above 0.1.  This paper proposes the addition of less than elastic supply of bonds, money market instruments and real investment opportunities.  The additions means that demand for foreign direct investment, bonds and speculative activity can now affect the foreign exchange market. In that case it would be anticipated that the net flows for all these variables will affect the exchange rate.  
 
-%I want to add a table for the TIC data s=to show the outline of what is available
-The other data that are available from the US Treasury are details on the transactions carried out by international monetary authorities.  These \emph{official} institutions are mostly central banks but can also include the IMF and other quasi-official organisations.  These data provide an insight to the activities of central banks as they take action in teh foreign exchange market to fix their currencies \citet{TIC}.
+The statistical difficulties that emerge when trying to estimate parameters when there is feedback from the dependent variable onto explanatory variables had already been noted. As part of their criticism of the Branson model \citet{Branson1968} and \citet{Branson1971}  \citet{Kouri} shows that a linear regression of capital flows on interest rate differentials will systematically under-estimate the sensitivity of capital flows.   A more general explanation of issues that arise when the dependent variable is endogenous is provided by Hamilton in an analysis of the estimation of the supply and demand for oranges \citet[pp. 235-238]{Hamilton}. In this case, international capital flows are used to explain deviations from purchasing power partiy and a vector autoregression is utilise to deal with the endogeneity problem.
 
-The first speculative money market series are compiled to account for speculative sentiment, momentum or technical tracing flows.  The series for the speculative flows are the positions held by speculative funds in the main currency futures markets in the US.  These are positions that must be reported to the US derivative regulator, the US Commodity Futures Trading Commission (CFTC).  The positions are held in foreign currency vs the US dollar.  The key contracts are Canadian Dollar (contract of 100,000 Canadian dollars), UK Sterling (contract of 62,500 sterling), Japanese yen (12,500,000 yen), Swiss franc (125,000 CHF) and Euro (125,000 EUR) or Deutschmark before the introduction of ECU trading.  The data and explanation about the differentiation between commercial (hedgers) and non-commercial (speculators) is available from the CFTC web site \citet{cot}.   The outstanding long or short speculative positions are amalgamated across currencies and normalised to the total number of speculative positions (S1) or the total open interest positions (S2) to get an overall measure of sentiment.  Once the two series are constructed, they are multiplied by -10 to make something easier to work with and to ensure that a speculative inflow to the US is a positive number. 
+Vector autoregression is one way of dealing with the issue of endogeneity.  The method was initially suggested by \citet{Sims1980Macroeconomics}.  An overview of developments and extensions can be found in \citet{lutkepohlvar} and \citet{Hamilton}. 
 
-The second speculative series is based on the activity of the \emph{carry-trade} which is an attempt to take advantage of a breakdown in uncovered interest parity (UIP).  See citations requred. The interest rate data are taken from the IMF International Financial Statistics.  The interest rates are short-term interest rates and usually 'money market rates' where available.  The three month rate is used. An index of international money rates is compiled and compared to the equivalent US interest rate.
-
-Therefore, there are seven main variables that are to be used in the analysis and a number of variations that can be applied to the model.  The main variables are: the cumulative current account balance per GDP (CCA); the cumulative net bond per GDP (CNB); the cumulative net equity per GDP (CNE); cumulative net foreign direct investment per GDP (CNFDI); cumulative net official treasuries per GDP (COT); the real trade-weighted index (RTWI); and the nominal trade-weighted index (NTWI); the spread between US short rates and the rates of the main trading partners (SPREAD1 includes Mexico and SPREAD2 does not); and, a measure of speculative sentiment measured in two ways (S1 and S2).  The full data set run from the first quarter of 1973 through to the first quarter of 2010.  However, the series taken from the Transactions in Long Term Securities data (TIC) only begin in the second quarter of 1977, the data on official holdings of US Treasury bonds begin in the second quarter of 1978 and the sentiment data begin in the first quarter of 1986.   
-
+The essence of the VAR is to set up a system that is made up of all the important variables, assume that they are endogenous and that there are significant lags.
+The variables used here are net equity flows, net bond flows, net foreign direct investment, net official purchase and two variable for speculative activity.  The FDI data come from the US balance of payments, net portfolio flows are from the US Treausury Internatioanl Capital data, specuative momentum is based on CFTC specualtive positions and the interest rate differential is a proxy for the carry-trade. Fuller details of the variables, their source are in the Appendix 1.  
 A sample of the data are presented in Table \ref{tab:capflow}.   The capital flow and current account are percentage of GDP, the trade-weighted exchange rate are indices, interest-rate spreads are percentage point differences and the speculative sentiment are a percentage of total derivative positions. The main thing to note is that the current account to GDP ratio is substantially larger than any of the other series.  
-
-
-Table \ref{tab:capflow} and Figure \ref{fig:timeseries} provide an overview of the data that will be used in the capital flow model.   
-
 %it was [h!] now
 \begin{figure}[t]
 \graphicspath{{../Figures2/}}
@@ -226,20 +128,38 @@ Table \ref{tab:capflow} and Figure \ref{fig:timeseries} provide an overview of t
 \label{figref:ts}
 \includegraphics[scale=0.8]{timeseries}
 \end{figure}\label{fig:timeseries}
+>>>>>>> a0a7a43c0d087d6d778facbc7c5764c2bd1a06cd
 
-Figure \ref{fig:timeseries} also shows the significant changes that have taken place amongst capital flows.  A number of these warrant more attention.  For example, the scale of the fluctuation in net bond flows becomes apparent.   Cumulative net bond flows increase steadily through the period from 1995 from a fairly flat position to reach a peak of close to 15 percent of GDP at the eve of the financial crisis.  With a nominal GDP of \$3.5trillion in the first quarter of 2010, this is a net increase of around \$500 bn in the space of 10 years. 
+\citet{HauEquity} only assess equity market flows with bond supplies in home and overseas assumed to be perfectly price elastic.  Interest rates are equal and exogenous; the supply of equity is fixed while the supply of foreign exchange is less than perfectly elastic.  They find that net equity flows into overseas markets are positively associated with the foreign currency appreciation and that higher overseas equity returns relative to those at home are associated with domestic currency appreciation via a capital repatriation. 
 
-%\subsection{Dummy variables}\label{secref:dummy}
-%The time series plots are also useful for identifying special situations or extreme circumstances that may not be easily understood by the model and where it may be useful to add some \emph{dummy variables}.  These are a form of \emph{transfer function} that seek to account for particular exogenous events.  It is proposed that three dummy variables be created and their ability to improve the performance of the model assessed.  The first dummy (D1) is going to cover the period from the third quarter of 1986 to the first quarter of 1988.  This is an extreme move in the variable SPREAD1 caused by a sharp movement in Mexican interest rates. This, of course, is not needed if the SPREAD2 variable that excludes Mexican interest rates is used.  The second dummy (D2) covers the period from the second quarter of 1994 to the second quarter of 1995 to cover the shock of the increase in US interest rates and the dramatic international outflows from the US bond market.   The third dummy (D3) runs from the third quarter of 2007 to the end of 2008 and represents the disturbance caused by the financial crisis. Dummies for the dot.com boom and for the 9/11 event could also be considered.   
+Table \ref{tab:capflow} and Figure \ref{fig:timeseries} provide an overview of the data that will be used in the capital flow model.     There are three exogenous dummy variables that are designed to account for periods of unusual activity.  The first dummy (D1) is going to cover the period from the third quarter of 1986 to the first quarter of 1988.  This is an extreme move in the variable SPREAD1 caused by a sharp movement in Mexican interest rates. This, of course, is not needed if the SPREAD2 variable that excludes Mexican interest rates is used.  The second dummy (D2) covers the period from the second quarter of 1994 to the second quarter of 1995 to cover the shock of the increase in US interest rates and the dramatic international outflows from the US bond market.   The third dummy (D3) runs from the third quarter of 2007 to the end of 2008 and represents the disturbance caused by the financial crisis. 
+
+The \emph{primative} version of the VAR is presented in Figure \ref{transitionvar} 
+
+\begin{equation}\label{transitionvar}
+Bx_{t}=\Gamma_{0}+\Gamma_{1}x_{t-1}+\epsilon_{t}
+\end{equation}
+
+where $x_t$ is a vector of the endogenous variables, $\epsilon_t$ is a matrix of innovations with teh assumption that non-diagonal covariance elements are zero and normally distributed with a constant variance\footnote{Though the independence assumption appears quite onerous, it should be remembered that this is independence of innovation.  It does not mean that there is no relationship between the two variables ($x$ and $y$ here). A shock to either variable will have an effect on the other via the contemporaneous relationship (which is the matrix $B$ in Equation \ref{transitionvar}.}, and $B$ is a matrix of contemporaneous correlatons. 
+
+To remove the endogeneity, the structural or primitive equations can be transformed so that ordinary least squares (OLS) can be utilised. 
+
+Multiplying through by $B^{-1}$ will give the \emph{standard form of the VAR}
+
+\begin{equation}\label{standardvar}
+x_t=A_0+A_1x_{t-1}+e_t
+\end{equation}
+
+Now the equations can be estimated with OLS because the variables are uncorrelated with the error term.  Hamilton shows that this is the equivalent to the Maximum Likelihood Estimator (MLE) \citet[p. 293]{Hamilton}.  However, though the model can be estimated with ease, because of the transformation that has been undertaken, some method must be established to deal with the problem of identification.  This is because the original coefficients have been transformed.  Now with $A_0=B^{-1}\Gamma_0$, $A_1=B^{-1}\Gamma_1$ and $e_t=B^{-1}\epsilon_t$,  In general, $K(K-1)/2$ restrictions will be required, where K is the number of endogenous  variables in the VAR.
 
 %A transfer function could also be used to account for a structural shift in the model at some point.  In this case, rather than turning the dummy on for the period of disturbance and then off again when the usual circumstances have come to an end, the transfer function is maintained.  There are no obvious breakpoints that would suggest a clear chance of a structural change.  However, it is possible to check for structural breaks at points like the introduction of the North American Free Trade Agreement (NAFTA) in 1995, the introduction of the Euro in 1999 or September 11.  This would also be one way to deal with the real risk of parameter instability. 
 
 
+
 % the changing nature of capital flows may also be addressed. This is something that is assessed in Hau and Rey and in Siourounis. They have a break point at 2004.  Does the model change at this date?  Has speculation become more signficant?  
 
-
 \subsection{Identification}\label{secref:ident}
-There are a wide variety of restrictions that can be placed on Equations \ref{primitivevarone} and \ref{primitivevartwo}. The Sims-Bernanke approach is adopted here. Sims proposed a six-variable VAR including variables like GNP, money supply, interest rates, inflation, investment and unemployment and made 17 restrictions that the system was \emph{over-identified}, meaning that there are more equations than unknown coefficients to be estimated \citet{Sims1986}. While Bernanke makes a number of explicit restrictions to support his assertion that the relationship between money and income is intermediated by credit rather than being the result of money illusion or causality running from income to money \citet{Bernanke1986}.  
+There are a wide variety of restrictions that can be placed on Equation \ref{transitionvar}.  The Sims-Bernanke approach is adopted here. Sims proposed a six-variable VAR including variables like GNP, money supply, interest rates, inflation, investment and unemployment and made 17 restrictions that the system was \emph{over-identified}, meaning that there are more equations than unknown coefficients to be estimated \citet{Sims1986}. While Bernanke makes a number of explicit restrictions to support his assertion that the relationship between money and income is intermediated by credit rather than being the result of money illusion or causality running from income to money \citet{Bernanke1986}.  
 
 There are are seven variables in the model being estimated. This means that  twenty one restrictions ($K(K-1)/2$) are needed for system identification.     It is now possible to consider the economic arguments for restrictions and to impose these on the model.  For example, in this paper, there will be seven variables which can be represented by seven equations along the lines of Equations \ref{primitivevarone} and \ref{primitivevartwo} where there is a seven-by-seven B matrix like that in Equation \ref{transitionvar} and Table \ref{tabref:svar1} is the first matrix of Equation \ref{transitionvar2}.  Table \ref{tabref:svar1} gives an overview of of the restrictions suggested.  
 

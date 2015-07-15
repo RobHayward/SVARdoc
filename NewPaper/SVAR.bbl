@@ -22,6 +22,25 @@ BIS  \harvardyearleft 2013\harvardyearright , `Triennial central bank survey of
 {\em BIS Statistics}  \harvardyearleft 2012\harvardyearright .
 \newline\harvardurl{http://www.bis.org/statistics/index.htm}
 
+\harvarditem{Branson}{1968}{Branson1968}
+Branson, W.~H.  \harvardyearleft 1968\harvardyearright , {\em Financial Capital
+  Flows in the US Balance of Payments}, Amsterdam.
+
+\harvarditem{Branson \harvardand\ Hill}{1971}{Branson1971}
+Branson, W.~H. \harvardand\ Hill, R.  \harvardyearleft 1971\harvardyearright ,
+  `Capital movements in the {OECD} area', {\em OECD Economic Outlook}
+  (Occasional Studies).
+
+\harvarditem{Bruno \harvardand\ Sachs}{1982}{SachsDutch}
+Bruno, M. \harvardand\ Sachs, J.  \harvardyearleft 1982\harvardyearright ,
+  `Energy and resource allocation: A dynamic model of the '{D}utch disease'',
+  {\em Review of Economic Studies} {\bf 49},~845--859.
+
+\harvarditem{Bruno \harvardand\ Shin}{2014}{Bruno2014}
+Bruno, V. \harvardand\ Shin, H.~S.  \harvardyearleft 2014\harvardyearright ,
+  Cross-border banking and global liquidity.
+\newblock mimeo, Princeton University.
+
 \harvarditem{Calvo}{1998}{CalvoSS}
 Calvo, G.~A.  \harvardyearleft 1998\harvardyearright , `Capital flows and
   capital-market crises {:} the simple economics of sudden stops', {\em Journal
@@ -30,6 +49,20 @@ Calvo, G.~A.  \harvardyearleft 1998\harvardyearright , `Capital flows and
 \harvarditem{Cassel}{1916}{Cassel1916Present}
 Cassel, G.  \harvardyearleft 1916\harvardyearright , `The present situation of
   the foreign exchanges', {\em Economic Journal} {\bf 26}(23),~319--323.
+
+\harvarditem[Cavallo et~al.]{Cavallo, Powell, Pedemonte \harvardand\
+  Tavella}{2015}{cavalloSS}
+Cavallo, E., Powell, A., Pedemonte, M. \harvardand\ Tavella, P.
+  \harvardyearleft 2015\harvardyearright , `{A new taxonomy of Sudden Stops:
+  Which Sudden Stops should countries be most concerned about?}', {\em Journal
+  of International Money and Finance} {\bf 51},~47--70.
+\newline\harvardurl{http://dx.doi.org/10.1016/j.jimonfin.2014.10.001}
+
+\harvarditem[Ceruttie et~al.]{Ceruttie, Claessens \harvardand\
+  Ratnovski}{2014}{Cerutti2014}
+Ceruttie, E., Claessens, S. \harvardand\ Ratnovski, L.  \harvardyearleft
+  2014\harvardyearright , `Global liquiity and drivers of cross-border bank
+  flows', {\em IMF Working Paper} {\bf 14}(69).
 
 \harvarditem{{CFTC}}{2012}{cot}
 {CFTC}  \harvardyearleft 2012\harvardyearright , `Us commodity futures trading
@@ -46,6 +79,11 @@ Chris~Kubelec, F.~S.  \harvardyearleft 2010\harvardyearright , `The
 {\em Coordinated Portfolio Investment Survey}  \harvardyearleft
   2012\harvardyearright .
 \newline\harvardurl{http://cpis.imf.org/}
+
+\harvarditem{Corden \harvardand\ Neary}{1982}{CordenNeary}
+Corden, W.~M. \harvardand\ Neary, J.  \harvardyearleft 1982\harvardyearright ,
+  `Booming sector and de-industrialisation in a small open economy', {\em The
+  Economic Journal} {\bf 92}(Dec),~825--848.
 
 \harvarditem{Dornbusch \harvardand\ Werner}{1995}{DornbuschSS}
 Dornbusch, R. \harvardand\ Werner, A.  \harvardyearleft 1995\harvardyearright ,
@@ -75,6 +113,10 @@ Harrod, R.  \harvardyearleft 1933\harvardyearright , {\em International
 Hau, H. \harvardand\ Rey, H.  \harvardyearleft 2006\harvardyearright ,
   `Exchange rates, equity prices and capital flows', {\em Review of Financial
   Studies} {\bf 19}(1),~273 -- 317.
+
+\harvarditem{Keynes}{1925}{Keynes1925Churchill}
+Keynes, J.~M.  \harvardyearleft 1925\harvardyearright , {\em The Economic
+  Consequences of Mr. Churchill}, L. and V. Woolf.
 
 \harvarditem{Korinek}{2011}{Korinek2011}
 Korinek, A.  \harvardyearleft 2011\harvardyearright , `Hot money and serial
@@ -109,6 +151,11 @@ Lyons, R.~K.  \harvardyearleft 1995\harvardyearright , `Tests of the
   microstruture hypothesis in the foreign exchange market', {\em Journal of
   Financial Economics} {\bf 39}(2-3),~321--351.
 
+\harvarditem{Obstfeld \harvardand\ Rogoff}{1995}{OandRedux}
+Obstfeld, M. \harvardand\ Rogoff, K.  \harvardyearleft 1995\harvardyearright ,
+  `{Exchange Rate Dynamics Redux}', {\em The Journal of Political Economy} {\bf
+  103}(3),~624--660.
+
 \harvarditem{Obstfeld \harvardand\ Rogoff}{1996}{OandR}
 Obstfeld, M. \harvardand\ Rogoff, K.  \harvardyearleft 1996\harvardyearright ,
   {\em Foundations of International Macroeconomics}, The MIT Press.
@@ -117,10 +164,6 @@ Obstfeld, M. \harvardand\ Rogoff, K.  \harvardyearleft 1996\harvardyearright ,
 Obstfeld, M. \harvardand\ Rogoff, K.  \harvardyearleft 2000\harvardyearright ,
   `New directions for stochastic open economy models', {\em Journal of
   international economics} {\bf 50}(1),~117--153.
-
-\harvarditem{O'Hara}{1998}{maureen1998market}
-O'Hara, M.  \harvardyearleft 1998\harvardyearright , {\em Market Microstructure
-  Theory}, Blackwell Business.
 
 \harvarditem[Rime et~al.]{Rime, Sarno \harvardand\
   Sojli}{2010}{rime2010exchange}
