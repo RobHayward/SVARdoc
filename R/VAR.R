@@ -17,6 +17,7 @@ info
 #Each of these can be tried with and without the dummies.
 # Model selection var1 and va2
 # Two models var1 is original, var2 has spread 2 and S2. 
+# The dum includes the three dummies, D4 is the 1994 break, D5 is the 1992 break 
 Var1<-VAR(da,p=4, type='both',season=NULL, exog=dum)
 logLik(Var1)
 summary(Var1)
@@ -144,6 +145,7 @@ var1.norm<-normality.test(Var1,multivariate.only=FALSE)
 var1.norm
 plot(var1.arch)
 
+
 #Test Granger Causality--------------
 
 #change the variable to get the grager causality
@@ -154,9 +156,10 @@ var1.cause$Instant
 #the variables are changed to show the effect of a shock on each 
 #impulse to the responding exchange rate
 
-fevd.var6<-fevd(Var6)
-plot(fevd.var6)
-fevd.var6$CNB
+fevd.var1<-fevd(Var1)
+plot(fevd.var1)
+fevd.var1$CNB
+fevd.var1$RTWI
 # Plot cumsum of coefficients---------------
 pdf("stab.pdf", paper= "a4", width = 9, height = 11, title = "Stability test")
 par(mfcol=c(3,2), oma = c(0,0,0,0))
