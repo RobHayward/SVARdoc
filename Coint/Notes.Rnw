@@ -1,0 +1,29 @@
+\documentclass{article}
+\title{Cointegration tests with capital flow data}
+\author{Rob Hayward}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+Testing for cointegration of the series.  For the F-Test, that the coefficient on the lagged difference of the dependent variable and the coefficient on the It appears that the null of a unit root cannot be rejected for CNB, RTWI, Spread2. It is rejected at the 5\% level for CNE, CFDI, COT and S1.  Therefore, it appears that the former should be introduced in first difference. 
+
+According to the results from the "Test type: maximal eigenvalue statistic (lambda max), with linear trend in cointegration", there are 3 or 4 cointegrating realtionships.  
+
+
+The next step would be to use the cajorls function to estimate an errror correction model. The results of this activity are shown in the following table.
+
+\begin{tabular}{l | r r r r}
+test  & 10pct   &   5pct &   1pct & test stat\\
+\hline
+r <= 6 &   1.91 &  6.50  & 8.18   & 11.65\\
+r <= 5 &  13.07 & 15.66  & 17.95  & 23.52\\
+r <= 4 &  31.44 & 28.71  & 31.52  & 37.22\\
+r <= 3 &  59.99 & 45.23  & 48.28  & 55.43\\
+r <= 2 & 106.41 & 66.49  & 70.60  & 78.87\\
+r <= 1 & 168.18 & 85.18  & 90.39  & 104.20\\
+r = 0  & 251.31 & 118.99 & 124.25 & 136.06\\
+\end{tabular}
+
+This suggests that there are three or four conintegrating variables.  The results are the same no matter what the combination that is adopted.  
+
+\end{document}
