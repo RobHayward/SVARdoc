@@ -3,6 +3,7 @@
 head(da)
 # THis will select the variables that are used. 
 da <- da[,c(3:7,9,11)]
+head(da)
 info<-VARselect(da,lag.max=8,type='t')
 info
 #if you want turn list into dataframe and xtable for la tex

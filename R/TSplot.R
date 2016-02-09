@@ -12,3 +12,4 @@ plot(dt[,2], ylab="Official Treasuries to GDP", main="Change in Current Account"
 plot(dt[,4], ylab="Official Treasuries to GDP", main="US Net Equity Flow")
 plot(dt[,5], ylab="Official Treasuries to GDP", main="US Net FDI Flow")
 plot(dt[,6], ylab="Official Treasuries to GDP", main="Official Treasuries to GDP")
+

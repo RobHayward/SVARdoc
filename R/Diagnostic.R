@@ -1,11 +1,11 @@
 require(xtable)
 head(da)
 # change i for column number
-i <- 1
+i <- 4
 da <- da[,c(3:7,9,11)]
 M <- data.frame(NA)
 info<-VARselect(da,lag.max=8,type='t')
-Var1<-VAR(da,p=4, type='both',season=NULL, exog=dum)
+Var1<-VAR(da,p=4, type='both',season=NULL)
 resid1<-data.frame(resid(Var1))
 Var1.ser<-serial.test(Var1,lags.pt=8,type="ES")
 Var1.arch<-arch.test(Var1,lags.multi=4, multivariate.only=FALSE)

@@ -64,4 +64,14 @@ dum<-cbind(da$D1,da$D2, da$D3)
 #Any other dummies?  Maybe look at the residuals to see if anything is required.
 #One possibility would be the dot.com burst.  Check equity and FDI flow.
 colnames(dum)<- c("D1", "D2", "D3")
+# maybe update to include new dummy.  Hau and Rey have breaks at  
+# 1994. Assuming first quarter, these would be row 34 onwards for 1994
+# that would be 66 for 2002.  This could be tried. 
+# 
+da$D4 = 0
+da$D4[c(34:length(da$D4))] = 1
+da$D5 = 0
+da$D5[c(66:length(da$D5))] = 1
+D4 <- da$D4
+D5 <- da$D5
 

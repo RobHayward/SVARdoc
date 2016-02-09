@@ -1,0 +1,121 @@
+\documentclass{hitec}
+\usepackage{amsmath}
+\usepackage[colorlinks = true, citecolor = blue, linkcolor = blue]{hyperref}
+\author{Rob Hayward}
+\title{Portfolio balance model} 
+\begin{document}
+\maketitle
+\section{IMF Blanchard}
+This is from \href{http://www.imf.org/external/pubs/cat/longres.aspx?sk=43090
+.0}{Blanchard paper}. This is in citulike. 
+
+Tne general model is 
+\begin{equation}
+GPKI_{j,t} - GPKO_{j,t} + FXI_{j,t} +CA_{j,t} = 0
+\end{equation}
+
+Each of the main components is determined by 
+
+\begin{subequations}
+\begin{equation}
+GPKI_{j,t} = \alpha (i_{j,t} - i^*_t - e_{j,t} +Ee_{j, t+1}) + z_t
+\end{equation}
+\begin{equation}
+GPKO_{j,t} = -\beta (i_{j,t} - i^*_t - e_{j,t} + Ee_{j,t+1}) + \rho z_t
+\end{equation}
+\end{subequations}
+
+where $i_{j,t}$ is the domestic interest rate, $i^*_t$ is the overseas interest rate, $e_{j,t}$ is the $e_{j,t}$ is the exchange rate and $z_t$ is a set of exgenous variables that drive capital flows (such as risk appetite). 
+
+The current account is assumed to be a linear function of the exchange rate so that, 
+\begin{equation}
+CA_t = -\gamma e_{j,t}
+\end{equation} 
+with $\gamma \leq 0$.  
+
+Parameters $\alpha$ and $\beta$ are parameters that measure the sensitivity of capital flows to return differnetials. These are expected to be positive.   
+
+The parameter $\rho$ measures how sensitive domestic investors are to global financial shocks relative to international (normalised to one). In general it is believed (and evidence is supportive) that $\rho \leq 0$ as repatriation in the event of an increase in risk aversion means that a reduction in gross outflow offset the effect of a reduction in gross inflow.  
+
+Central bank activity is modelled as 
+\begin{subequations}
+\begin{equation}\label{eqref:cb1}
+i_{j.t} - i^*_t = -de_{j,t}
+\end{equation}
+\begin{equation}\label{eqref:cb2}
+FXI_{j,t} = -(1+\rho)\phi z_t
+\end{equation}
+\end{subequations}
+with parameter $d$ in Equation \ref{eqref:cb1} the exchange rate policy (which could be negative) and $\phi$ in Equation \ref{eqref:cb2} as the proportionate (offset) response to exogenous net private capital flows.  
+
+It is assumed that exogenous capital flows ($z_t$) follow an AR process with a parameter $\Phi$. 
+
+It is possible to asses the way that intervention can affect the way that capital flows impact the economy.  For example, Figure \ref{fig:capflow} shows the effect of different levels of intervention when there are differences in the way that shocks to exogenous capital flows affect gross inflows and gross outflows. 
+
+<<capflow, fig.height=4.5, echo = FALSE>>=
+# PB model from blanchard
+# intervention can offset from none to all of the capital inflow
+int = seq(0, 1, 0.1)
+# starting point for effect of capital flow on exchange rate
+rho = 1
+# gross outflows respond one-to-one with inflows when confronted by shocks. 
+a = b = 0.5
+# Effect of growss inflows and gross outflows on the exchange rate. 
+w = 0.2
+# AR to exogenous capital flows (z)
+g = 0.2
+# sensitivity of current account to exchange rate
+d = 0
+# central bank response to overseas-domestic interest rate differential.
+e <- (1 + rho)*(1 - int)/((a + b)*(1 - d - w) + g)
+plot(int, e, type = 'l', main = "Effect of intervention when domestic risk
+     aversion changes", lty = 1)
+rho = 0
+e <- (1 + rho)*(1 - int)/((a + b)*(1 - d - w) + g)
+lines(int, e, type = 'l', col = "blue", lty = 2)
+rho = -1
+e <- (1 + rho)*(1 - int)/((a + b)*(1 - d - w) + g)
+lines(int, e, type = 'l', col = "red", lty = 4)
+legend = legend("topright", c("rho = 1", "rho = 0", "rho = -1"), 
+                col = c("black", "blue",  "Dark Green"), 
+                lty = c(1, 2, 4)) 
+@
+This shows that intervention tends to offset the effect of exogenous capital flows as it tends towards complete offset (1).  This depends on how much gross outflows are affected by the same factors that affect the inflows.  
+
+it would be good to look at some other changes to the parameters to see what happenes. 
+
+\section{Gabaix and Maggiori}
+This paper is on citulike.  International Liquidity and exchange rate dynamics.
+
+This is a theory of exchange rate determination basedo on capital flows in imperfect international financial markets. The model gives a justification for welfare improvements from foreign exchange intervention and from taxes on capital flows. Exchange rates are volatile and largely disconected from international financial markets. Global shifts in the international supply and demand for assets result in large capital flows that are intermediated by the global financial system. 
+
+In this model, the exchange rate does not act as the shock absorber as in the traditioanal role whereby a depreciation can re-direct demand but can be a force to trasmit financial shocks. 
+
+There is another paper, Bacchetta, Phillipe and Eric Van Wincoop, 2010, Infrequent portfolio Decisions: A solution to the forward discount puzzle, American Economic Review, 100(3), 870-878.
+
+In the basic gammer model, financiers intermediate the capital flows caused by the result of households' investment decision in domestic bonds. Intermediation is imperfect and there is a downward demadn curve for risk-taking. 
+
+%Household derive utility from the consumption of goods. 
+%\begin{equation}
+%E[\theta_0 ln C_0 + \beta \theta_1 ln C_1)]
+%end{equation}
+
+%$C_t \equiv [(C_{NT,t})^{\Chi}]
+This model is half way between the microstructure and the long-run PPP models that are based on adjustment to trade. The missing link is a speculative one that will systematically try to take advantage of the breakdown in UIP and will have waves of positive and negative sentiment about specific currencies. These two factors are not modelled.  The UIP is probably due to ability to bare risk and the second is some random variable. 
+
+The financiers' demand for Dollar bonds relative to Japanese yen bonds is 
+\begin{equation}
+Q_0 = \frac{1}{\Gamma} \epsilon \left [e_o - e_1 \frac{R^*}{R} \right ]
+\end{equation}
+This is downward sloping as demand for US dollars decreases with the strenght of the dollar (declilne in $e-0$). $\Gamma$ controls the ability of financiers to take risk. The higher $\Gamma$ the lower the risk-baring and the steeper the demand curve. There are two extemes: when $\Gamma = 0$ financiers are able to bare any level of risk and UIP holds; as $zGamma \uparrow \infty$  financiers are unable to take any risk and there are no financial account transactions. 
+
+For teh market to clear, 
+
+\begin{subequations}
+\begin{align} 
+\zeta_0 e_0 - \iota_0 + Q_0  = 0\\
+\zeta_1 e_1 - \iota_1 + Q_1 = 0
+\end{align}
+\end{subequations}
+For simplicity $\beta + \beta^* = 1$ and therfore, $R + R^* = 1$.  
+\end{document}
