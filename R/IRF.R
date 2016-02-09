@@ -17,10 +17,10 @@ c<-irf.rtwicnb$Lower
 aa<-data.frame(c(a,b,c))
 plot(aa[,1], xlim=c(1,8), ylim=c(-6, 6), type='l',
      main='CNB shock: System 2',
-     ylab='RTWI', xlab='Quarters')
-lines(aa[,2], type='l', col='red', lty=2)
-lines(aa[,3],type='l', col='red',lty=2)
-abline(h=0, col='red',lty=6)
+     ylab='RTWI', xlab='Quarters', lwd = 2)
+lines(aa[,2], type='l', col='red', lty=2, lwd = 2)
+lines(aa[,3],type='l', col='red',lty=2, lwd = 2)
+abline(h=0, col='red',lty=6, lwd = 2)
 # System 2 CNE------------
 irf.rtwicne <- irf(Var2, n.ahead=8,impulse='CNE', response='RTWI',ortho=TRUE, 
                    cumulative=TRUE,boot=TRUE, runs=100)
