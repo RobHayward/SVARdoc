@@ -1,14 +1,5 @@
 \begin{thebibliography}{xx}
 
-\harvarditem{anon}{2000}{BOEFSR2000}
-anon  \harvardyearleft 2000\harvardyearright , {\em Bank of England Financial
-  Stability Review}.
-
-\harvarditem{Balassa}{1964}{balassa1964ppp}
-Balassa, B.  \harvardyearleft 1964\harvardyearright , `The purchasing power
-  parity doctrin: A reappraisal', {\em Journal of Political Economy} {\bf
-  72},~584--596.
-
 \harvarditem{Bernanke}{1986}{Bernanke1986}
 Bernanke, B.  \harvardyearleft 1986\harvardyearright , `Alternative explanation
   of the money-income correlation', {\em NBER Working Papers} {\bf 1842}.
@@ -18,9 +9,9 @@ BIS  \harvardyearleft 2013\harvardyearright , `Triennial central bank survey of
   foreign exchange and derivatives market activity in 2013'.
 \newline\harvardurl{http://www.bis.org/publ/rpfxf10t.htm}
 
-\harvarditem{{\em BIS Statistics}}{2012}{website:bisdata}
-{\em BIS Statistics}  \harvardyearleft 2012\harvardyearright .
-\newline\harvardurl{http://www.bis.org/statistics/index.htm}
+\harvarditem{{\em BIS Location Banking Statistics}}{2012}{BISbanking}
+{\em BIS Location Banking Statistics}  \harvardyearleft 2012\harvardyearright .
+\newline\harvardurl{http://www.bis.org/statistics/bankstats.htm}
 
 \harvarditem{Branson}{1968}{Branson1968}
 Branson, W.~H.  \harvardyearleft 1968\harvardyearright , {\em Financial Capital
@@ -31,11 +22,6 @@ Branson, W.~H. \harvardand\ Hill, R.  \harvardyearleft 1971\harvardyearright ,
   `Capital movements in the {OECD} area', {\em OECD Economic Outlook}
   (Occasional Studies).
 
-\harvarditem{Bruno \harvardand\ Sachs}{1982}{SachsDutch}
-Bruno, M. \harvardand\ Sachs, J.  \harvardyearleft 1982\harvardyearright ,
-  `Energy and resource allocation: A dynamic model of the '{D}utch disease'',
-  {\em Review of Economic Studies} {\bf 49},~845--859.
-
 \harvarditem{Bruno \harvardand\ Shin}{2014}{Bruno2014}
 Bruno, V. \harvardand\ Shin, H.~S.  \harvardyearleft 2014\harvardyearright ,
   Cross-border banking and global liquidity.
@@ -45,10 +31,6 @@ Bruno, V. \harvardand\ Shin, H.~S.  \harvardyearleft 2014\harvardyearright ,
 Calvo, G.~A.  \harvardyearleft 1998\harvardyearright , `Capital flows and
   capital-market crises {:} the simple economics of sudden stops', {\em Journal
   of Applied Economcs} {\bf 1}(1),~34 -- 54.
-
-\harvarditem{Cassel}{1916}{Cassel1916Present}
-Cassel, G.  \harvardyearleft 1916\harvardyearright , `The present situation of
-  the foreign exchanges', {\em Economic Journal} {\bf 26}(23),~319--323.
 
 \harvarditem[Cavallo et~al.]{Cavallo, Powell, Pedemonte \harvardand\
   Tavella}{2015}{cavalloSS}
@@ -69,54 +51,45 @@ Ceruttie, E., Claessens, S. \harvardand\ Ratnovski, L.  \harvardyearleft
   commission: Cot'.
 \newline\harvardurl{http://www.cftc.gov/marketreports/commitmentsoftraders/index.htm}
 
-\harvarditem{Chris~Kubelec}{2010}{BoEdata}
-Chris~Kubelec, F.~S.  \harvardyearleft 2010\harvardyearright , `The
-  geographical composition of national external balance sheets: 1980-2005',
-  {\em Bank of England Working Paper} (384).
-
-\harvarditem{{\em Coordinated Portfolio Investment
-  Survey}}{2012}{website:imfportfolio}
-{\em Coordinated Portfolio Investment Survey}  \harvardyearleft
-  2012\harvardyearright .
-\newline\harvardurl{http://cpis.imf.org/}
-
-\harvarditem{Corden \harvardand\ Neary}{1982}{CordenNeary}
-Corden, W.~M. \harvardand\ Neary, J.  \harvardyearleft 1982\harvardyearright ,
-  `Booming sector and de-industrialisation in a small open economy', {\em The
-  Economic Journal} {\bf 92}(Dec),~825--848.
-
 \harvarditem{Dornbusch \harvardand\ Werner}{1995}{DornbuschSS}
 Dornbusch, R. \harvardand\ Werner, A.  \harvardyearleft 1995\harvardyearright ,
   `Currenc crises and collapses', {\em Brookings Papers in Economic Activity}
   {\bf 1995}(2),~219 -- 293.
+
+\harvarditem{Enders}{2010}{EndersTS}
+Enders, W.  \harvardyearleft 2010\harvardyearright , {\em Applied Econometric
+  Time Series}, 3 edn, Wiley.
 
 \harvarditem{Evans \harvardand\ Lyons}{2002}{Evans2002Order}
 Evans, M.~D. \harvardand\ Lyons, R.  \harvardyearleft 2002\harvardyearright ,
   `Order flow and exchange rate dynamics', {\em The Journal of Political
   Economy} {\bf 10}(1),~170--180.
 
-\harvarditem{Gourinchas \harvardand\ Rey}{2007}{gourinchas2007world}
-Gourinchas, P.-O. \harvardand\ Rey, H.  \harvardyearleft 2007\harvardyearright
-  , From world banker to world venture capitalist: Us external adjustment and
-  the exorbitant privilege, {\em in} `G7 Current Account Imbalances:
-  Sustainability and Adjustment', University of Chicago Press, pp.~11--66.
-
 \harvarditem{Hamilton}{1994}{Hamilton}
 Hamilton, J.~D.  \harvardyearleft 1994\harvardyearright , {\em Time Series
   Analysis}, Princton University Press.
 
-\harvarditem{Harrod}{1933}{harrod1933international}
-Harrod, R.  \harvardyearleft 1933\harvardyearright , {\em International
-  Economics}, Palgrave Macmillan, London.
+\harvarditem{Harvey}{1993}{HarveyTSM}
+Harvey, A.~C.  \harvardyearleft 1993\harvardyearright , {\em Time Series
+  Models}, Pearson.
 
 \harvarditem{Hau \harvardand\ Rey}{2006}{HauEquity}
 Hau, H. \harvardand\ Rey, H.  \harvardyearleft 2006\harvardyearright ,
   `Exchange rates, equity prices and capital flows', {\em Review of Financial
   Studies} {\bf 19}(1),~273 -- 317.
 
-\harvarditem{Keynes}{1925}{Keynes1925Churchill}
-Keynes, J.~M.  \harvardyearleft 1925\harvardyearright , {\em The Economic
-  Consequences of Mr. Churchill}, L. and V. Woolf.
+\harvarditem{Hayward}{2013}{Hayward2013}
+Hayward, R.  \harvardyearleft 2013\harvardyearright , Towards a model of
+  speculation in the foreign exchange market, PhD thesis, University of
+  Brighton Business School.
+
+\harvarditem{Hicks}{1946}{HicksHedge}
+Hicks, J.~R.  \harvardyearleft 1946\harvardyearright , {\em Value and Capital},
+  Clarendon Press, Oxford.
+
+\harvarditem{Keynes}{1930}{KeynesHedge}
+Keynes, J.~M.  \harvardyearleft 1930\harvardyearright , {\em A Treaties on
+  Money}, Macmillan, London.
 
 \harvarditem{Korinek}{2011}{Korinek2011}
 Korinek, A.  \harvardyearleft 2011\harvardyearright , `Hot money and serial
@@ -172,11 +145,6 @@ Rime, D., Sarno, L. \harvardand\ Sojli, E.  \harvardyearleft
   macroeconomic information', {\em Journal of International Economics} {\bf
   80}(1),~72--88.
 
-\harvarditem{Samuelson}{1964}{samuelson1964trade}
-Samuelson, P.~A.  \harvardyearleft 1964\harvardyearright , `Theoretical notes
-  on trade problems', {\em Review of Economics and Statistics} {\bf
-  46},~145--154.
-
 \harvarditem{Sims}{1980}{Sims1980Macroeconomics}
 Sims, C.~A.  \harvardyearleft 1980\harvardyearright , `Macroeconomics and
   reality', {\em Econometrica} {\bf 48}(1).
@@ -191,19 +159,9 @@ Siourounis, G.  \harvardyearleft 2004\harvardyearright , `Capital flows and
   exchange rates: An empirical analysis', {\em Social Science Research Network
   Working Paper Series} .
 
-\harvarditem{Taylor}{2003}{TaylorPPP}
-Taylor, M.~P.  \harvardyearleft 2003\harvardyearright , `Purchasing power
-  parity', {\em Review of International Economics} {\bf 11},~436--452.
-
 \harvarditem{{{US} Treasury}}{2014}{TIC}
 {{US} Treasury}  \harvardyearleft 2014\harvardyearright , `Treasury
   international capital ({TIC}) system'.
 \newline\harvardurl{http://www.treasury.gov/resource-center/data-chart-center/tic/Pages/index.aspx}
-
-\harvarditem{{\em World Bank Quarterly External Debt
-  Statistics}}{2012}{website:worldbankdebt}
-{\em World Bank Quarterly External Debt Statistics}  \harvardyearleft
-  2012\harvardyearright .
-\newline\harvardurl{http://web.worldbank.org/datastatistics/extdecqeds}
 
 \end{thebibliography}
