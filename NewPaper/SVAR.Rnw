@@ -169,17 +169,17 @@ Two methodological issues are to be addressed: the set of explanatory variables 
 
 Vector Auto Regression (VAR) is one way of dealing with the issue of endogeneity.  The method was initially suggested by \citet{Sims1980Macroeconomics}.  An overview of developments and extensions can be found in \citet{lutkepohlvar} and \citet{Hamilton}.  The essence of the VAR is to set up a system that is made up of all the important variables, assume that they are endogenous and add significant lags to remove any serial correlation from the equation residuals.   The variables used here are cumulative net equity flows, net bond flows, net foreign direct investment, net official purchase and two variable for speculative activity. The cumulative flows produces a stock of international financial assets so changes in these stocks are related to changes in the real exchange rate.  
 
-The FDI data come from the US balance of payments, net portfolio flows are from the US Treasury International Capital data, speculative momentum is based on CFTC speculative positions and the interest rate differential is a proxy for the carry-trade. Fuller details of the variables, their source and data preparation are in the Appendix \ref{app1}.   
+The FDI data come from the US balance of payments, net portfolio flows are from the US Treasury International Capital data, speculative momentum is based on CFTC speculative positions and the interest rate differential is a proxy for the carry-trade. Fuller details of the variables.   
 
-The preferred model, according to the range of information and diagnostics is the one that does not include the current account, has four lags and uses the three dummy variables as well as the S1 and SPREAD2 measures of sentiment and interest rates.  A model with a linear trend and a constant is the one that best fit the data.  The summary information is presented in Appendix \ref{app2}.  It reveals that the system is stable as the roots of the autoregressive coefficients are all within the unit circle.    
+The preferred model, according to the range of information and diagnostics is the one that does not include the current account, has four lags and uses the three dummy variables as well as the S1 and SPREAD2 measures of sentiment and interest rates.  A model with a linear trend and a constant is the one that best fit the data.  It reveals that the system is stable as the roots of the autoregressive coefficients are all within the unit circle.    
   
 %it was [h!] now
-\begin{figure}[h!]
+\begin{figure}
 \graphicspath{{../Figures2/}}
 \centering
 \caption{Cumulative capital flows and USD}
 \label{figref:ts}
-\includegraphics[scale=0.6]{ts}
+\includegraphics[scale=0.65]{ts}
 \end{figure}\label{fig:timeseries}
 
 Figure \ref{fig:timeseries} also shows the significant changes that have taken place in the stock of international financial assets during the period under study.  A number of these warrant more attention.  For example, the scale of the fluctuation in net bond flows becomes apparent.   Cumulative net bond flows increase steadily through the period from 1995 from a fairly flat position to reach a peak of close to 15 percent of GDP at the eve of the financial crisis.  With a nominal GDP of \$3.5trillion in the first quarter of 2010, this is a net increase of around \$500bn in the space of 10 years. 
@@ -275,12 +275,12 @@ In this case, the \emph{residual bootstrap} is used.  This involves using a rand
 
 The main results are presented in Figure \ref{fig:IRF1} where it is evident that innovations to speculative sentiment and the interest rate spread can have a significant effect on the real exchange rate.  IRF show that a one unit innovation or shock to the S1 series, equal to a ten percentage point change in the net position of speculators relative to the total speculative positions, will have on average, a positive effect of close to 4\% on the real trade-weighted exchange rate over the next eight quarters.  The 95\% confidence intervals, denoted by the red, dashed lines, reveal that it is very likely that there is a positive effect.  For speculative flows that are linked to the interest rate differential, a one-unit or one hundred basis-point improvement in US interest rate advantage tends on average to have an effect of increasing the US real trade-weighted index by about 10\%.  Here there is more uncertainty and there are residual samples when the effect is quite minimal. 
 
-\begin{sidewaysfigure}[h!]
-\graphicspath{{../Figure2/}}
+\begin{sidewaysfigure}
+\graphicspath{{../Figures2/}}
 \centering
 \caption{Impulse Response Functions for RTWI for Specification One}
 \label{fig:IRF1}
-\includegraphics[scale=0.8]{IRF3}
+\includegraphics[scale=0.75]{IRF3}
 \end{sidewaysfigure}
 % does the section on impulse response function fit here? 
 
@@ -294,21 +294,21 @@ The overall impression is one where speculation, whether sentiment-orientated or
 
 %A transfer function of permanent dummy is used to account for a structural shift in the model in 1994 and 2002.  These dummies appear to be important for some of the equations and improve the fit very slightlty (based on AIC and Log Likelihood statistics).  It is possible to check for structural breaks at points like the introduction of the North American Free Trade Agreement (NAFTA) in 1995, the introduction of the Euro in 1999 or September 11.  This would also be one way to deal with the real risk of parameter instability. 
 
-\begin{sidewaysfigure}[h!]
+\begin{sidewaysfigure}
 \graphicspath{{../Figures2/}}
 \centering
 \caption{Impulse Response Functions for RTWI for Specification Two}
 \label{fig:IRF2}  
-\includegraphics[scale=0.8]{IRF1}
+\includegraphics[scale=0.75]{IRF1}
 \end{sidewaysfigure}
 
 
-\begin{sidewaysfigure}[h!]
+\begin{sidewaysfigure}
 \graphicspath{{../Figures2/}}
 \centering
 \caption{Impulse Response Functions for RTWI for Specification Two}
 \label{fig:IRF3}  
-\includegraphics[scale=0.8]{IRF2}
+\includegraphics[scale=0.75]{IRF2}
 \end{sidewaysfigure}
 
 % does some additional infirmation about diagnositc tests (possibly with reference to appendix) come in here? 
@@ -325,6 +325,7 @@ The results suggest that measures to reduce the effect of speculation can enhanc
 %There has been only limited progress in the development of exchange rate models that depend on capital flows.  There have been three major problems in their contruction:  deciding on the variables that will be used, dealing with the issue of endogeneity and modelling the relationship between portfolio choice and the exchange rate.  This paper seeks to address these three issues. There is a discussion of the empirical evidence that underpins the relationship between capital flows and the exchange rate; there is at attempt to measures speculative flows; there is also a discussion of the effect of exchange rate intervention that does not depend on monetary changes or signalling.   There are three important contributions:  creating a structural model of international capita flows and the real exchange rate; adding speculation to the capital flows that are assessed; assessing the effect of speuclation in the model.   
 %
 \bibliography{../../myrefs}
+\end{document}
 
 \begin{appendices}
 \section{Appendix 1}\label{app1}
