@@ -46,7 +46,7 @@ Identifying speculative flows has been a challenge due to the scarcity of data. 
 
 Exchange rate models that incorporate capital flows are being developed. However, the process has been constrained by missing data and the complexity of the interaction. This paper seeks to address these issues by broadening the range of capital flows that are included in the model and by using a structural model to understand the relationship between capital flow and the exchange rate. In addition to discussing the empirical evidence that underpins the relationship between capital flows and the exchange rate, speculative activity is measured and the effect of exchange rate intervention is assessed.  There are three important contributions:  creating a structural model of international capita flows and the real exchange rate, adding speculation to the capital flow model and assessing the effect of speculation in the model.   
 
-\section{The model:literature}\label{secref:2}
+\section{The model: literature}\label{secref:2}
 \subsection{Capital Flow}
 Standard models of exchange rates have put the emphasis on the goods market. \citet{OandR} provide an overview of the most widely used open-economy macro model that concentrates on relative prices and the adjustment via the current account.  International financial markets are complete and therefore act as an automatic facilitator of any current account imbalance.  International financial flows can be incorporated so that there are adjustments to country-specific exogenous innovations like productivity shocks through inter-temporal transfers.  This involves capital flows and changes in the stock of net international investments. See \citet{obstfeld2000new}, \citet{OandRedux} and \citet{lane2001new} for a survey of the literature. 
 
@@ -72,12 +72,12 @@ A standard linear empirical exchange rate model presented by \citet{Siourounis20
   
 A one-standard deviation shock to net equity purchase has the effect of a 10\% appreciation that is statistically significant for 13 months on average. Positive innovations in overseas equity returns are associated with short-run US dollar appreciation and repatriation for three of the four countries. Positive shocks to US interest rates cause US appreciation, rather than the depreciation that UIP would imply. This is the carry-trade. 
 
-\citet{HauEquity} model the financial account of the balance of payments using the microstructure idea of order-flow to account for changes in the exchange rate.  This is an increasingly familiar approach (see \citet{Geliman}). However, while in the microstructure literature \citet{Evans2002Order}, \citet{Lyons1995Microstructure} and \citet{rime2010exchange} explain movements in currency with knowledge about market-maker and dealer orders, here the movement of international capital is the fulcrum of adjustment.
+\citet{HauEquity} derive exchange rates from the financial account of the balance of payments where there is less than fully elastic supply of currency.  Net demand for overseas equities will drive the exchange rate in an extension of the microstructure approach.  This is an increasingly familiar approach (see \citet{Geliman}). However, while in the microstructure literature \citet{Evans2002Order}, \citet{Lyons1995Microstructure} and \citet{rime2010exchange} explain movements in currency with knowledge about market-maker and dealer orders, here the movement of international capital is the fulcrum of adjustment.
 
 On the assumption that all dividends are repatriated, Hau and Rey express the capital outflow for the equity market $(Q_t)$ as
 
 \begin{equation}
-TC = \Delta Y + \Delta R^* + \Delta NDA + \Delta RR 
+dQ_t = E_tK_t^{h*}D_t^hdt - K_t^fD_t^fdt + dK_t^fP_t^f - E_tdK_t^{h*}P_t^h
 \end{equation}
 
 where $E_t$ is the exchange rate at time $t$ expressed as foreign units of domestic currency; equity holding at time $t$ are $K_t$, divided between home equities $K_t^h$ and foreign $K_t^f$; $D^h_t$ and $D^f_t$ are the home and overseas dividend payments; $P_t^h$ and $P_t^f$ are the home and overseas stock prices respectively.   
@@ -88,7 +88,7 @@ The foreign exchange market is assumed to be incomplete and the exchange rate fo
 Q^s = -\kappa(E_t - \bar{E})
 \end{equation}
 
-Therefore, excess net demand for overseas equities will cause an appreciation of the overseas currency as a means of inducing risk-averse market-makers and speculators to hold more domestic currency.  Speculators facilitate the decisions of equity investors through price concession. This is consistent with the Keynes-Hicks model of speculations.  See \citet{KeynesHedge} and \citet{HicksHedge}.   
+Therefore, excess net demand for overseas equities will cause an appreciation of the overseas currency as a means of inducing risk-averse market-makers and speculators to hold more domestic currency.  Speculators facilitate the decisions of equity investors through price concession. This is consistent with the Keynes-Hicks model of speculations ( \citet{KeynesHedge} and \citet{HicksHedge}).   
 %Note 20 closes the model.  The flow is offset by a movement of currency that is absorbed by the central bank. Is this different from the financial system absorbing or completing the model? 
 
 % Can this be used at some ponit. The two extremes of the Hau Rau model. This is a world half-way between financial autarchy where investors hold only domestic assets and where there is complete risk sharing through the use of foreign exchange derivatives and domestic and foreign equities are held in proportion to their capitalisation (50:50 in the model). 
