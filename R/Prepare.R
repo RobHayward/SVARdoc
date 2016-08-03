@@ -28,17 +28,17 @@ da$S2 <- da$S2*(-10)
 head(da)
 #create and save time series for plot--------------  
 dt<-ts(da,start=c(1986.1),frequency=4)
-pdf("Figures/ts2.pdf", paper= "a4", width = 10, height = 10, title = "ts")
+#pdf("Figures/ts2.pdf", paper= "a4", width = 10, height = 10, title = "ts")
 par(mfcol=c(3,2), oma = c(0,0,0,0))
 plot(dt[,c(2:7, 9, 11)], main = "Cumulative capital flow and exchange rate")
 dev.off()
 # Normalise--------------------------------------------
 #normalise da by taking mean and dividing by standard error
 #Do we need to normalise them all?  RTWI? 
-#normalised data will be dan insteady of da
+#normalised data will be dan in stead of da
 #head(da)
-#dan<-scale(da)
-#head(dan)
+dan<-scale(da)
+head(dan)
 #  Dummy Variables###########################################################
 # D1
 # Q386 to Q188 (55 to 61 in d) and 3 to 9 in da is an interest rate shock for 
