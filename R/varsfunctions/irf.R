@@ -42,10 +42,13 @@ irf <- function (x, impulse = NULL, response = NULL, n.ahead = 10, ortho = TRUE,
                   response = response, ci = ci, seed = seed, y.names = y.names)
     Lower <- BOOT$Lower
     Upper <- BOOT$Upper
+    # adding this 
+    temp <- BOOT$temp
   }
   result <- list(irf = irs, Lower = Lower, Upper = Upper, response = response, 
                  impulse = impulse, ortho = ortho, cumulative = cumulative, 
-                 runs = runs, ci = ci, boot = boot, model = class(x))
+                 runs = runs, ci = ci, boot = boot, model = class(x), 
+                 temp = temp)
   class(result) <- "varirf"
   return(result)
 }

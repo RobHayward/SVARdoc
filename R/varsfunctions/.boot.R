@@ -80,6 +80,8 @@
   }
   names(Lower) <- impulse
   names(Upper) <- impulse
-  result <- list(Lower = Lower, Upper = Upper)
+  # I have added temp = temp to the results list.  I want to return the array 
+  # of samples so that I can draw a heat map of forecasts. 
+  result <- list(Lower = Lower, Upper = Upper, temp = temp)
   return(result)
 }

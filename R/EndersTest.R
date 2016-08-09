@@ -6,7 +6,7 @@ set.seed(123)
 # create the multivariate random variables
 Mu <- c(0, 0)
 Mu
-Sigma <- matrix(c(1, 0.8, 0.0, 1), 2, 2)
+Sigma <- matrix(c(1, 0.8, 0.8, 1), 2, 2)
 Sigma
 # mvrnorm will create a multivariate random normal distribution from MASS package
 bv <- mvrnorm(100, mu = Mu, Sigma = Sigma)
@@ -35,18 +35,26 @@ str(IR)
 # This is an exercise in creating a print function and then applying it 
 # to a number of variables. This will eventually be used in the paper. 
 
+Amat <- diag(2)
+Amat[2,1] <- NA
+eq <- SVAR(var1, Amat = Amat)
+IR2 <- irf(eq)
+print(IR2)
+
+print(eq)
+
+
 par(mfrow = c(2, 1))
 names(IR$irf)
 myData <- c('y', 'z')
 myPlot <- function(myData){
-  plot(IR$irf[[myData]][,1], type = 'l', col = 'black', ylim = c(0, 1), 
-       lty = 1,   ylab = "Response", main = paste("Response of y 
-       to innovation in ", myData, sep = "")) 
-  lines(IR$Upper[[myData]][,1], col = 'blue', lty = 2)
-  lines(IR$Lower[[myData]][,1], col = 'blue', lty = 2)
+  plot(seq(0,10, 1),   IR2$irf[[myData]][,1], type = 'l', col = 'black', ylim = c(0, 1), 
+       lty = 1,   lwd = 3, ylab = "Response", main = paste("Response of y 
+       to innovation in ", myData, sep = ""), xlab = "Quarters") 
+  lines(seq(0,10, 1), IR$Upper[[myData]][,1], col = 'blue', lty = 2)
+  lines(seq(0, 10,1), IR$Lower[[myData]][,1], col = 'blue', lty = 2)
 }
 lapply(X = myData, FUN = myPlot)
-# Those does work.  
 # If there is a negative relationship
 for(i in 2:length(y)){
   y[i] = 0.7 * y[i-1] - 0.2 * z[i-1] + bv[i, 1]

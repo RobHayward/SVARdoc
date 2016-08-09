@@ -1,7 +1,7 @@
 require(xtable)
 head(da)
 # change i for column number
-i <- 4
+i <- 1
 da <- da[,c(3:7,9,11)]
 M <- data.frame(NA)
 info<-VARselect(da,lag.max=8,type='t')
@@ -10,6 +10,7 @@ resid1<-data.frame(resid(Var1))
 Var1.ser<-serial.test(Var1,lags.pt=8,type="ES")
 Var1.arch<-arch.test(Var1,lags.multi=4, multivariate.only=FALSE)
 Var1.norm<-normality.test(Var1,multivariate.only=FALSE)
+IRF <- IRF(var1, response = "RTWI")
 M[1,i] <- info$selection[1]
 M[2,i] <- info$selection[2]
 M[3,i] <- Var1$type
@@ -25,9 +26,12 @@ M[12,i] <- Var1.norm$jb.mul$Skewness$statistic
 M[13,i] <- Var1.norm$jb.mul$Skewness$p.value
 M[14,i] <- Var1.norm$jb.mul$Kurtosis$statistic
 M[15,i] <- Var1.norm$jb.mul$Kurtosis$p.value
+M[16,i] <- colnames(dum)
+M[17,i] <- colnames(Var1$y)
+print(IRF)
 
 rownames(M) <- c("Lags (AIC)", "Lags (BIC)", "Type", "LogLikelihood", "AIC", 
               "BIC", "Roots", "Serial Correlation", "P1", "Arch-test", 
-               "P2", "Skewness", "P3", "Kurtosis", "P4")
+               "P2", "Skewness", "P3", "Kurtosis", "P4", "Dummies", "Endogenous")
 M
 M <- xtable(M, caption = "Diagnostic tests", label = "tabref:diag", digits = 2)
