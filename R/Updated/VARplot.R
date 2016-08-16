@@ -6,7 +6,6 @@ var1<-VAR(da[,c(3:7, 9, 11)],p=4, type='both',season=NULL, exog=dum)
 #Setting up the A (or B) Matrix#####################################
 #Setting up the A matrix. 
 #change the restrictions according to the theory to be tested. 
-head(da)
 Amat=diag(7)
 Amat[1,1]<-1
 Amat[2,2]<-1
@@ -89,19 +88,28 @@ irfSPREAD.Svar1<-irf(Svar1, cumulative=T,impulse="SPREAD2",response="RTWI",
 plot(irfSPREAD.Svar1)
 #
 irfS1.Svar1<-irf(Svar1, cumulative = T, impulse="S1",response="RTWI", 
-                 boot=TRUE, runs=100, n.ahead=4, xlab = "", ortho = FALSE)
+                 boot=TRUE, runs=100, n.ahead=4)
 plot(irfS1.Svar1)
 #
 
-
+#=====================Plot the IRF============================================
 myPlot <- function(imp){
-  plot(x = seq(1:5), y = imp$irf, xlim=c(1,8), ylim=c(-2, 6), type='l',
-       main='Speculative shock: System 2',
-       ylab='RTWI', xlab='Quarters')
-46yg  lines(imp$Lower, type='l', col='red', lty=2)
-  lines(imp$Upper,type='l', col='red',lty=2)
-  abline(h=0, col='red',lty=6)
+plot(unlist(imp[[1]], seq(0, 9, 1)), type = 'l', ylim = c(-6, 10), 
+     main = paste("Response of ", imp$response, " to a one unit shock to ", names(imp[[1]]), sep = ""), 
+     xlab = "Quarters", ylab = "RTWI", lwd = 2)
+lines(unlist(imp[[2]]), type = 'l', lty = 2)
+lines(unlist(imp[[3]]), type = 'l', lty = 2)  
+abline(h = 0, lty = 3, lwd = 2)
 }
-myPlot(imp = irfCNB.Svar1)
-lapply(irfCNB.Svar1, FUN = myPlot)
-imp <- irfCNB.Svar1
+capital_flow <- c("CNB", "CNE", "CNFDI", "COT", "SPREAD2", "S1")
+imp <- list(length = length(capital_flow))
+for(i in capital_flow){
+  imp[[i]] <- irf(Svar1, cumulative = T, impulse = i, response = "RTWI", boot = "TRUE", 
+                runs = 100, n.ahead = 8)
+}
+par(mfrow = c(2, 3))
+for(i in capital_flow){
+  myPlot(imp[[i]])
+}
+
+dev.off()
