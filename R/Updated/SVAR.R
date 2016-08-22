@@ -1,8 +1,11 @@
+#SVAR sel up
 # there will be three models: the central SVAR model is model 1
 # the othogonal model is model 2
 # the othogonal random model is model 3
 head(da)
+#head(dan)
 var1<-VAR(da[,c(3:7, 9, 11)],p=4, type='both',season=NULL, exog=dum)
+#Var3 <- VAR(dan[, c(3:7, 9. 11)], p = 8, type = 'both', season = NULL, exog = dum)
 #Setting up the A (or B) Matrix#####################################
 #Setting up the A matrix. 
 #change the restrictions according to the theory to be tested. 
@@ -63,53 +66,3 @@ Svar1$A
 # This is the A matrix
 #if you want turn list into dataframe and xtable for la tex
 xtable(Svar1$A, digits = 3)
-#IRF, select number of bootstraps and the period ahead-----------------
-#pdf("IRF3.pdf", paper= "a4r", width = 9, title = "IRF2")
-# Need to make consistent with others so made in irf3.R
-par(mfcol=c(2,3), oma = c(0,0,1,0))
-irfCNB.Svar1<-irf(Svar1, cumulative=T,impulse="CNB",response="RTWI", 
-                  boot=TRUE, runs=100, n.ahead=4)
-plot(irfCNB.Svar1)
-#
-irfCNE.Svar1<-irf(Svar1, cumulative=T,impulse="CNE",response="RTWI", 
-                  boot=TRUE, runs=100, n.ahead=4)
-plot(irfCNE.Svar1)
-#
-irfCOT.Svar1<-irf(Svar1, cumulative=T,impulse="COT",response="RTWI", 
-                  boot=TRUE, runs=100, n.ahead=4)
-plot(irfCOT.Svar1)
-#
-irfRTWI.Svar1<-irf(Svar1, cumulative=T,impulse="RTWI",response="RTWI", 
-                   boot=TRUE, runs=100, n.ahead=4)
-plot(irfRTWI.Svar1)
-#
-irfSPREAD.Svar1<-irf(Svar1, cumulative=T,impulse="SPREAD2",response="RTWI", 
-                     boot=TRUE, runs=100, n.ahead=4)
-plot(irfSPREAD.Svar1)
-#
-irfS1.Svar1<-irf(Svar1, cumulative = T, impulse="S1",response="RTWI", 
-                 boot=TRUE, runs=100, n.ahead=4)
-plot(irfS1.Svar1)
-#
-
-#=====================Plot the IRF============================================
-myPlot <- function(imp){
-plot(unlist(imp[[1]], seq(0, 9, 1)), type = 'l', ylim = c(-6, 10), 
-     main = paste("Response of ", imp$response, " to a one unit shock to ", names(imp[[1]]), sep = ""), 
-     xlab = "Quarters", ylab = "RTWI", lwd = 2)
-lines(unlist(imp[[2]]), type = 'l', lty = 2)
-lines(unlist(imp[[3]]), type = 'l', lty = 2)  
-abline(h = 0, lty = 3, lwd = 2)
-}
-capital_flow <- c("CNB", "CNE", "CNFDI", "COT", "SPREAD2", "S1")
-imp <- list(length = length(capital_flow))
-for(i in capital_flow){
-  imp[[i]] <- irf(Svar1, cumulative = T, impulse = i, response = "RTWI", boot = "TRUE", 
-                runs = 100, n.ahead = 8)
-}
-par(mfrow = c(2, 3))
-for(i in capital_flow){
-  myPlot(imp[[i]])
-}
-
-dev.off()
