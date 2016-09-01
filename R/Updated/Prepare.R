@@ -25,4 +25,7 @@ da<-da[,-c(1:2,9,10,12,13)]
 # adjust sentiment data-------------------------
 da$S1 <- da$S1*(-10)
 da$S2 <- da$S2*(-10)
+colnames(da) <- c('b', 'e', 'fdi', 'cb', 'er', 'i', 's')
 head(da)
+
+
