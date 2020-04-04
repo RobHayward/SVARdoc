@@ -2,7 +2,8 @@ rm(list=ls(all=TRUE))
 #library(xtable)
 library(dse)
 library(vars)
-library(car)
+# this appears to be missing. 
+#library(car)
 d <- read.csv("Data/VARdata.csv", header=TRUE, sep=",")
 head(d)
 # Create variables per GDP for capital flows-----------------------
@@ -17,6 +18,7 @@ da$CNFDI<-(d$CNFDI/d$NGDP2)/10
 da$COT<-(d$COT/d$NGDP2)/10
 # delete unneeded variables---------------------------------------
 #delete the first 52 rows with missing values and the debris
+head(da)
 da<-da[-c(1:52),]
 da<-da[,-c(1:2,9,10,12,13)]
 ### to shuffle data for the Chlosky decomposition
@@ -25,7 +27,8 @@ da<-da[,-c(1:2,9,10,12,13)]
 # adjust sentiment data-------------------------
 da$S1 <- da$S1*(-10)
 da$S2 <- da$S2*(-10)
-colnames(da) <- c('b', 'e', 'fdi', 'cb', 'er', 'i', 's')
+da <- da[ ,c(3, 4, 5, 6, 7, 8, 11)]
+colnames(da) <- c('Bond', 'Equity', 'FDI', 'CB', 'ER', 'Irs', 'Spec')
 head(da)
 
 

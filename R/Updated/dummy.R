@@ -28,9 +28,12 @@ colnames(dum)<- c("D1", "D2", "D3")
 # 1994. Assuming first quarter, these would be row 34 onwards for 1994
 # that would be 66 for 2002.  This could be tried. 
 # 
-da$D4 = 0
-da$D4[c(34:length(da$D4))] = 1
-da$D5 = 0
-da$D5[c(66:length(da$D5))] = 1
-D4 <- da$D4
-D5 <- da$D5
+# Don't put them in the main file.  Keep them exogeous. 
+#da$D4 = 0
+#da$D4[c(34:length(da$D4))] = 1
+#da$D5 = 0
+#da$D5[c(66:length(da$D5))] = 1
+#D4 <- da$D4
+#D5 <- da$D5
+# Remove the dummies
+da <- da[, -c(8:10)]

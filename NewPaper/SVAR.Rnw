@@ -16,6 +16,7 @@
 \bibliographystyle{agsm}
 \usepackage[colorlinks = true, citecolor = blue, linkcolor = blue]{hyperref}
 %\hypersetup{urlcolor=blue, colorlinks=true} % Colors hyperlinks in blue - change to black if annoying
+
 %\renewcommand[\harvardurl]{URL: \url}
  \usepackage{listings}
   \usepackage{tikz}
@@ -29,23 +30,17 @@
 \author{Rob Hayward\footnote{University of Brighton Business School, Lewes Road, Brighton, BN2 4AT; Telephone 01273 642586.  rh49@brighton.ac.uk. }} 
 \date{\today}
 \maketitle
-  \begin{abstract}An SVAR model of the real exchange rate and intentional capital flows reveals that innovations to speculation can cause changes in competitiveness.  Adding measures of speculation to existing models of exchange rates and international capital flows reduces the economic and statistical significance of conventional portfolio flows unless they represent official intervention in the foreign exchange market.   The SVAR method allows a full interaction between the exchange rate and capital flows.  The results are robust to a variety of specifications.  
+  \begin{abstract}An SVAR model of the real exchange rate and intentional capital flows reveals that innovations to speculation that is drivern by sentiment or the carry-trade can cause changes in competitiveness.  Adding this speculation to a model of exchange rates and international capital flows replaces the effect of equity, bond and FDI on the exchange rate.   The SVAR method allows a full interaction between the exchange rate and capital flows.  The results are robust to a variety of specifications.  
 \end{abstract}
 
 \section{Introduction} 
-The rise in gross and net international capital flows that has taken place in the last 20 years has been documented by \citet{PLane2007}, \citet{obstfeldtaylor}, the \citet{BISFX2013} and others. Evidence has also accumulated that the link between international capital flows and economic development is not as prominent in practice as it appears to be in theory.  For example, even before the Global Financial Crisis (GFC), \citet{MishkinFinInstab} highlighted the failure of capital to flow from developed to less developed countries as conventional theory would predict; more recently, \citet{HauEquity} review the evidence on the benefits of international financial flows and find it elusive.  Moreover, \emph{sudden stops}, where inflows of international capital suddenly reverse, have been shown by \citet{CalvoSS},\citet{DornbuschSS} and \citet{KrugmanSS} to have very disruptive effects. The research has expanded to assess the effect of a \emph{sudden surge} that proceeds an outflow and to a consideration of net rather than gross capital flows.  \citet{cavalloSS} create a taxonomy of stops based on the composition of the financial account adjustment and the effect that it has on economic growth, the exchange rate and inflation in the target country. They find that a sudden stop in gross inflow is associated with much larger falls in output than those associated with a surge in gross outflows.    
+The rise in gross and net international capital flows that has taken place in the last 20 years has been documented by \citet{PLane2007}, \citet{obstfeldtaylor}, the \citet{BISFX2013} and others. While the free flow of global capital should allow smoothing of consumption, sharing of risk and the financing of global projects that have the greatest return, evidence has also accumulated that the link between international capital flows and economic development is not as prominent in practice as it appears to be in theory.  Even before the Global Financial Crisis (GFC), \citet{MishkinFinInstab} highlighted the failure of capital to flow from developed to less developed countries as conventional theory would predict. The study of international finanical crisis has shown that speculative flows of capital can cause major financial disruption, particiarlly where there are \emph{sudden stops}, \citet{CalvoSS},\citet{DornbuschSS} and \citet{KrugmanSS}.  Capital flow that is more short-term and speculative tends to be more disruptive and less beneficial.  \citet{Ozan} finds that for the period 1990 to 2003, a capital influx that is dominated by private loans and portfolio flows rather than direct investment is more likely to be followed by a sudden stop.   \citet{RazinCap} identify a \emph{pecking-order} in these financial flows with FDI having the least cost of reversal risk, equity flows being less prone to stops and reversals, and, debt, particularly with short maturity, being the most dangerous. 
 
-Increased scepticism towards benefits of capital flows has renewed interest in the use of capital controls and other means of reducing their influence.  There is evidence from the experience of Malaysia, China, Iceland and Brazil that restrictions on the free movement of capital can be effective (See \citet{IMFCC} for an IMF sponsored analysis that concludes that capital controls are justified and useful - a change of stance from its previously held position).  Theoretically, \citet{brunnermeier2014international} develop a two-country neoclassical stochastic growth model where banking credit can become excessive because of capital inflows and can disappear quickly when these flows reverse.  Capital controls or macro-prudential measures can improve outcomes. \citet{KatanoCapital} compares the effect of capital controls and perfect capital mobility and finds that the less efficient the financial system the more likely that capital controls will be welfare enhancing. \citet{Korinek2011} makes the case for variable taxation of capital flows on the basis that individual investors do not internalise the increase in aggregate cash risk that individual inflows cause.  He calls for taxes based on the liquidity of the flow-type to price this externalities.   
+There are two components to speculative exchange rate activity: a momentum effect and the carry-trade. Each of these contribute to the cycle of capital surges and capital stops.  Momentum is associated with a gradual building of positive sentiment and an occasional sharp, unexpected reversal when favourable views are punctured.  The carry-trade tries to take advantage of the breakdown of Uncovered-Interest-Parity.  Borrowing at relatively low rates in \emph{funding currencies} such as the US dollar, Japanese yen, Swiss franc or Euro and using the proceeds to deposit in higher interest rates currencies.  The bubble builds and bursts as speculators avoid the sharp reversal that is associated wth the enactment of uncovered interest parity.  This activity can cause disruption when large inflows cause bubbles and constraints on monetary policy. \citet{Jagadeesh} document the momentum effect in equities while \citet{Sweeney} finds the same in foreign exchange; \citet{DarvasCarry} and others find carry-trade profits in defiance of uncovered-interest rate parity, even though this may be due to taking what \citet{BrunnermeierCarry} call \emph{crash risk}.    
 
-This focus on short-term speculative flow is consistent with evidence that capital flow that is more short-term and speculative tends to be more disruptive and less beneficial.  \citet{Ozan} finds that for the period 1990 to 2003, a capital inflow that is dominated by private loans and portfolio flows rather than direct investment is more likely to be followed by a sudden stop.   \citet{RazinCap} identify a \emph{pecking-order} in these financial flows with FDI having the least cost of reversal risk, equity flows being less prone to stops and reversals, and, debt, particularly with short maturity, being the most dangerous. \citet{RodrickVelasco} study 32 countries through the period 1988 to 1998 and find that those with the highest proportion of debt are the most likely to suffer financial flow reversal with \citet{MontielReinhart} discover that foreign exchange intervention, particularly if sterilised,  can exacerbate the attraction of short-term speculative flows by increasing domestic interest rates and by encouraging the belief that exchange rate stability will be promoted by the central bank.    
+Exchange rate models that incorporate capital flows have been developed. However, the process has been impeded by the availability of data and by the difficulties of modelling the complex interaction between capital flows. This paper addresses each of these issues. There are three related contributions:  using a structural vector auto-regression (SVAR) to model capita flows and the real exchange rate, adding speculation to the capital flow model and identifying the effect of speculation on competitiveness.  
 
-There are two components to speculative exchange rate activity: a momentum effect and the carry-trade. Each of these contribute to the cycle of capital surges and capital stops.  Momentum is associated with a gradual building of positive sentiment and an occasional sharp, unexpected reversal when favourable views are unsettled.  The carry-trade is tries to take advantage of the failure of Uncovered-Interest-Parity (UIP) to hold.  It involves borrowing at relatively low rates in \emph{funding currencies} such as the US dollar, Japanese yen, Swiss franc or Euro and using the proceeds to deposit in higher interest rates currencies.  This activity can cause disruption when large inflows become a constraint on monetary policy and even larger problems when, fearing a shock, discrete devaluation of the investment currency, inflows reverse as traders rush to close their exposed positions. \citet{Jagadeesh} document the momentum effect in equities while \citet{Sweeney} finds the same in foreign exchange and \citet{NarayanMoment} confirm that the effect still exists at high frequency; \citet{DarvasCarry} and others find carry-trade profits in defiance of uncovered-interest rate parity, even though this may be due to taking what \citet{BrunnermeierCarry} call \emph{crash risk}.    
-
-Identifying and measuring speculative flows has been a challenge due to the scarcity of data.  A standard approach has been to utilise \citet{BISbanking}. These figures record cross-border banking exposure.  For example, \citet{Bruno2014} model the global liquidity cycle of international banks; \citet{AdamsKaneGlobal} try to assess the relative importance or willingness to lend, the level of liquidity and measures of solvency in determining capital flow.  However, it is impossible, using this data, to distinguish between bank lending for real business projects and that for speculation in financial markets.  As a rare exception, \citet{Cerutti2014} combine BIS with proprietary banking data to analyse the speculative flow between international and local banks. 
-
-Exchange rate models that incorporate capital flows have been developed. However, the process has been impeded by these limitations in the availability of data and by the difficulties of modelling the complex interaction between capital flows. This paper addresses each of these issues by broadening the range of capital flows that are included in the model to encompass short-term measures of speculation and by using a structural model to fully capture the interaction between capital flow and the exchange rate. In addition to discussing the empirical evidence that underpins the relationship between capital flows and the exchange rate, speculative activity is measured and the effect of exchange rate intervention is assessed.  There are three related contributions:  using a structural vector auto-regression (SVAR) to model capita flows and the real exchange rate, adding speculation to the capital flow model and identifying the effect of speculation on competitiveness.  
-
-Impulse response functions (IRF) showing how innovations to capital flows can affect the real exchange rate are presented in Figure \ref{fig:IRF1}. It is evident that innovations to speculative sentiment (as measured by the $s$ variable - see Section \ref{secref:meth} and Appendix \ref{app1} for full details of the data that is used in the study) and to speculative carry  trade activity (variable $i$) can have a significant effect on the real exchange rate.  IRF show that a one unit innovation or shock to the speculative sentiment series, equal to a ten percentage point change in the net position of speculators relative to the total speculative positions, will have, on average, a positive effect of close to 4\% on the real trade-weighted exchange rate over the next eight quarters.   For speculative flows that are linked to the interest rate differential, a one-unit or one hundred basis-point reduction in US interest rates relative to the rest of the world leads to a reduction of the US real trade-weighted index by about 10\% as it becomes a more attractive funding currency.  
+Impulse response functions (IRF) showing how innovations to capital flows can affect the real exchange rate are presented in Figure \ref{fig:IRF1}. It is evident that innovations to speculative sentiment (as measured by the $s$ variable) and to speculative carry  trade activity (variable $i$) can have a significant effect on the real exchange rate.  IRF show that a one unit innovation or shock to the speculative sentiment series, equal to a ten percentage point change in the net position of speculators relative to the total speculative positions, will have, on average, a positive effect of close to 4\% on the real trade-weighted exchange rate over the next eight quarters.   For speculative flows that are linked to the interest rate differential, a one-unit or one hundred basis-point reduction in US interest rates relative to the rest of the world leads to a reduction of the US real trade-weighted index by about 10\% as it becomes a more attractive funding currency.  
 
 \begin{sidewaysfigure}
 \graphicspath{{../Figures3/}}
@@ -56,20 +51,14 @@ Impulse response functions (IRF) showing how innovations to capital flows can af
 \end{sidewaysfigure}
 % does the section on impulse response function fit here? 
 
-For the other types of capital flow, there is a great deal more ambiguity about the effect on the real exchange rate.  A one-unit innovation in the bond position $(b)$ - equivalent to about \$35bn at the beginning of 2010 - is close to zero over the following four quarters and slightly negative beyond that point.  The average effect of an innovation to the net inflow to US equities $(e)$ (again about \$35bn) is on average zero. The net flow associated with foreign direct investment $(fdi)$ is very similar to that of equities, but slightly more positive.  
-
-The action of overseas central banks is also of interest.  A one unit exceptional increase in central bank net holding of treasuries, a consequence of foreign exchange intervention to purchase US dollars with a sale of their domestic currency, is associated with an average positive move of 4\% over the next four quarters. It appears that this intervention in the foreign exchange market is successful in the short-term on the assumption that it takes place because of initial US dollar weakness and the attempt by overseas central banks to maintain their own currency pegs. 
-
-The overall impression is one where speculation, whether sentiment-orientated or part of a carry-trade activity, has a much more consistent and significant effect on the real exchange rate than the other capital flows.  This effect is not as short-term as is often envisaged, it continues to have an influence for several quarters. It is also clear that central bank intervention can affect the level of the exchange rate. 
+For the other types of capital flow, there is a great deal more ambiguity about the effect on the real exchange rate.  A one-unit innovation in the bond position $(b)$ - equivalent to about \$35bn at the beginning of 2010 - is close to zero over the following four quarters and slightly negative beyond that point.  The average effect of an innovation to the net inflow to US equities $(e)$ (again about \$35bn) is on average zero. 
 
 The rest of this paper is organised as follows: Section \ref{secref:capflow} discusses theoretical models of capital flows and the exchange rate; Section \ref{secref:meth} addresses some methodological issues; Section \ref{secref:altspec} presents the results and considers alternative model specifications; Section \ref{secref:conc} concludes.  
 
 \section{Capital flow and the exchange rate}\label{secref:capflow}
-Standard models of exchange rates put the emphasis on the goods market. These open-economy macro model concentrate on relative prices and trade adjustment via the current account.  International financial markets are complete and automatically offset or finance any current account imbalance.  International financial flows and changes in the stock of international financial assets facilitate inter-temporal transfers and allow adjustment to country-specific exogenous innovations such as productivity shocks.  See \citet{obstfeld2000new}, \citet{OandRedux}, \citet{OandR} and \citet{lane2001new} for a survey of the literature. 
-
-The financial account and the role that portfolio adjustment plays in the evolution of exchange rates has received less attention.  However, \citet{Branson1971} investigate international capital flows with a stock, equilibrium, reduced-form model where changes in capital flows depend on changes in relative interest rates and changes in the the size of the overall stock of savings.  \citet{Kouri1974International} extend Branson by adding the traditional monetary approach to the balance of payments to develop a Portfolio Equilibrium model. Capital flows are affected by the domestic excess demand for money and endogenous interest rates.   
+The financial account and the role that portfolio adjustment plays in the evolution of exchange rates has received increased attention.  \citet{Branson1971} investigate international capital flows with a stock, equilibrium, reduced-form model where changes in capital flows depend on changes in relative interest rates and changes in the the size of the overall stock of savings.  \citet{Kouri1974International} extend Branson by adding the traditional monetary approach to the balance of payments to develop a Portfolio Equilibrium model. Capital flows are affected by the domestic excess demand for money and endogenous interest rates.   
   
-\citet{brookscapital} show that portfolio and foreign direct investment track movements in the US dollar against the Yen and the Euro in the period 1988 to 2000. They find that excess returns for the US equity market relative to that of the Euro area explain US capital inflow and the appreciation of the US dollar. \citet{Siourounis2004Capital} finds that net US equity purchase has a stable and consistent impact on UK, German and Swiss exchange rates, but that net purchase of US or overseas bonds has no influence.   
+\citet{brookscapital} show that portfolio and foreign direct investment track movements in the US dollar against the Yen and the Euro in the period 1988 to 2000. They find that excess returns for the US equity market relative to that of the Euro area explain US capital inflow and the appreciation of the US dollar. \citet{Siourounis2004Capital} discovers that net US equity purchase has a stable and consistent impact on UK, German and Swiss exchange rates, but that net purchase of US or overseas bonds has no influence.   
   
 \citet{HauEquity} model the exchange rate as driven by the financial account of the balance of payments where there is less than fully elastic supply of currency.  Net demand for overseas equities will move the exchange rate in this expansion of the microstructure approach to financial asset pricing.  However, while in the microstructure literature \citet{Evans2002Order}, \citet{Lyons1995Microstructure} and \citet{rime2010exchange} explain distribution in currency with knowledge about market-maker and dealer orders, here the movement of international capital is the fulcrum of adjustment. 
 
@@ -81,112 +70,41 @@ Q^s = -\kappa(E_t - \bar{E})
 
 Here $\kappa$ is the elasticity of currency supply.  Therefore, excess net demand for overseas equities (a capital outflow) cause an appreciation of the overseas currency as a means of inducing risk-averse market-makers to hold more domestic currency.  Financial institutions facilitate the decisions of international investors in exchange for a price concession. 
 
-\citet{Blanchardint} use a very similar model to assess whether central bank intervention in the foreign exchange market can be successful outside of its monetary or signalling effects.  They try to show that central bank purchase of foreign exchange (a capital flow) can affect the price without actual or expect monetary changes. The pattern is,  
-
-\begin{equation}
-GPKI_{j,t} - GPKO_{j,t} + FXI_{j,t} +CA_{j,t} = 0
-\end{equation}
-
-where GPKI is gross private capital inflow and GPKO is gross capital outflow, FXI is official foreign exchange intervention and CA is the current account position. 
-
 \section{Methodological issues}\label{secref:meth}
-In this paper a structural model of international capital flows and the real exchange rate assumes a downward sloping demand curve like that presented in \citet{HauEquity}. However,  the capital market flow is broken into its constituent parts. The equivalent of Equation \ref{eqref:supsub} holds for each capital flow as market participants require a price concession in the real exchange rate to absorb the net capital flow.  This format suggests that $\kappa$ in Equation \ref{eqref:supsub} can vary according to the type of capital: the elasticity of supply depends on the capital type. It is assumed that financial institutions are more willing to finance foreign purchase of currency for foreign direct investment than for more speculative activity. It may also be the case that different flows come from different institutions and that these institutions have different levels of information or have institutional features that suggest a more or less permanent change in exchange rate value.\footnote{\citet[p.3 footnote. 3]{Siourounis2004Capital} cites a survey of proprietary data from a Fund of Funds that shows that cross border bond holdings are heavily hedged (more than 90\%) whereas equity holdings are not (less than 12\%). Therefore a net flow to bonds would not be expected by the liquidity provider to have a permanent effect as there will be an anticipated offsetting transaction elsewhere in the system.}
+Identifying and measuring speculative flows has been a challenge due to the scarcity of data.  A standard approach has been to utilise \citet{BISbanking}. These figures record cross-border banking exposure.  For example, \citet{Bruno2014} model the global liquidity cycle of international banks; \citet{AdamsKaneGlobal} try to assess the relative importance or willingness to lend, the level of liquidity and measures of solvency in determining capital flow.  However, it is impossible, using this data, to distinguish between bank lending for real business projects and that for speculation in financial markets.  As a rare exception, \citet{Cerutti2014} combine BIS with proprietary banking data to analyse the speculative flow between international and local banks. 
 
-There are three major methodological issues that have to be overcome: the equilibrium exchange rate; the variables that will be included in the model; the issue of endogeneity.   In the Hau and Rey model, $\bar{E}$ in Equation \ref{eqref:supsub} is the fundamental value.  That fundamental value is here assumed to be purchasing power parity that equates the price of a US basket of goods with those in the rest of the world.  The aim is to model deviations in the real trade-weighted US exchange rate. Systematic changes in the value of the real exchange rate can be incorporated by intercepts and trends in the model. \citet{Gelman} create a real effective financial market exchange rate (REFER) that is financially weighted and deflated by financial market prices and find a coinetgrating relationship between the index and a the level of net foreign equities.  This rate is not used here as the aim is to assess the effect of financial flows on competitiveness - particularly the way that speculative activity can affect the real economy.  
+\subsection{The data}
+Since January 1977, the US Treasury has released a monthly report providing significant detail about the changes in the holding of long-term securities amongst US and overseas investors. This report is part of a series of reports under the Treasury International Capital Department (commonly known as the TIC data).  See \citet[p. 29]{siourounis2004Capital} and US Treasury \citet{TIC} for a comprehensive overview. \citet[p.18]{siourounis2004Capital} has a discussion of the way that share-swaps for overseas mergers may affect the data; \citet[p.516]{brookscapital} and \citet{HauEquity} discuss some of the limitations of the data.
 
-Exchange rates are notoriously difficult to forecast using fundamental variables (see \citet{Meese1983Empirical}.  The current study seeks to understand changes in competitiveness as measured by movements in the real exchange rate with the whole spectrum of international capital flows.  Most of the existing models (some of which have been discussed above) concentrate on the equity or bond flows, leaving no room for the influence of short-term speculative activity.  To understand the fluctuations in the US real exchange rate, data on foreign direct investment are taken from the balance of payments statistics while net flows of equity, bonds and the purchase of bonds by overseas central banks are taken from the US Treasury report on International Capital and a figure for cumulative net holdings of foreign direct investment, bond, equities and official purchase relative to GDP are constructed. To measure speculation positions held by speculative non-commercial accounts in US exchange rate futures are used to assess speculative sentiment while the interest rate differential is used to measure the propensity for the carry-trade. Appendix \ref{app1} provides full details of data used. The full list of variables used with abbreviations used throughout are; real trade-weighted index $(er)$; net cumulative bonds per GDP $(b)$; net cumulative equity per GDP $(e)$; net cumulative FDI per GDP $(fdi)$; official holdings of treasuries that is primarily the result of central bank intervention in the foreign exchange market $(cb)$; speculative sentiment $(s)$ and the carry-trade $(i)$. 
+The data include information about the buying and selling of long-term securities by US and overseas investors.  From the gross figures for purchase and sale of specific securities by US-based and overseas investors, a net flow figure for each direction can be constructed for each security type by amalgamating gross purchase of overseas securities by US investors with the gross sale of US securities by overseas.  
 
-The statistical difficulties that emerge when trying to estimate parameters when there is feedback from the dependent variable onto explanatory variables were an important part of the criticism of the Branson model (See \citet{Branson1968} and \citet{Branson1971}.)  \citet{Kouri1974International} show that a linear regression of capital flows on interest rate differentials will systematically under-estimate the sensitivity of capital flows. The \citet{brookscapital} model suffers in the same way from being reduced form.     Vector Auto Regression (VAR) is one way of dealing with the issue of endogeneity.  The method was initially suggested by \citet{Sims1980Macroeconomics},  An overview of developments and extensions can be found in \citet{lutkepohlvar} and \citet{Hamilton}.  The essence of the VAR is to create a system with all the important variables, assume that they are endogenous and add significant lags to remove any serial correlation from the residuals.    
+The first speculative money market series are compiled to account for sentiment, momentum or technical tracing flows.  The series for these flows are the positions held by speculative funds in the main currency futures markets in the US.  These are positions that must be reported to the US derivative regulator, the US Commodity Futures Trading Commission (CFTC).  The positions are held in foreign currency vs the US dollar.  The key contracts are Canadian Dollar (contract of 100,000 Canadian dollars), UK Sterling (contract of 62,500 sterling), Japanese yen (12,500,000 yen), Swiss franc (125,000 CHF) and Euro (125,000 EUR) or Deutschmark before the introduction of ECU trading.  The data and explanation about the differentiation between commercial (hedgers) and non-commercial (speculators) is available from the CFTC web site \citet{cot}.   The outstanding long or short speculative positions are amalgamated across currencies and normalised to the total number of speculative positions (S1) or the total open interest positions (S2) to get an overall measure of sentiment.  Once the two series are constructed, they are multiplied by -10 to make something easier to work with and to ensure that a speculative inflow to the US is a positive number. 
 
-The \emph{primitive} version of the VAR is presented in Equation \ref{transitionvar} 
-\begin{equation}\label{transitionvar}
-Ay_{t}=\Gamma_{0}y_{t-p} +\Gamma_{1}x_{t-1}+\epsilon_{t}
-\end{equation}
+Therefore, there are seven main variables that are to be used in the analysis and a number of variations that can be applied to the model.  The main variables are:  the cumulative net bond per GDP $(Bond)$; the cumulative net equity per GDP $(Equity)$; cumulative net foreign direct investment per GDP $(FDI)$; cumulative net official treasuries per GDP $cb)$; the real trade-weighted index $(ER)$;  the spread between US short rates and the rates of the main trading partners $(Irs)$; and, a measure of speculative sentiment measured in two ways $(Spec)$.  The full data set run from the first quarter of 1973 through to the first quarter of 2010.  
+\subsection{The model}
 
-where $y_t$ is a vector of the endogenous variables, $\epsilon_t$ is a matrix of innovations with the assumption that non-diagonal covariance elements are zero and normally distributed with a constant variance\footnote{Though the independence assumption appears quite onerous, it should be remembered that this is independence of innovation.  It does not mean that there is no relationship between the endogenous variables ($y$). A shock to an endogenous variable can have an effect on the other via the contemporaneous relationship (which is the matrix $A$ in Equation \ref{transitionvar}).}, $x_t$ is a vector of exogenous variables, $\Gamma_0$ and $\Gamma_1$ are parameters to be estimated, and $A$ is a matrix of contemporaneous covariances to be estimated. 
+In this paper a structural model of international capital flows and the real exchange rate assumes a downward sloping demand curve like that presented in \citet{HauEquity}. However,  the capital market flow is broken into its constituent parts. The equivalent of Equation \ref{eqref:supsub} holds for each capital flow as market participants require a price concession in the real exchange rate to absorb the net capital flow.  This format suggests that $\kappa$ in Equation \ref{eqref:supsub} can vary according to the type of capital: the elasticity of supply depends on the capital type. It may also be the case that different flows come from different institutions and that these institutions have different levels of information or have institutional features that suggest a more or less permanent change in exchange rate value.\footnote{\citet[p.3 footnote. 3]{ Siourounis2004Capital} cites a survey of proprietary data from a Fund of Funds that shows that cross border bond holdings are heavily hedged (more than 90\%) whereas equity holdings are not (less than 12\%). Therefore a net flow to bonds would not be expected by the liquidity provider to have a permanent effect as there will be an anticipated offsetting transaction elsewhere in the system.}
 
-To remove the endogeneity, the structural or primitive equations can be transformed so that coefficients can be estimated without the fear of bias. This is done by multiplying Equation \ref{transitionvar} through by $A^{-1}$ to get the \emph{standard form of the VAR}
+There are three major methodological issues that have to be overcome: the equilibrium exchange rate; the variables that will be included in the model; the issue of endogeneity.   In the Hau and Rey model, $\bar{E}$ in Equation \ref{eqref:supsub} is the fundamental value.  That fundamental value is here assumed to be purchasing power parity that equates the price of a US basket of goods with those in the rest of the world.  The aim is to model deviations in the real trade-weighted US exchange rate. Systematic changes in the value of the real exchange rate can be incorporated by intercepts and trends in the model. 
 
-\begin{equation}\label{standardvar}
-y_t=B_0+B_1y_{t-p}+e_t
-\end{equation}
+The statistical difficulties that emerge when trying to estimate parameters when there is feedback from the dependent variable onto explanatory variables were an important part of the criticism of the Branson model (See \citet{Branson1968} and \citet{Branson1971}.)  \citet{Kouri1974International} show that a linear regression of capital flows on interest rate differentials will systematically under-estimate the sensitivity of capital flows. The \citet{brookscapital} model suffers in the same way from being reduced form.     Vector Auto Regression (VAR) is one way of dealing with the issue of endogeneity.  The method was initially suggested by \citet{Sims1980Macroeconomics},  An overview of developments and extensions can be found in \citet{lutkepohlvar} and \citet{Hamilton}.  The essence of the VAR is to create a system with all the important variables, assume that they are endogenous and add significant lags to remove any serial correlation from the residuals.  The explanation for the twenty-one restrictions that are imposed on the exchange rate-capital flow model are in the Appendix \ref{app1}.  
 
-Now the equations are in reduced form.\footnote{Ordinary least squares can be used and it can be shown that the ordinary-least-squares estimator is the equivalent to the Maximum Likelihood Estimator (MLE). See \citet[p. 293]{Hamilton}.}  However, though the model can be estimated with ease, because of the transformation that has been undertaken, the coefficients that are of interesting in the structural model have been transformed. $B_0=A^{-1}\Gamma_0$, $B_1=A^{-1}\Gamma_1$ and $e_t=A^{-1}\epsilon_t$. Some method must be established to uncover the structural parameters.  As there are seven variables twenty one restrictions are required for identification.  In general, $K(K-1)/2$ restrictions will be needed, where K is the number of endogenous  variables in the VAR.
+\section{Results}\label{secref:altspec}
+The preferred module has been chosen by using Akaike Information Criteria (AIC) whilst ensuring that the diagnostic statistics are consistent with the module assumptions.  This model is called the First Specification and it is a SVAR model with a constant and trend together with three dummy variables for the Mexican crisis, the 1984 increase in US interest rates and the Global Financial Crisis.  Four lags are used and all the capital flow variables are used in the system.  
+   
+The parameters of the model have been estimated with some imprecision.  It is usual therefore to account for this imprecision by drawing confidence intervals around the central estimate.  This is done by drawing random residuals from the model and using these to reassess the parameters and the IRFs.  The 95\% confidence intervals are represented by the dashed lines in Figure \ref{fig:IRF1}.  These shows that in many cases the imprecision is sufficient to make it very difficult to be sure that capital flows have a positive or negative effect on the real trade-weighted index.  However, for the speculative sentiment $(s)$ and central bank activity $(cb)$ more than 95\% of the estimates are positive making these much more reliable indicators. 
 
-\subsection{Identification}\label{secref:ident}
-There are a wide variety of methods that can be used to restrict the equation for identification.   \citet{Sims1980Macroeconomics} originally suggested a \emph{recursive} method of imposing zero restrictions on some of the contemporaneous correlations in the $A$ matrix in Equation \ref{transitionvar}.  It is also possible to use a \emph{Cholesky decomposition} to create a triangular $A$ matrix. \citet{Siourounis2004Capital} uses this method to set all the lower-triangle elements to zero.  The disadvantage of either of these methods is that the estimated values of the contemporaneous coefficients will be determined in part by the order that the variables are included in the VAR (see \citet[pp. 303-311]{EndersTS} for a full discussion).  
+\section{Conclusion}\label{secref:conc}
+An SVAR model of the real exchange rate and international capital flows is estimated and IRF are used to analyse the effect of shocks to the system.   Unlike most attempts to assess the relationship between capital flow and the exchange rate, this model includes a role for speculation. New methods have been proposed to measure speculative activity.  These measures seek to capture two types of speculation:  sentiment and the carry-trade.   
 
-The Sims-Bernanke approach to identification uses economic theory to place restrictions on some of the parameters. This is the approach that is adopted here. In assessing the relative importance of fiscal and monetary policy in economic activity,  \citet{Sims1986} proposed a six-variable VAR including factors like GNP, money supply, interest rates, inflation, investment and unemployment and made 17 restrictions so that the system was \emph{over-identified}. Similarly,  \citet{Bernanke1986} made a number of explicit restrictions to evaluate his assertion that the relationship between money and income is intermediated by credit rather than being the result of money illusion or causality running from income to money.  
+Impulse Response Functions from the SVAR show that deviations from PPP can be explained by innovations in net international capital flows but, contrary to some of the other investigations of this issue, the type of flow that has the most pronounced and significant effect is that associated with speculation. This means that speculation is the key factor that is driving the exchange rate away from equilibrium and that speculation can affect competitiveness. Speculation can either flow from sentiment and momentum or carry-like positions.   
 
-Four our system of capital flows and the real exchange rate, the primitive version of the VAR from Equation \ref{transitionvar} without any lags or exogenous variables can be represented as
+The results support the notion that measures to reduce the effect of speculation can enhance economic stability.  In addition to the effect on competitiveness, these short-term capital flows can add liquidity to the banking system, fuel a credit book and cause an appreciation of asset prices.  The measures to be taken could be taxation of foreign exchange transactions or capital controls or intervention in the foreign exchange market.  There is some evidence that these direct interventions in the market can be effective. The other capital flow that has a consistent, positive and statistically significant effect on the real exchange rate associated with official intervention in the foreign exchange market. This provides evidence that official intervention in the foreign exchange market may be effective in offsetting some of the effect of speculative activity.  However, this paper does not assess the way that this intervention may affect other aspects of monetary policy. As such, capital controls or other forms of official activity may be more effective policy instruments against speculation in the medium to long term. 
+\bibliography{../../myrefs}
+%\end{document}
 
-\begin{equation*}\label{eqref:marf}
-\underbrace{
-\begin{bmatrix}
-1 & \xi_{be} & 0 & 0 & 0 & \xi_{bi} & 0 \\ 
-\xi_{eb} & 1 &  \xi_{efdi} & 0 & \xi_{eer} & 0 & \xi_{es} \\
-0 & \xi_{fdie} & 1 & 0 & \xi_{fdire} & 0 & 0 \\
-\xi_{cbb} & 0 & 0 & 1 & \xi_{cbre} & 0 & \xi_{cbs}\\
-0 & xi_{ree} & \xi_{refdi} & \xi_{recb} & 1 & \xi_{rei} & \xi_{res}\\
-\xi_{ib} & 0 & 0 & 0 & xi_{ire} & 1 & 0\\
-0 & \xi_{se} & 0 & \xi_{scb} & \xi_{sre} & 0 & 1
-\end{bmatrix} }_{A}
-\times
-\underbrace{
-\begin{bmatrix}
-b\\
-e\\
-fdi\\
-cb\\
-re\\
-i\\
-s
-\end{bmatrix} }_{y}
-= 
-\underbrace{
-\begin{bmatrix}
-\varepsilon_{b,t}\\
-\varepsilon_{e,t}\\
-\varepsilon_{fdi, t}\\
-\varepsilon_{cb,t}\\
-\varepsilon_{re, t}\\
-\varepsilon_{i, t}\\
-\varepsilon_{s, t}
-\end{bmatrix} }_{\varepsilon}
-\end{equation*}
-
-Zero restriction are imposed on some of the contemporaneous relationships.  The parameters to be estimated are $\xi$ with the subscript indicating the two endogenous variables being measured for contemporaneous covariance.  For example, $xi_{be}$ is the relationship between the net bond and net equities flow.    Equations \ref{eqref:res1} to \ref{eqref:res7} show the reduced form version of the matrix representation Equation \ref{eqref:marf} and allow more careful consideration of the restrictions.   
-
-\begin{equation}\label{eqref:res1}
-  b_t = \xi_{be}e_t + \xi_{bi} i_t + \varepsilon_{b,t}
-\end{equation}
-
-\begin{equation}\label{eqref:res2}
-e_t = \xi_{eb} b_t + \xi_{efdi} fdi_t + \xi_{ere} re_t + \xi_{es} s_t + \varepsilon_{e,t}
-\end{equation}
-
-\begin{equation}\label{eqref:res3}
-fdi_t = \xi_{fdie} e_t + \xi_{fdire} re_t + \varepsilon_{i, t}
-\end{equation}
-
-\begin{equation}\label{eqref:res4}
-cb_t = \xi_{cbre} re_t + \xi_{cbs} s_t + \varepsilon_{cd,t}
-\end{equation}
-
-\begin{equation}\label{eqref:res5}
-re_t = \xi_{ree} e_t + \xi_{refdi} fdi_t + \xi_{recb} + cd_t + \xi_{eri} i_t + \xi_{res} s_t + \varepsilon_{re, t}
-\end{equation}
-
-\begin{equation}\label{eqref:res6}
-i_t = \xi_{ib} b_t + \xi_{ire} re_t + \varepsilon_{i, t}
-\end{equation}
-
-\begin{equation}\label{eqref:res7}
-s_t = \xi_{se} e_t + \xi_{scb} cd_t + \xi_{sre} re_t + \varepsilon_{s, t}
-\end{equation}
-
-The following are the explanations for the twenty-one restrictions that are imposed on the exchange rate-capital flow model.  
-
+\begin{appendices}
+\section{Appendix 1}\label{app1}
 For Equation \ref{eqref:res1}, the bond flow $(b)$ is restricted by imposing a coefficient of zero on foreign direct investment $(fdi)$, central bank transactions $(cb)$, the real exchange rate $(re)$ and sentiment $(s)$.  Though the exchange rate $(er)$ and speculative sentiment $(s)$ could be expected to be related to an increase net bond flows, it seems more likely that this would happen at the short end of the yield curve (and therefore would be better captured by the measures of short-term speculative activity, which is allowed) and, as noted in \citet{HauEquity}, most of the international bond flows appear to be hedged against foreign exchange gains and losses.   
 
 For Equation \ref{eqref:res2} the cumulative net equity equation is restricted only at the cumulative official treasuries $(cb)$ and the interest rate spread $(i)$  Lower relative rates could inspire a more positive attitude towards corporate profits, but rate changes could just as likely be a response to broad-based economic weakness that would not be conducive to profitability. 
@@ -200,110 +118,6 @@ Equation \ref{eqref:res5} is the heart of the analysis.  The real exchange rate 
 The interest-rate spread in Equation \ref{eqref:res6}, which presumably is largely a function of central bank policy, is restricted against net equity (e), net FDI (fdi), official purchase (cb) and sentiment (s).  The exchange rate and net bond flows are allowed to have some influence as the exchange rate may be a policy trigger and bond flows may be affected by expected changes in short-term interest rates.  
 
 Finally, Equation \ref{eqref:res7} with speculative sentiment is restricted on bonds$ (b)$, FDI $(fdi)$ and the interest rate spread $(i)$, but can vary with equity and the exchange rate $(er)$.  This allows for some positive spillover from more optimistic attitudes towards the economy, which may affect the flow of money to the stock market.   It can account for positive feedback from a change in the value of the exchange rate to speculative sentiment, thereby allowing positive momentum. 
-
-\section{Results and alternative specifications}\label{secref:altspec}
-The preferred module has been chosen by using Akaike Information Criteria (AIC) whilst ensuring that the diagnostic statistics are consistent with the module assumptions.  This model is called the First Specification and it is a SVAR model with a constant and trend together with three dummy variables for the Mexican crisis, the 1984 increase in US interest rates and the Global Financial Crisis.  Four lags are used and all the capital flow variables are used in the system.  Impulse Response Functions (IRF), created with the \emph{Wold moving average representation} of the autoregressive process established in Equation \ref{standardvar} (see \citep[p. 17]{HarveyTSM} or \citep[pp. 64 - 70]{Hamilton} for full details) have already been presented in Figure \ref{fig:IRF1}.\footnote{Starting from the standard VAR representation of Equation \ref{standardvar}, 
-
-\begin{equation}
-x_t=A_0+A_1x_{t-1}+e_t
-\end{equation}
-
-by iterating backwards and using the stability assumption, this becomes  
-
-\begin{equation}
-x_t=\mu + \sum_{i=0}^{\infty} A_i^i e_{t-i}
-\end{equation}
-
-Where $\mu$ is the mean level of the vector $x$. 
-
-The identification discussed in Section \ref{secref:ident} is now used to uncover the structural parameters. In this case, the identification requires that $A_1$ be replaced by the $B^{-1}A_1$.  Which for a two-variable case would be 
-
-\begin{equation}
-x_t=\mu + \sum_{i=0}^{\infty} \Phi_i \varepsilon_{t-i}
-\end{equation}
-
-when
-
-\begin{equation}
-\Phi_i=\frac{A_1^i}{1 - b_{12}b_{21}}
-\begin{bmatrix} 1 & -b_{12} \\ -b_{21} & 1 
-\end{bmatrix} 
-\end{equation}
-}  These showed that speculative activity from the carry-trade or momentum has significant effects on the level competitiveness: a ten percentage point increase in speculative positions is equated with an average 4\%v rise in the trade-weighted index and a 100bp fall in US interest rates relative to those in the rest of the world is associated with an increase in competitiveness of around 10\%.    
-   
-The parameters of the model have been estimated with some imprecision.  It is usual therefore to account for this imprecision by drawing confidence intervals around the central estimate.  This is done by drawing random residuals from the model and using these to reassess the parameters and the IRFs.  The 95\% confidence intervals are represented by the dashed lines in Figure \ref{fig:IRF1}.  These shows that in many cases the imprecision is sufficient to make it very difficult to be sure that capital flows have a positive or negative effect on the real trade-weighted index.  However, for the speculative sentiment $(s)$ and central bank activity $(cb)$ more than 95\% of the estimates are positive making these much more reliable indicators. 
-
-\subsection{Robustness of model}
-The performance of the structural model will be influenced by the model specification.  Therefore it would be beneficial to assess how the capital flows affect the real exchange rate under a variety of alternative specifications. There are two primary alternatives presented here: a full model that is identified with the Cholesky decomposition. This is called Specification Two. IRFs from this model are presented in Figure \ref{fig:IRF2}.   As these results are affected to a large extend by the ordering of the variables in the VAR, an alternative is proposed with the resits presented in Figure \ref{fig:IRF3} where the order of the variables is selected randomly.  This is called Specification Three.  
-
-
-\begin{sidewaysfigure}
-\graphicspath{{../Figures3/}}
-\centering
-\caption{Impulse Response Functions for RTWI for Specification Two}
-\label{fig:IRF2}  
-\includegraphics[scale=0.75]{IRF1}
-\end{sidewaysfigure}
-
-\begin{sidewaysfigure}
-\graphicspath{{../Figures3/}}
-\centering
-\caption{Impulse Response Functions for RTWI for Specification Two}
-\label{fig:IRF3}  
-\includegraphics[scale=0.75]{IRF2}
-\end{sidewaysfigure}
-
-% does some additional infirmation about diagnositc tests (possibly with reference to appendix) come in here? 
-It is encouraging that the broad patterns identified in the IRFs remain very similar no matter which of the three methods is used to identify the system (see Figures \ref{fig:IRF1}, \ref{fig:IRF2} and \ref{fig:IRF3} for IRFs from Specifications One, Two and Three respectively).  The speculative effects related to sentiment and interest rate differentials are unequivocally positive in all three cases. The other major effect that is identified is that of the positive relationship between the official purchase of treasuries and the exchange rate.  The different methods of identifying the system all indicate that the other capital flows have a much more uncertain effect on the real exchange rate.  
-
-The one difference that is evident in the IRF from the three different specifications is that for Specification One the initial impact of a positive shock to the purchase of bonds by foreign official institutions is negative and then turns positive in line with the other two systems.  This may be the result of reverse causation as it is most likely that the foreign exchange intervention will take place at times when the US dollar is weak. This is very plausible. 
-
-In addition, a range of attentive specifications have been proposed with a summary of the results presented in Table \ref{tabref:diag} in Appendix \ref{app2}.  This reports a number of metrics such as the Akaike Information Criterion and the Bayesian Schwartz Information as well as some summary statistics and information on the IRF for changes made in the variable selection (removing some of the capita flows to established results), the use of exogenous variables such as trends, slopes and dummies as well as adjustments to the number of lags.  
-Table \ref{tabref:diag} shows that none of the other configurations match the data was well as the preferred model.  Irrespective of whether this is judged by the Akaike Information Criterion (AIC) or a Bayesian Information Criterion (BIC).  The general results remain intact under these alternative specifications:  speculative measures of carry-trade and speculative response are positive and generally statistically significant; central bank purchase of treasuries is negative initial and becomes positive; bond, equity and real investment flows are limited and ambiguous.  
-
-\section{Conclusion}\label{secref:conc}
-An SVAR model of the real exchange rate and international capital flows is estimated and IRF are used to analyse the effect of shocks to the system.   Unlike most attempts to assess the relationship between capital flow and the exchange rate, this model includes a role for speculation. New methods have been proposed to measure speculative activity.  These measures seek to capture two types of speculation:  sentiment and the carry-trade.   
-
-Impulse Response Functions from the SVAR show that deviations from PPP can be explained by innovations in net international capital flows but, contrary to some of the other investigations of this issue, the type of flow that has the most pronounced and significant effect is that associated with speculation. This means that speculation is the key factor that is driving the exchange rate away from equilibrium and that speculation can affect competitiveness. Speculation can either flow from sentiment and momentum or carry-like positions.   
-
-The results support the notion that measures to reduce the effect of speculation can enhance economic stability.  In addition to the effect on competitiveness, these short-term capital flows can add liquidity to the banking system, fuel a credit book and cause an appreciation of asset prices.  The measures to be taken could be taxation of foreign exchange transactions or capital controls or intervention in the foreign exchange market.  There is some evidence that these direct interventions in the market can be effective. The other capital flow that has a consistent, positive and statistically significant effect on the real exchange rate associated with official intervention in the foreign exchange market. This provides evidence that official intervention in the foreign exchange market may be effective in offsetting some of the effect of speculative activity.  However, this paper does not assess the way that this intervention may affect other aspects of monetary policy. As such, capital controls or other forms of official activity may be more effective policy instruments against speculation in the medium to long term. 
-\bibliography{../../myrefs}
-%\end{document}
-
-\begin{appendices}
-\section{Appendix 1}\label{app1}
-\subsection{The data}
-The data on capital flows are derived from a number of sources.  The first source is the US balance of payments data.  These data give a broad overview of the position of the US relative to other economies.  The series that explain the flow of foreign direct investment (FDI) come from the balance of payments data.  The net of private, direct investment in foreign-owned assets in the US and US assets abroad are combined.   Since January 1977, the US Treasury has released a monthly report providing significant detail about the changes in the holding of long-term securities amongst US and overseas investors. This report is part of a series of reports under the Treasury International Capital Department (commonly known as the TIC data).  See \citet[p. 29]{Siourounis2004Capital} and US Treasury \citet{TIC} for a comprehensive overview. \citet[p.18]{siourounis2004Capital} has a discussion of the way that share-swaps for overseas mergers may affect the data; \citet[p.516]{brookscapital} and \citet{HauEquity} discuss some of the limitations of the data and .
-
-The data include information about the buying and selling of long-term securities by US and overseas investors.  From the gross figures for purchase and sale of specific securities by US-based and overseas investors, a net flow figure for each direction can be constructed for each security type by amalgamating gross purchase of overseas securities by US investors with the gross sale of US securities by overseas.  
-
-\begin{equation}
-NB= NUSB + NFB
-\end{equation}
-
-Where NB is net bonds; NUSB is net US bonds; NFB is net foreign bonds. 
-
-\begin{equation}
-NUSB = NT + NA + NC
-\end{equation}
-
-NT is net treasuries; NA is net agency securities; and, NC is net corporate bonds.  The net position is calculated by subtracting the gross sale of securities by overseas investors to US residents from the gross purchase of securities from overseas investors from US residents. 
-
-\begin{equation}
-NE = NUSE + NFE
-\end{equation} 
-
-Where NE is net equity; NUSE is net US equities; NFE is net foreign equities.  As before, the net position is the difference between gross purchase and gross sales by US residents.  
-
-The other data that are available from the US Treasury are details on the transactions carried out by international monetary authorities.  These \emph{official} institutions are mostly central banks but can also include the IMF and other quasi-official organisations. By far the largest component of these are the purchase and sale of US Treasury bonds.  An increase in capital inflow to the US associated with official flows would be expected to come from pressure for appreciation of domestic currency vs the US dollar.  The most obvious example of  this is ``Mainland China" where the Chinese monetary authorities have acquired a huge holding of US Treasury bonds as they have bought US dollars against their own currency to maintain competitiveness \citet{TIC}.
-
-The monthly official bond flow are subtracted from the total bond flows to leave a figure for the private sector and one for the pubic sector as well as a monthly series for net equity flows.  Once the three series  are added together to get quarterly figures they are placed with the current account and foreign direct investment flows (which came from the balance of payments) and all of these are cumulated from the starting point to get something approaching a stock of international assets and are then deflated by nominal GDP to facilitate the comparison across time. 
-
-The first speculative money market series are compiled to account for sentiment, momentum or technical tracing flows.  The series for these flows are the positions held by speculative funds in the main currency futures markets in the US.  These are positions that must be reported to the US derivative regulator, the US Commodity Futures Trading Commission (CFTC).  The positions are held in foreign currency vs the US dollar.  The key contracts are Canadian Dollar (contract of 100,000 Canadian dollars), UK Sterling (contract of 62,500 sterling), Japanese yen (12,500,000 yen), Swiss franc (125,000 CHF) and Euro (125,000 EUR) or Deutschmark before the introduction of ECU trading.  The data and explanation about the differentiation between commercial (hedgers) and non-commercial (speculators) is available from the CFTC web site \citet{cot}.   The outstanding long or short speculative positions are amalgamated across currencies and normalised to the total number of speculative positions (S1) or the total open interest positions (S2) to get an overall measure of sentiment.  Once the two series are constructed, they are multiplied by -10 to make something easier to work with and to ensure that a speculative inflow to the US is a positive number. 
-
-The interest rate data are taken from the IMF International Financial Statistics.  The interest rates are short-term interest rates and usually 'money market rates' where available.  The three month rate is used. An index of international money rates is compiled and compared to the equivalent US interest rate. The index is composed with weights equal to those used in the Major Currency trade-weighted index that is compiled by the US Federal Reserve \citet{Fedtwi}.  For the Euro, an equal weight of French and German rates is taken until the arrival of the ECU.   Mexico causes some problems as it has a relatively large trade weight with the US and, in the 1980s, had very volatile interest rates.  This means that the interest rate spread is quite volatile in the early years of the series.  Therefore, there are two spread series created.  The first (SPREAD1) includes Mexico and the second (SPREAD2) excludes Mexico.  In the VAR analysis, a dummy variable is also used to account for the interest rate volatility in the early 1980s.    
-
-Therefore, there are seven main variables that are to be used in the analysis and a number of variations that can be applied to the model.  The main variables are:  the cumulative net bond per GDP $(b)$; the cumulative net equity per GDP $(e)$; cumulative net foreign direct investment per GDP $(fdi)$; cumulative net official treasuries per GDP $cb)$; the real trade-weighted index $(er)$;  the spread between US short rates and the rates of the main trading partners $(i)$; and, a measure of speculative sentiment measured in two ways $(s)$.  The full data set run from the first quarter of 1973 through to the first quarter of 2010.  However, the series taken from the Transactions in Long Term Securities data (TIC) only begin in the second quarter of 1977, the data on official holdings of US Treasury bonds begin in the second quarter of 1978 and the sentiment data begin in the first quarter of 1986.   
 
 \section{Appendix 2}\label{app2}
 \begin{sidewaystable}

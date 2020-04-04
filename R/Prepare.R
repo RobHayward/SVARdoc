@@ -1,4 +1,4 @@
-rm(list=ls(all=TRUE))
+#rm(list=ls(all=TRUE))
 library(xtable)
 library(dse)
 library(vars)

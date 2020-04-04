@@ -75,9 +75,9 @@ irfCOT.Svar1<-irf(Svar1, cumulative=T,impulse="COT",response="RTWI",
                   boot=TRUE, runs=100, n.ahead=4)
 plot(irfCOT.Svar1)
 #
-irfRTWI.Svar1<-irf(Svar1, cumulative=T,impulse="RTWI",response="RTWI", 
+irfCNFDI.Svar1<-irf(Svar1, cumulative=T,impulse="CNFDI",response="RTWI", 
                    boot=TRUE, runs=100, n.ahead=4)
-plot(irfRTWI.Svar1)
+plot(irfCNFDI.Svar1)
 #
 irfSPREAD.Svar1<-irf(Svar1, cumulative=T,impulse="SPREAD2",response="RTWI", 
                      boot=TRUE, runs=100, n.ahead=4)

@@ -4,7 +4,7 @@
 # the othogonal random model is model 3
 head(da)
 #head(dan)
-Var1<-VAR(da,p=4, type='both',season=NULL, exog=dum)
+#Var1<-VAR(da,p=4, type='both',season=NULL, exog=dum)
 #Var3 <- VAR(dan[, c(3:7, 9. 11)], p = 8, type = 'both', season = NULL, exog = dum)
 #Setting up the A (or B) Matrix#####################################
 #Setting up the A matrix. 
@@ -60,9 +60,3 @@ Amat[7,4]<-NA #sentiment vs no
 Amat[7,5]<-NA # sentiment vs fx
 Amat[7,6]<-0 # sentiment vs spread
 Amat
-# Estimate the SVAR
-Svar1<-SVAR(Var1,estmethod='direct',Amat=Amat,hessian=TRUE)
-Svar1$A
-# This is the A matrix
-#if you want turn list into dataframe and xtable for la tex
-xtable(Svar1$A, digits = 3)
