@@ -1,4 +1,23 @@
-12-Apr-2022
+19-Apr-2020
+Send the revised paper back for review JRFM. 
+
+18-Apr-2020
+There are questions of dummy variables and model selection that can be addressed.
+
+12-Apr-2020
+Role of USD as a safe asset?  Journal of Finance Vol 76 number 1.
+
+Understanding capital flows is crucial to policy and regulation.  How far should the capital account be restricted?  Can they free savings for development and reduce the cost of capital?  Is full capital account convertibility still the aim? The Committe for International Economic Policy and Reform (CIEPR 2012) looks at this issue.  The Rethinking Central Banking (2011) make the case for a broader mandate for central banks and for more active policy coordination.  There are difficulties in global coordination.  Report concludes that policymakers should aim to get the benefits of capital flows while minimising the costs. The report suggest that one way to do that is to improve the data that they have. 
+
+Borio and Disyatat (2011) show that cross-border bank and bank deposits account for a very large share of major economies overall cross-border gross positions. 
+
+Avdjiev et al (2017) and Davis et al (2019) have examples of the improved data that has been seen.  
+
+Cesa-Bianchi (2019) model gross international capital flows. This is about exchange rates. 
+
+There are a number of models that use gross capital flows. These include Devereux and Saito (2006), Devereau et al. (2018), Gabaix and Maggiorio (2015), Fostel et al. (2015) Gournichas et al (2017), McGrattean and Prescotte (2010). Caballero and Simsek (2019). THey gnerally abstract from teh banking system.  This lossses a major part of speculation. 
+
+1e-Apr-2022
 The SVAR.tex paper is in the zip file to send to the journal. I am now working on the major corrections. 
 
 These are the corrections and my response
@@ -22,6 +41,8 @@ Review 1:
 8) References incorrectly formatted.  Each is different. 
 
 9) Overall arrangement of the article is in appropriate. Unstructured. 
+
+I used the latex template.  This inficated that there were four required sections: introduction, materials and methods, results and discussion.  I have re-strucuted the paper to a more conventional format.  
 
 10) The defined aim or goal of the work is missing. This needs research questions or hypotheses. 
 
